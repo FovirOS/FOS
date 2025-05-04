@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  program.hyprland = {
+  programs.hyprland = {
     enable = true;
     xwayland.enable = true;
   };
