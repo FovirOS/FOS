@@ -1,1 +1,1 @@
-[ ./openssh.nix ]
+{ imports = [ ./openssh.nix ]; }
