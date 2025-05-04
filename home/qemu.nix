@@ -1,6 +1,6 @@
 { pkgs, ... }: {
-  home.username = "fovir";
-  home.homeDirectory = "/home/fovir";
+  home.username = "qemu";
+  home.homeDirectory = "/home/qemu";
 
   programs.zsh.enable = true;
 
