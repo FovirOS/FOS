@@ -24,7 +24,7 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.fovir = imports ./home/fovir.nix;
+              home-manager.users.fovir = import ./home/fovir.nix;
             }
           ];
 
