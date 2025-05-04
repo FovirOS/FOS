@@ -1,15 +1,6 @@
-{ config, pkgs, lib, ... }:
-
-{
-  services.xserver = {
+{ pkgs, ... }: {
+  program.hyprland = {
     enable = true;
-    windowManager.hyprland.enable = true;
-  };
-
-  environment.systemPackages = with pkgs; [ hyprland wayland waybar alacritty ];
-
-  fonts = {
-    enable = true;
-    fontconfig = { enable = true; };
+    xwayland.enable = true;
   };
 }
