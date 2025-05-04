@@ -6,8 +6,6 @@
 
   imports = [ ../hardware-configuration.nix ];
 
-  services.openssh.enable = true;
-
   users.users.qemu = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
