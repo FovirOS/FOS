@@ -1,7 +1,1 @@
-{pkgs,...}:
-{
-  environment.systemPackages=with pkgs;[
-    kitty,
-    zsh
-  ];
-}
+{ pkgs, ... }: { environment.systemPackages = with pkgs; [ kitty zsh ]; }
