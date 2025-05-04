@@ -12,6 +12,8 @@
     password = "qemu";
   };
 
+  users.users.root = { password = "qemu"; };
+
   security.sudo.enable = true;
   security.sudo.wheelNeedsPassword = false;
 }
