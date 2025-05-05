@@ -7,8 +7,6 @@
   imports = [
     ../modules/services/server # Import the `server` services.
     ../hardware-configuration.nix # Import the hardware configurations.
-    ../modules/desktop # Import the `desktop` module.
-    ../modules/softwares # Import `softwares` module.
     ../modules/system # Import `system` module.
   ];
 
