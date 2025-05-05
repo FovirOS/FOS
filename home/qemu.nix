@@ -6,5 +6,8 @@
 
   home.stateVersion = "24.11";
 
-  imports = [ ./programs/git.nix ];
+  imports = [
+    ../modules/home/develop # Import the develop softwares.
+    ../modules/home/terminal # Import terminal applications.
+  ];
 }
