@@ -5,10 +5,11 @@
   boot.loader.grub.device = "/dev/vda";
 
   imports = [
-    ../modules/services/server # Import the server services.
+    ../modules/services/server # Import the `server` services.
     ../hardware-configuration.nix # Import the hardware configurations.
-    ../modules/desktop # Import the desktop modules.
-    ../modules/softwares # Import softwares.
+    ../modules/desktop # Import the `desktop` module.
+    ../modules/softwares # Import `softwares` module.
+    ../modules/system # Import `system` module.
   ];
 
   users.users.qemu = {
