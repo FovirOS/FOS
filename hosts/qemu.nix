@@ -8,7 +8,6 @@
     ../modules/services/server # Import the `server` services.
     ../hardware-configuration.nix # Import the hardware configurations.
     ../modules/system # Import `system` module.
-    ../modules/desktop # Import `desktop` module.
   ];
 
   users.users.qemu = {
