@@ -24,7 +24,7 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.qemu = import ./home/qemu.nix;
+              home-manager.users.${name} = imports ./home/${name}/${name}.nix;
             }
           ];
 
