@@ -9,6 +9,5 @@
   imports = [
     ../modules/home/develop # Import the develop softwares.
     ../modules/home/terminal # Import terminal applications.
-    ../modules/home/desktop # Import desktop module.
   ];
 }
