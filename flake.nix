@@ -33,11 +33,13 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.${name} = import ./home/${name}.nix;
+            home-manager.users.${name} = {
+              imports = [
+                ./home/${name}.nix
+                nixvim.homeManagerModules.nixvim
+              ];
+            };
           }
-
-          nixvim.homeManagerModules.nixvim
-          ./modules/home/development/nixvim
         ];
 
         specialArgs = {inherit name inputs;};
