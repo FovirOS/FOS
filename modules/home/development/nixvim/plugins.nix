@@ -21,6 +21,18 @@
         {name = "path";}
         {name = "buffer";}
       ];
+
+      mapping = {
+        "<Tab>" = ''
+          function(fallback)
+            if cmp.visible() then
+              cmp.confirm({select = true})
+            else
+              fallback()
+            end
+          end
+        '';
+      };
     };
 
     nvim-surround = {
