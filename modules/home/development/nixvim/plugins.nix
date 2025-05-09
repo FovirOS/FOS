@@ -49,7 +49,6 @@
                 fallback()
               end
             end
-
           '';
         };
       };
