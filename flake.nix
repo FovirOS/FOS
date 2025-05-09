@@ -17,6 +17,7 @@
     self,
     nixpkgs,
     home-manager,
+    nixvim,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -34,6 +35,9 @@
             home-manager.useUserPackages = true;
             home-manager.users.${name} = import ./home/${name}.nix;
           }
+
+          nixvim.homeManagerModules.nixvim
+          ./modules/home/development/nixvim
         ];
 
         specialArgs = {inherit name inputs;};
