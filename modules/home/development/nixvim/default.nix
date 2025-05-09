@@ -1,8 +1,7 @@
 {inputs, ...}: {
-  imports = [inputs.nixvim.homeManagerModule.nixvim];
+  inputs.nixvim = {
+    url = "github:nix-community/nixvim/nixos-24.11";
 
-  programs.nixvim = {
-    enable = true;
-    defaultEditor = true;
+    inputs.nixpkgs.follows = "nixpkgs";
   };
 }
