@@ -22,16 +22,18 @@
         {name = "buffer";}
       ];
 
-      mapping = {
-        "<Tab>" = ''
-          function(fallback)
-            if cmp.visible() then
-              cmp.confirm({select = true})
-            else
-              fallback()
+      settings = {
+        mapping = {
+          "<Tab>" = ''
+            function(fallback)
+              if cmp.visible() then
+                cmp.confirm({select = true})
+              else
+                fallback()
+              end
             end
-          end
-        '';
+          '';
+        };
       };
     };
 
