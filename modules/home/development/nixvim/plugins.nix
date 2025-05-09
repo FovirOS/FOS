@@ -37,7 +37,7 @@
               if cmp.visible() then
                 cmp.confirm({select = true})
               elseif jump_chars[after] then
-                vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Right>", true, true, true), "n", true)
+                vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Right>", true, true, true), "i", true)
               else
                 fallback()
               end
