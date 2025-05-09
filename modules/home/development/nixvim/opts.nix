@@ -4,5 +4,8 @@
     shiftwidth = 4;
     softtabstop = 4;
     expandtab = true;
+
+    number = true;
+    relativenumber = true;
   };
 }
