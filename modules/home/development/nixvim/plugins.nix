@@ -1,8 +1,7 @@
 {...}: {
   plugins = {
-    autoclose = {
+    nvim-autopairs = {
       enable = true;
-      autoLoad = true;
     };
   };
 }
