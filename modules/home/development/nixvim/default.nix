@@ -2,6 +2,9 @@
   programs.nixvim = {
     enable = true;
 
-    imports = [./colorscheme.nix];
+    imports = [
+      ./colorscheme.nix
+      ./plugins.nix
+    ];
   };
 }
