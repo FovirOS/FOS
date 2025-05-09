@@ -21,16 +21,6 @@
         {name = "path";}
         {name = "buffer";}
       ];
-
-      mapping."<Tab>" = {
-        action = ''
-          function(fallback)
-              if cmp.visible() then
-                cmp.confirm({select = true})
-              end
-          end
-        '';
-      };
     };
 
     nvim-surround = {
