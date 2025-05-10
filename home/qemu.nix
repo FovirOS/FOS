@@ -11,4 +11,9 @@
     ../modules/home/terminal # Import terminal applications.
     ../modules/home/desktop # Import the desktop.
   ];
+
+  programs.git = {
+    userName = "qemu";
+    userEmail = "qemu@example.com";
+  };
 }
