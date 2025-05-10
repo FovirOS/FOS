@@ -2,6 +2,6 @@
   imports = [
     ./git.nix
     ./nixvim
-    ./clang.nix
+    ./c_cpp
   ];
 }
