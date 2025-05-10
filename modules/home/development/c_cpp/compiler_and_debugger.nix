@@ -7,5 +7,6 @@
     gcc
     gdb
     cgdb
+    cmake
   ];
 }
