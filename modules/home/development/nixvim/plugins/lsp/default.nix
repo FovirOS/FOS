@@ -3,7 +3,7 @@
     ./clangd.nix
   ];
 
-  lsp = {
+  plugins.lsp = {
     enable = true;
   };
 }
