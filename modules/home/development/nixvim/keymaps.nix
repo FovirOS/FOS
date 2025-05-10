@@ -1,11 +1,9 @@
 {...}: {
-  programs.nixvim = {
-    keymaps = [
-      {
-        action = "<C-w>";
-        key = "<C-BS>";
-        mode = "i";
-      }
-    ];
-  };
+  keymaps = [
+    {
+      action = "<C-w>";
+      key = "<C-BS>";
+      mode = "i";
+    }
+  ];
 }
