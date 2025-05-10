@@ -8,5 +8,6 @@
     gdb
     cgdb
     cmake
+    gnumake
   ];
 }
