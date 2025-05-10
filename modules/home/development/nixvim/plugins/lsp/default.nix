@@ -7,7 +7,7 @@
     enable = true;
   };
 
-  plugins.lsp-format.enable = {
+  plugins.lsp-format = {
     enable = true;
   };
 }
