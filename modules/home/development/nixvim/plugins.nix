@@ -1,20 +1,26 @@
 {pkgs, ...}: {
   plugins = {
+    # Auto pair brackets.
     nvim-autopairs = {
       enable = true;
     };
 
+    # Syntax highlight.
     treesitter = {
       enable = true;
 
+      # Language options.
       grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
         bash
         nix
       ];
     };
 
+    # Code completion.
     cmp = {
       enable = true;
+
+      # Completion sources.
       autoEnableSources = true;
       settings.sources = [
         {name = "nvim_lsp";}
@@ -24,6 +30,7 @@
 
       settings = {
         mapping = {
+          # Configure tab out.
           "<Tab>" = ''
             function(fallback)
               local cmp = require("cmp")
@@ -50,12 +57,13 @@
       };
     };
 
+    # Add surrounding characters to selected contents.
     nvim-surround = {
       enable = true;
 
       settings = {
         keymaps = {
-          visual = "S";
+          visual = "S"; # Bind `S`.
         };
       };
     };

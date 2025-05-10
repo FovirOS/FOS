@@ -3,9 +3,9 @@
     enable = true;
 
     imports = [
-      ./colorscheme.nix
-      ./plugins.nix
-      ./opts.nix
+      ./colorscheme.nix # Theme.
+      ./plugins.nix # Plugins settings.
+      ./opts.nix # Options.
     ];
   };
 }
