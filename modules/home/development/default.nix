@@ -1,1 +1,7 @@
-{imports = [./git.nix ./nixvim];}
+{
+  imports = [
+    ./git.nix
+    ./nixvim
+    ./clang.nix
+  ];
+}
