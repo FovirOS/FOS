@@ -8,5 +8,8 @@
     number = true;
     relativenumber = true;
     termguicolors = true;
+
+    autoindent = true;
+    smartindent = true;
   };
 }
