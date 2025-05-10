@@ -1,5 +1,5 @@
 {...}: {
-  lsp.server.clangd = {
+  plugins.lsp.servers.clangd = {
     enable = true;
   };
 }
