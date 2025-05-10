@@ -1,5 +1,5 @@
-{pkgs, ...}: {
-  cmp = {
+{...}: {
+  plugins. cmp = {
     enable = true;
 
     # Completion sources.

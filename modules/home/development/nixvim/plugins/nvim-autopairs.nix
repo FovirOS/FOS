@@ -1,6 +1,6 @@
 {...}: {
   # Auto pair brackets.
-  nvim-autopairs = {
+  plugins.nvim-autopairs = {
     enable = true;
   };
 }

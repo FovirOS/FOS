@@ -1,5 +1,5 @@
 {...}: {
-  nvim-tree = {
+  plugins.nvim-tree = {
     enable = true;
 
     git = {

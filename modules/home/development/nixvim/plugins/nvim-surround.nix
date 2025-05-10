@@ -1,6 +1,6 @@
 {...}: {
   # Add surrounding characters to selected contents.
-  nvim-surround = {
+  plugins.nvim-surround = {
     enable = true;
 
     settings = {
