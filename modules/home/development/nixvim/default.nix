@@ -8,7 +8,7 @@
 
     imports = [
       ./colorscheme.nix # Theme.
-      ./plugins.nix # Plugins settings.
+      ./plugins # Plugins settings.
       ./opts.nix # Options.
     ];
   };
