@@ -26,17 +26,20 @@
         mapping = {
           "<Tab>" = ''
             function(fallback)
+              local cmp = require("cmp")
               local col = vim.fn.col(".")
               local line = vim.fn.getline(".")
 
-              local char = line:sub(col, col)
-              local after = line:sub(col + 1, col + 1)
+              local next_char = ""
+              if col <= #line then
+                next_char = line:sub(col,col)
+              end
 
               local jump_chars = { [")"]=true, ["}"]=true, ["]"]=true }
 
               if cmp.visible() then
                 cmp.confirm({select = true})
-              elseif jump_chars[after] then
+              elseif jump_chars[next_char] then
                 vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Right>", true, true, true), "i", true)
               else
                 fallback()
