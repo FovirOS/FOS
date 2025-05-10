@@ -1,6 +1,6 @@
-{...}: {
+{pkgs, ...}: {
   # Syntax highlight.
-  treesitter = {
+  plugins.treesitter = {
     enable = true;
 
     # Language options.
