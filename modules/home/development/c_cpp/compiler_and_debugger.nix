@@ -4,7 +4,7 @@
   ...
 }: {
   home.packages = with pkgs; [
-    libgcc
+    gcc
     gdb
     cgdb
   ];
