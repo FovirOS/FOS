@@ -5,7 +5,6 @@
     ./nvim-surround.nix
     ./treesitter.nix
     ./nvim-tree.nix
-    ./neoscroll.nix
     ./web-devicons.nix
   ];
 }
