@@ -7,5 +7,6 @@
     ./nvim-tree.nix
     ./web-devicons.nix
     ./mini.nix
+    ./lsp
   ];
 }
