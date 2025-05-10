@@ -4,9 +4,6 @@
   ...
 }: {
   home.packages = with pkgs; [
-    gcc
-    gdb
-    cgdb
     cmake
     gnumake
   ];
