@@ -8,10 +8,10 @@
     };
   };
 
-  keymaps=[
+  keymaps = [
     {
       key = "<leader>tr";
-      action="<cmd>NvimTreeToggle<cr>";
-    };
+      action = "<cmd>NvimTreeToggle<cr>";
+    }
   ];
 }
