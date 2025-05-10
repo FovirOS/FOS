@@ -10,6 +10,7 @@
       ./colorscheme.nix # Theme.
       ./plugins # Plugins settings.
       ./opts.nix # Options.
+      ./lsp # Language server protocol configurations.
     ];
   };
 }
