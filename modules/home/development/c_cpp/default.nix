@@ -1,7 +1,7 @@
 {...}: {
   imports = [
     ./clang.nix
-    ./debugger.nix
+    ./debuggers.nix
     ./make_tools.nix
   ];
 }
