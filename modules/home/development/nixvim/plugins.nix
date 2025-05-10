@@ -35,7 +35,7 @@
                 next_char = line:sub(col,col)
               end
 
-              local jump_chars = { [")"]=true, ["}"]=true, ["]"]=true }
+              local jump_chars = { [")"]=true, ["}"]=true, ["]"]=true, ['"']=true, ["'"]=true, ["`"]=true, [">"]=true, [";"]=true }
 
               if cmp.visible() then
                 cmp.confirm({select = true})
