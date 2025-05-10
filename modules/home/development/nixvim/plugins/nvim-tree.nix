@@ -7,4 +7,11 @@
       ignore = true;
     };
   };
+
+  keymaps=[
+    {
+      key = "<leader>tr";
+      action="<cmd>NvimTreeToggle<cr>";
+    };
+  ];
 }
