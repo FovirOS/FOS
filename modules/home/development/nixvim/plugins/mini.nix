@@ -5,6 +5,10 @@
     modules = {
       animate = {
       };
+
+      statusline = {
+        use_icons = true;
+      };
     };
   };
 }
