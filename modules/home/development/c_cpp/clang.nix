@@ -4,7 +4,7 @@
   ...
 }: {
   home.packages = with pkgs; [
-    llvmPackages_19.clang-tools
+    llvmPackages_19.clang-unwrapped
   ];
 
   home.file.".clang-format".text = ''
