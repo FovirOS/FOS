@@ -283,5 +283,6 @@
       - CF_SWIFT_NAME
 
     PackConstructorInitializers: CurrentLine
+    InsertNewlineAtEOF: true
   '';
 }
