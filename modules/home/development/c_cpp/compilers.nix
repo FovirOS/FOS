@@ -4,7 +4,8 @@
   ...
 }: {
   home.packages = with pkgs; [
-    llvmPackages_19.libcxxClang
+    llvmPackages_19.clang-tools # For LSP.
+    gcc # Global compiler.
   ];
 
   home.file.".clang-format".text = ''
