@@ -7,7 +7,6 @@
     ./nvim-tree.nix
     ./web-devicons.nix
     ./mini.nix
-    ./sniprun.nix
     ./toggleterm.nix
     ./lsp
   ];
