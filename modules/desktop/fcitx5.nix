@@ -12,6 +12,5 @@
       fcitx5-rime
       libsForQt5.fcitx5-qt
     ];
-    waylandFrontend = true;
   };
 }
