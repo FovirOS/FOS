@@ -1,0 +1,3 @@
+{pkgs, ...}: {
+  stylix.autoEnable = true;
+}
