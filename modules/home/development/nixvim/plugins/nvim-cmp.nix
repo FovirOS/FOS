@@ -1,5 +1,5 @@
 {...}: {
-  plugins. cmp = {
+  plugins.cmp = {
     enable = true;
 
     # Completion sources.
@@ -7,8 +7,16 @@
     settings.sources = [
       {name = "nvim_lsp";}
       {name = "path";}
-      {name = "buffer";}
     ];
+
+    filetype = {
+      markdown = {
+        sources = [
+          {name = "buffer";}
+          {name = "path";}
+        ];
+      };
+    };
 
     settings = {
       sorting.comparators = [
@@ -40,20 +48,6 @@
             end
           end
         '';
-
-        # Close the completion
-        "<BS>" = ''
-          function(fallback)
-            if cmp.visible() then
-              cmp.close()
-            else
-              fallback()
-            end
-          end
-        '';
-
-        "<Down>" = "cmp.mapping.select_next_item()";
-        "<Up>" = "cmp.mapping.select_prev_item()";
       };
     };
   };
