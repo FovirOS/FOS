@@ -1,5 +1,5 @@
 {...}: {
-  plugins. cmp = {
+  plugins.cmp = {
     enable = true;
 
     # Completion sources.
@@ -10,7 +10,28 @@
       {name = "buffer";}
     ];
 
+    filetype = {
+      c = {
+        sources = [
+          {name = "nvim_lsp";}
+          {name = "path";}
+        ];
+      };
+
+      cpp = {
+        sources = [
+          {name = "nvim_lsp";}
+          {name = "path";}
+        ];
+      };
+    };
+
     settings = {
+      sorting.comparators = [
+        "require('cmp.config.compare').recently_used"
+        "require('cmp.config.compare').exact"
+        "require('cmp.config.compare').order"
+      ];
       mapping = {
         # Configure tab out.
         "<Tab>" = ''
@@ -35,20 +56,6 @@
             end
           end
         '';
-
-        # Close the completion
-        "<BS>" = ''
-          function(fallback)
-            if cmp.visible() then
-              cmp.close()
-            else
-              fallback()
-            end
-          end
-        '';
-
-        "<Down>" = "cmp.mapping.select_next_item()";
-        "<Up>" = "cmp.mapping.select_prev_item()";
       };
     };
   };
