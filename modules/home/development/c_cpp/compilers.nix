@@ -8,6 +8,10 @@
     gcc # Global compiler.
   ];
 
+  home.file.".clang-tidy".text = ''
+    Checks: '*, -llvm*'
+  '';
+
   home.file.".clang-format".text = ''
     AccessModifierOffset: -4
 
