@@ -4,7 +4,7 @@
   ...
 }: {
   stylix = {
-    enable = true;
+    enable = false;
 
     fonts = {
       monospace = {
