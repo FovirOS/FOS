@@ -9,7 +9,7 @@
   ];
 
   home.file.".clang-tidy".text = ''
-    Checks: '*, -llvm*'
+    Checks: '*, -llvm*, -modernize-use-trailing-return-type'
   '';
 
   home.file.".clang-format".text = ''
