@@ -16,8 +16,4 @@
     userName = "qemu";
     userEmail = "qemu@example.com";
   };
-
-  catppuccin.flavor = "mocha";
-  catppuccin.starship.enable = true;
-  catppuccin.enable = true;
 }
