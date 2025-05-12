@@ -10,6 +10,7 @@
     ../modules/home/development # Import the development softwares.
     ../modules/home/terminal # Import terminal applications.
     ../modules/home/desktop # Import the desktop.
+    ../modules/home/misc # Import misc.
   ];
 
   programs.git = {
