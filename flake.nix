@@ -11,6 +11,8 @@
     nixvim = {
       url = "github:nix-community/nixvim/nixos-24.11";
     };
+
+    stylix.url = "github:danth/stylix";
   };
 
   outputs = {
