@@ -36,6 +36,7 @@
           end
         '';
 
+        # Close the completion
         "<BS>" = ''
           function(fallback)
             if cmp.visible() then
@@ -45,6 +46,9 @@
             end
           end
         '';
+
+        "<Down>" = "cmp.mapping.select_next_item()";
+        "<Up>" = "cmp.mapping.select_prev_item()";
       };
     };
   };
