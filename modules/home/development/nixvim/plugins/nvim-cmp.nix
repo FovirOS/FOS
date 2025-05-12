@@ -11,6 +11,11 @@
     ];
 
     settings = {
+      sorting.comparators = [
+        "require('cmp.config.compare').recently_used"
+        "require('cmp.config.compare').exact"
+        "require('cmp.config.compare').order"
+      ];
       mapping = {
         # Configure tab out.
         "<Tab>" = ''
