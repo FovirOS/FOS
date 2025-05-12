@@ -6,6 +6,7 @@
     cmd = [
       "clangd"
       "--header-insertion=never"
+      "--clang-tidy"
     ];
   };
 }
