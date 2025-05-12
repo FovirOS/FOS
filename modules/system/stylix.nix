@@ -10,12 +10,5 @@
         package = pkgs.jetbrains-mono;
       };
     };
-
-    autoEnable = true;
-    targets = {
-      fcitx5.enable = false;
-      hyprland.enable = false;
-      nixvim.enable = false;
-    };
   };
 }
