@@ -9,7 +9,7 @@
     fonts = {
       monospace = {
         name = "JetBrainsMono Nerd Font Mono";
-        packages = pkgs.nerd-fonts.jetbrains-mono;
+        package = pkgs.jetbrains-mono;
       };
     };
   };

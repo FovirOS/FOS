@@ -20,6 +20,7 @@
     nixpkgs,
     home-manager,
     nixvim,
+    stylix,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -42,6 +43,8 @@
               ];
             };
           }
+
+          inputs.stylix.nixosModules.stylix
         ];
 
         specialArgs = {inherit name inputs;};
