@@ -9,12 +9,4 @@
       "--clang-tidy"
     ];
   };
-
-  keymaps = [
-    {
-      key = "<F2>";
-      mode = "n";
-      action = "<cmd>lua vim.lsp.buf.rename()<CR>";
-    }
-  ];
 }
