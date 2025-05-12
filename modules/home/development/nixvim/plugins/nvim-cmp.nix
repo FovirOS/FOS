@@ -33,6 +33,9 @@
         "require('cmp.config.compare').order"
       ];
       mapping = {
+        "<Down>" = "cmp.mapping.select_next_item()";
+        "<Up>" = "cmp.mapping.select_prev_item()";
+
         # Configure tab out.
         "<Tab>" = ''
           function(fallback)
