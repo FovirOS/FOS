@@ -11,8 +11,6 @@
     nixvim = {
       url = "github:nix-community/nixvim/nixos-24.11";
     };
-
-    stylix.url = "github:danth/stylix/release-24.11";
   };
 
   outputs = {
@@ -20,7 +18,6 @@
     nixpkgs,
     home-manager,
     nixvim,
-    stylix,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -43,8 +40,6 @@
               ];
             };
           }
-
-          inputs.stylix.nixosModules.stylix
         ];
 
         specialArgs = {inherit name inputs;};
