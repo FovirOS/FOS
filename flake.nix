@@ -11,8 +11,6 @@
     nixvim = {
       url = "github:nix-community/nixvim/nixos-24.11";
     };
-
-    catppuccin.url = "github:catppuccin/nix";
   };
 
   outputs = {
@@ -20,7 +18,6 @@
     nixpkgs,
     home-manager,
     nixvim,
-    catppuccin,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -31,7 +28,6 @@
         inherit system;
         modules = [
           ./hosts/${name}.nix
-          catppuccin.nixosModules.catppuccin
 
           inputs.home-manager.nixosModules.home-manager
           {
