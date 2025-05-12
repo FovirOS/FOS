@@ -12,7 +12,7 @@
       url = "github:nix-community/nixvim/nixos-24.11";
     };
 
-    stylix.url = "github:danth/stylix";
+    stylix.url = "github:danth/stylix/release-24.11";
   };
 
   outputs = {
