@@ -7,7 +7,6 @@
       "clangd"
       "--header-insertion=never"
       "--clang-tidy"
-      "-checks=*,-llvm*"
     ];
   };
 }
