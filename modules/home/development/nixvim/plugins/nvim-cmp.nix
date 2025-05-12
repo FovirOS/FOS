@@ -7,12 +7,20 @@
     settings.sources = [
       {name = "nvim_lsp";}
       {name = "path";}
+      {name = "buffer";}
     ];
 
     filetype = {
-      markdown = {
+      c = {
         sources = [
-          {name = "buffer";}
+          {name = "nvim_lsp";}
+          {name = "path";}
+        ];
+      };
+
+      cpp = {
+        sources = [
+          {name = "nvim_lsp";}
           {name = "path";}
         ];
       };
