@@ -35,6 +35,16 @@
             end
           end
         '';
+
+        "<BS>" = ''
+          function(fallback)
+            if cmp.visible() then
+              cmp.close()
+            else
+              fallback()
+            end
+          end
+        '';
       };
     };
   };
