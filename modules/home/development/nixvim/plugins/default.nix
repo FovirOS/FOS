@@ -8,6 +8,7 @@
     ./web-devicons.nix
     ./mini.nix
     ./toggleterm.nix
+    ./lspsaga.nix
     ./lsp
   ];
 }
