@@ -9,7 +9,7 @@
   ];
 
   home.file.".clang-tidy".text = ''
-    Checks: '*, -llvm*, -modernize-use-trailing-return-type, -readability-braces-around-statements, -performance-unroll-loops'
+    Checks: '*, -llvm*, -modernize-use-trailing-return-type, -readability-braces-around-statements, -altera*'
   '';
 
   home.file.".clang-format".text = ''
