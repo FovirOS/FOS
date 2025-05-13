@@ -9,8 +9,4 @@
       };
     };
   };
-
-  plugins.diagram = {
-    enable = true;
-  };
 }
