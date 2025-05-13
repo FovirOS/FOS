@@ -19,6 +19,14 @@
 
     oh-my-zsh = {
       enable = true;
+
+      plugins = [
+        "git"
+        "vi-mode"
+        "thefuck"
+      ];
+
+      theme = "robbyrussell";
     };
   };
 }
