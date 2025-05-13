@@ -1,1 +1,6 @@
-{ imports = [ ./alacritty.nix ]; }
+{
+  imports = [
+    ./alacritty.nix
+    ./zsh.nix
+  ];
+}
