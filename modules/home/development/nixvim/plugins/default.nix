@@ -11,6 +11,7 @@
     ./lspsaga.nix
     ./tmux-navigator.nix
     ./markdown.nix
+    ./hop.nix
     ./lsp
   ];
 }
