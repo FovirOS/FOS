@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  lib,
   ...
 }: {
   programs.zsh = {
@@ -15,6 +16,10 @@
       ls = "ls -alF";
     };
 
+    initExtraFirst = ''
+      source $HOME/.p10k.zsh
+    '';
+
     history.size = 10000;
 
     oh-my-zsh = {
@@ -24,8 +29,6 @@
         "git"
         "vi-mode"
       ];
-
-      theme = "robbyrussell";
     };
   };
 }
