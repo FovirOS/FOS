@@ -23,7 +23,6 @@
       plugins = [
         "git"
         "vi-mode"
-        "thefuck"
       ];
 
       theme = "robbyrussell";
