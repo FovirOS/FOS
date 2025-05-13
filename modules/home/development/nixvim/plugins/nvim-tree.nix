@@ -2,6 +2,7 @@
   plugins.nvim-tree = {
     enable = true;
     autoClose = true;
+    openOnSetup = true;
 
     git = {
       enable = true;
