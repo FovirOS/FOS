@@ -22,6 +22,11 @@
         action = "right";
         key = "<M-l>";
       }
+
+      {
+        action = "previous";
+        key = "<M-o>";
+      }
     ];
   };
 }
