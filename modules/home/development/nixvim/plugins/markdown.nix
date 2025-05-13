@@ -9,4 +9,8 @@
       };
     };
   };
+
+  plugins.diagram = {
+    enable = true;
+  };
 }

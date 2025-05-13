@@ -10,7 +10,7 @@
     ./toggleterm.nix
     ./lspsaga.nix
     ./tmux-navigator.nix
-    ./render-markdown.nix
+    ./markdown.nix
     ./lsp
   ];
 }
