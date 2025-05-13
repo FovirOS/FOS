@@ -5,22 +5,22 @@
     keymaps = [
       {
         action = "left";
-        key = "<C-h>";
+        key = "<M-h>";
       }
 
       {
         action = "down";
-        key = "<C-j>";
+        key = "<M-j>";
       }
 
       {
         action = "up";
-        key = "<C-k>";
+        key = "<M-k>";
       }
 
       {
         action = "right";
-        key = "<C-l>";
+        key = "<M-l>";
       }
     ];
   };
