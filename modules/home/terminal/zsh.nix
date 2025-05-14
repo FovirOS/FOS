@@ -18,7 +18,7 @@
 
     initExtraFirst = ''
       source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
-      souce $HOME/.p10k.zsh
+      source $HOME/.p10k.zsh
     '';
 
     history.size = 10000;

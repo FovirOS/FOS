@@ -16,6 +16,7 @@
     ../modules/desktop # Import `desktop` module.
   ];
 
+  programs.zsh.enable = true;
   users.users.qemu = {
     isNormalUser = true;
     extraGroups = ["wheel"];
