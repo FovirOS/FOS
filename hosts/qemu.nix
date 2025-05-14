@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ... }: {
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}: {
   networking.hostName = "qemu"; # Set the host name.
 
   boot.loader.grub.enable = true;
@@ -13,11 +18,12 @@
 
   users.users.qemu = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = ["wheel"];
     password = "qemu";
+    shell = pkgs.zsh;
   };
 
-  users.users.root = { password = "qemu"; };
+  users.users.root = {password = "qemu";};
 
   security.sudo.enable = true;
   security.sudo.wheelNeedsPassword = false;
