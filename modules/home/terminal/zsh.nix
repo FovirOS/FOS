@@ -16,9 +16,7 @@
       ls = "ls -alF";
     };
 
-    initExtraFirst = ''
-      source $HOME/.p10k.zsh
-    '';
+    initExtraFirst = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
     history.size = 10000;
 
