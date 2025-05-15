@@ -13,7 +13,6 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      ls = "ls -alF";
     };
 
     initExtraFirst = ''

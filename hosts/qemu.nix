@@ -4,6 +4,12 @@
   lib,
   ...
 }: {
+  home-manager = {
+    extraSpecialArgs = {
+      inherit (config.networking) hostName;
+    };
+  };
+
   networking.hostName = "qemu"; # Set the host name.
 
   boot.loader.grub.enable = true;
