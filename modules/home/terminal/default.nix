@@ -4,5 +4,6 @@
     ./zsh.nix
     ./zsh-powerlevel10k.nix
     ./eza.nix
+    ./yazi.nix
   ];
 }
