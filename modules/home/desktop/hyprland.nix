@@ -46,7 +46,7 @@ in {
       ];
 
       input = {
-        kb_options = "menu:escape";
+        kb_options = "menu:escape"; # Map `menu` to `esc`.
       };
     };
   };
