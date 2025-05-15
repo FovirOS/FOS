@@ -12,6 +12,7 @@
     ./tmux-navigator.nix
     ./markdown.nix
     ./hop.nix
+    ./which-key.nix
     ./lsp
   ];
 }
