@@ -25,7 +25,7 @@ in {
         "SUPER,H,movefocus,l"
         "SUPER,J,movefocus,u"
         "SUPER,K,movefocus,d"
-        "SUPER,l,movefocus,r"
+        "SUPER,L,movefocus,r"
 
         # Switch workspace
         "SUPER,1,workspace,1"
