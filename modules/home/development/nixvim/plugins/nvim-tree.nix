@@ -15,6 +15,7 @@
     {
       key = "<leader>tr";
       action = "<cmd>NvimTreeToggle<cr>";
+      options.desc = "Toggle Nvim Tree";
     }
   ];
 }

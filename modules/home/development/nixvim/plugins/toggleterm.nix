@@ -43,6 +43,7 @@
       key = "<F5>";
       mode = "n";
       action = ":lua RunCurrentFile()<CR>";
+      options.desc = "Run Code";
     }
   ];
 }
