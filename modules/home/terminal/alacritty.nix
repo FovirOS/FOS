@@ -34,7 +34,7 @@ in {
           style = "Italic";
         };
 
-        size = 12.0;
+        size = 14.0;
       };
 
       general = {
