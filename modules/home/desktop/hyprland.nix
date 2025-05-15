@@ -27,7 +27,7 @@ in {
         "SUPER,K,movefocus,u"
         "SUPER,L,movefocus,r"
 
-        # Switch workspace
+        # Switch workspace.
         "SUPER_SHIFT,H,workspace,e-1"
         "SUPER_SHIFT,L,workspace,e+1"
         "SUPER,1,workspace,1"
@@ -39,6 +39,10 @@ in {
         "SUPER,7,workspace,7"
         "SUPER,8,workspace,8"
         "SUPER,9,workspace,9"
+      ];
+
+      bindm = [
+        "SUPER,mouse:272,movewindow" # Move window.
       ];
 
       input = {
