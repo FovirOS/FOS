@@ -6,7 +6,7 @@
   ...
 }: let
   monitor_name =
-    if hostname == "qemu"
+    if hostName == "qemu"
     then "Virtual-1"
     else "none";
 in {
