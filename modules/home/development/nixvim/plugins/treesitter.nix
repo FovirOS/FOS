@@ -7,6 +7,10 @@
     grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
       bash
       nix
+      json
+      lua
+      markdown
+      yaml
     ];
   };
 }
