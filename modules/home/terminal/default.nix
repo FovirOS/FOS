@@ -1,6 +1,7 @@
 {
   imports = [
     ./alacritty.nix
+    ./btop.nix
     ./zsh.nix
     ./zsh-powerlevel10k.nix
     ./eza.nix
@@ -8,5 +9,6 @@
     ./dust.nix
     ./tldr.nix
     ./fd.nix
+    ./nvtop.nix
   ];
 }
