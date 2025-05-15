@@ -2,10 +2,9 @@
   config,
   lib,
   pkgs,
+  hostName,
   ...
 }: let
-  hostname = config.networking.hostName;
-
   monitor_name =
     if hostname == "qemu"
     then "Virtual-1"
