@@ -9,6 +9,5 @@
     ./dust.nix
     ./tldr.nix
     ./fd.nix
-    ./nvtop.nix
   ];
 }
