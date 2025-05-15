@@ -15,10 +15,11 @@ in {
     settings = {
       monitor = "${monitor_name},1920x1080,0x0,1";
       bind = [
-        "SUPER,Q,killactive" # Kill current process.
+        ",F1,exec,alacritty" # Run `alacritty`.
         "ALT,SPACE,exec,wofi --show drun" # Run `wofi`.
 
-        "SUPER,SPACE,togglefloating"
+        "SUPER,Q,killactive" # Kill current process.
+        "SUPER,SPACE,togglefloating" # Toggle floating mode.
 
         # Move focus.
         "SUPER,H,movefocus,l"
