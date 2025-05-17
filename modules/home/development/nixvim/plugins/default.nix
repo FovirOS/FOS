@@ -16,5 +16,6 @@
     ./luasnip.nix
     ./telescope.nix
     ./lsp
+    ./bufferline.nix
   ];
 }
