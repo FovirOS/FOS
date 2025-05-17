@@ -16,6 +16,10 @@
       enable = false;
       restrictAboveCwd = true;
     };
+
+    openFile = {
+      quitOnOpen = false;
+    };
   };
 
   keymaps = [
