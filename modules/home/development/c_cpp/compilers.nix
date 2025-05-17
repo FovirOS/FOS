@@ -14,8 +14,10 @@
       - -llvm*
       - -modernize-use-trailing-return-type
       - -readability-braces-around-statements
+      - -hicpp-braces-around-statements
       - -altera*
       - -google*
+      - -fuchsia*
   '';
 
   home.file.".clang-format".text = ''
