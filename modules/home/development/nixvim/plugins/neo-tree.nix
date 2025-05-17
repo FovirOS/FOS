@@ -27,6 +27,7 @@
           show_path = "relative";
         };
       };
+      A = "add_directory";
 
       y = "copy_to_clipboard";
       p = "paste_from_clipboard";
