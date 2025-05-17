@@ -27,5 +27,19 @@
       mode = "n";
       options.desc = "Toggle Line Wrap";
     }
+
+    {
+      action = "<cmd>Telescope lsp_definitions<CR>";
+      key = "gd";
+      mode = "n";
+      options.desc = "[G]o to [D]efinition";
+    }
+
+    {
+      action = "<cmd>Telescope lsp_implementations";
+      key = "gi";
+      mode = "n";
+      options.desc = "[G]o to [I]mplementations";
+    }
   ];
 }
