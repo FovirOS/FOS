@@ -9,5 +9,7 @@
     ./dust.nix
     ./tldr.nix
     ./fd.nix
+    ./bat.nix
+    ./ripgrep.nix
   ];
 }

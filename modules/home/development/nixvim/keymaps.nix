@@ -8,7 +8,7 @@
     }
 
     {
-      action = "<C-w>c";
+      action = "<cmd>lua require('mini.bufremove').delete(0, false)<CR>";
       key = "<leader>w";
       mode = "n";
       options.desc = "Close Current Buffer";
@@ -19,6 +19,27 @@
       key = "<leader>v";
       mode = "n";
       options.desc = "Split Tab Vertically";
+    }
+
+    {
+      action = "<cmd>set wrap!<CR>";
+      key = "<M-z>";
+      mode = "n";
+      options.desc = "Toggle Line Wrap";
+    }
+
+    {
+      action = "<cmd>Telescope lsp_definitions<CR>";
+      key = "gd";
+      mode = "n";
+      options.desc = "[G]o to [D]efinition";
+    }
+
+    {
+      action = "<cmd>WhichKey<CR>";
+      key = "<leader>?";
+      mode = "n";
+      options.desc = "Open which-key";
     }
   ];
 }

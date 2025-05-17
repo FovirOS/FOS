@@ -16,5 +16,12 @@
     # Automatically indent and smart indent.
     autoindent = true;
     smartindent = true;
+
+    # Highlight current line.
+    cursorline = true;
+
+    # Search with case-insenstive.
+    ignorecase = true;
+    smartcase = true;
   };
 }
