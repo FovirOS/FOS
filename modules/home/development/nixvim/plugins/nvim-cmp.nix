@@ -50,6 +50,8 @@
         "<Tab>" = ''
           function(fallback)
             local cmp = require("cmp")
+            local luasnip = require("luasnip")
+
             local col = vim.fn.col(".")
             local line = vim.fn.getline(".")
 
@@ -64,6 +66,8 @@
               cmp.confirm({select = true})
             elseif jump_chars[next_char] then
               vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Right>", true, true, true), "i", true)
+            elseif luasnip.expand_or_jumpable() then
+              luasnip.expand_or_jump()
             else
               fallback()
             end
