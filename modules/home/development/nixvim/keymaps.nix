@@ -36,13 +36,6 @@
     }
 
     {
-      action = "<cmd>Telescope lsp_implementations<CR>";
-      key = "gi";
-      mode = "n";
-      options.desc = "[G]o to [I]mplementations";
-    }
-
-    {
       action = "<cmd>WhichKey<CR>";
       key = "<leader>?";
       mode = "n";
