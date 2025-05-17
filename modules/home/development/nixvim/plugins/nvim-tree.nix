@@ -11,6 +11,17 @@
     };
   };
 
+  actions = {
+    changeDir = {
+      enable = false;
+      restrictAboveCwd = true;
+    };
+
+    openFile = {
+      quitOnOpen = false;
+    };
+  };
+
   keymaps = [
     {
       key = "<leader>tr";

@@ -8,7 +8,7 @@
     }
 
     {
-      action = "<C-w>c";
+      action = "<cmd>lua require('mini.bufremove').delete(0, false)<CR>";
       key = "<leader>w";
       mode = "n";
       options.desc = "Close Current Buffer";
