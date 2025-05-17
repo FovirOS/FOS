@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11"; # Use the stable version.
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable"; # The unstable version
 
     # Home Manager
     home-manager.url = "github:nix-community/home-manager/release-24.11";
@@ -16,12 +17,14 @@
   outputs = {
     self,
     nixpkgs,
+    nixpkgs-unstable,
     home-manager,
     nixvim,
     ...
   } @ inputs: let
     system = "x86_64-linux";
     hosts = ["laptop" "qemu"];
+    pkgs = import nixpkgs {inherit system;};
 
     mkHost = name:
       nixpkgs.lib.nixosSystem {
