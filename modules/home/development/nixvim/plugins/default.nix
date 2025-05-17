@@ -13,6 +13,7 @@
     ./markdown.nix
     ./hop.nix
     ./which-key.nix
+    ./luasnip.nix
     ./lsp
   ];
 }
