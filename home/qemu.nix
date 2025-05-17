@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  unstablePkgs,
+  ...
+}: {
   home.username = "qemu";
   home.homeDirectory = "/home/qemu";
 
@@ -15,4 +19,6 @@
     userName = "qemu";
     userEmail = "qemu@example.com";
   };
+
+  programs.nixvim.plugins.lsp.servers.clangd.package = unstablePkgs.llvmPackages_20.clang-tools;
 }
