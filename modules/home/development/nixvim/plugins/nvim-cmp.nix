@@ -70,7 +70,7 @@
           end
         '';
 
-        "<CR>" = "cmp.confirm({select = true})";
+        "<CR>" = "cmp.mapping.confirm({ select = true })";
       };
     };
   };
