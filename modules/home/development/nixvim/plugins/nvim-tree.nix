@@ -2,7 +2,7 @@
   plugins.nvim-tree = {
     enable = true;
     autoClose = true;
-    openOnSetup = true;
+    openOnSetup = false;
     openOnSetupFile = true;
 
     actions = {
