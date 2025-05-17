@@ -11,6 +11,14 @@
     closeIfLastWindow = true;
     popupBorderStyle = "rounded";
 
+    eventHandlers = {
+      file_opended = ''
+        function(file_path)
+          require("neo-tree").close_all()
+        end
+      '';
+    };
+
     window.mappings = {
       "<cr>" = "open";
       o = "open";
