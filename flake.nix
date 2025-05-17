@@ -25,6 +25,9 @@
     system = "x86_64-linux";
     hosts = ["laptop" "qemu"];
     pkgs = import nixpkgs {inherit system;};
+    extraSpecialArgs = {
+      unstablePkgs = import nixpkgs-unstable {system = "x86_64-linux";};
+    };
 
     mkHost = name:
       nixpkgs.lib.nixosSystem {
