@@ -15,6 +15,7 @@
         sources = [
           {name = "nvim_lsp";}
           {name = "path";}
+          {name = "luasnip";}
         ];
       };
 
@@ -22,6 +23,7 @@
         sources = [
           {name = "nvim_lsp";}
           {name = "path";}
+          {name = "luasnip";}
         ];
       };
     };
@@ -32,11 +34,13 @@
           require('luasnip').lsp_expand(args.body)
         end
       '';
+
       sorting.comparators = [
         "require('cmp.config.compare').recently_used"
         "require('cmp.config.compare').exact"
         "require('cmp.config.compare').order"
       ];
+
       mapping = {
         "<Down>" = "cmp.mapping.select_next_item()";
         "<Up>" = "cmp.mapping.select_prev_item()";
