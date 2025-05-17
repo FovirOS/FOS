@@ -11,6 +11,12 @@
     };
   };
 
+  actions = {
+    changeDir = {
+      restrictAboveCwd = true;
+    };
+  };
+
   keymaps = [
     {
       key = "<leader>tr";
