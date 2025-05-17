@@ -27,6 +27,11 @@
     };
 
     settings = {
+      snippet.expand = ''
+        function(args)
+          require('luasnip').lsp_expand(args.body)
+        end
+      '';
       sorting.comparators = [
         "require('cmp.config.compare').recently_used"
         "require('cmp.config.compare').exact"
