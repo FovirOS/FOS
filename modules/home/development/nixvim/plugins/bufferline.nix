@@ -21,4 +21,20 @@
       };
     };
   };
+
+  keymaps = [
+    {
+      action = "<cmd>BufferLineCycleNext<CR>";
+      key = "<C-Tab>";
+      mode = "n";
+      options.desc = "Next Buffer";
+    }
+
+    {
+      action = "<cmd>BufferLineCyclePrev<CR>";
+      key = "<C-S-Tab>";
+      mode = "n";
+      options.desc = "Previous Buffer";
+    }
+  ];
 }
