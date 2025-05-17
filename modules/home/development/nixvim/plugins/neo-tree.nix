@@ -12,7 +12,7 @@
     popupBorderStyle = "rounded";
 
     eventHandlers = {
-      file_opended = ''
+      file_opened = ''
         function(file_path)
           require("neo-tree").close_all()
         end
