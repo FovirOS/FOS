@@ -14,6 +14,7 @@
     ./hop.nix
     ./which-key.nix
     ./luasnip.nix
+    ./telescope.nix
     ./lsp
   ];
 }
