@@ -15,6 +15,8 @@
       "<cr>" = "open";
       o = "open";
 
+      "<C-\\>" = "open_vsplit";
+
       l = "toggle_node";
       h = "close_node";
       r = "rename";
