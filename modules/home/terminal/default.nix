@@ -10,5 +10,6 @@
     ./tldr.nix
     ./fd.nix
     ./bat.nix
+    ./ripgrep.nix
   ];
 }
