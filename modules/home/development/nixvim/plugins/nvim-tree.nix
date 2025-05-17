@@ -13,6 +13,7 @@
 
   actions = {
     changeDir = {
+      enable = false;
       restrictAboveCwd = true;
     };
   };
