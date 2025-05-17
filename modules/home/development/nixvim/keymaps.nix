@@ -20,5 +20,12 @@
       mode = "n";
       options.desc = "Split Tab Vertically";
     }
+
+    {
+      action = "<cmd>set wrap!<CR>";
+      key = "<M-z>";
+      mode = "n";
+      options.desc = "Toggle Line Wrap";
+    }
   ];
 }
