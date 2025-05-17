@@ -41,5 +41,12 @@
       mode = "n";
       options.desc = "[G]o to [I]mplementations";
     }
+
+    {
+      action = "<cmd>WhichKey<CR>";
+      key = "<esc><esc>";
+      mode = "n";
+      options.desc = "Open which-key";
+    }
   ];
 }
