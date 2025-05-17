@@ -17,5 +17,6 @@
     ./telescope.nix
     ./lsp
     ./bufferline.nix
+    ./indent-blankline.nix
   ];
 }
