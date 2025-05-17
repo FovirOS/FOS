@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   plugins.lsp.servers.clangd = {
     enable = true;
-    package = pkgs.llvmPackages_19.clang-tools;
+    # package = unstablePkgs.llvmPackages_20.clang-tools;
 
     cmd = [
       "clangd"
