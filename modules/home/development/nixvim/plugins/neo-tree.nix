@@ -9,6 +9,7 @@
     useDefaultMappings = false;
 
     closeIfLastWindow = true;
+    popupBorderStyle = "rounded";
 
     window.mappings = {
       "<cr>" = "open";
