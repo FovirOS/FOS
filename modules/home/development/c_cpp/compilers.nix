@@ -20,6 +20,12 @@
       - -fuchsia*
   '';
 
+  home.file.".clangd".text = ''
+    Completion:
+      ArgumentLists: None
+      HeaderInsertion: Never
+  '';
+
   home.file.".clang-format".text = ''
     AccessModifierOffset: -4
 
