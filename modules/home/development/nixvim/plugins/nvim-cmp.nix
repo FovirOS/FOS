@@ -4,11 +4,6 @@
 
     # Completion sources.
     autoEnableSources = true;
-    settings.sources = [
-      {name = "nvim_lsp";}
-      {name = "path";}
-      {name = "buffer";}
-    ];
 
     filetype = {
       c = {
@@ -29,6 +24,12 @@
     };
 
     settings = {
+      sources = [
+        {name = "nvim_lsp";}
+        {name = "path";}
+        {name = "buffer";}
+      ];
+
       snippet.expand = ''
         function(args)
           require('luasnip').lsp_expand(args.body)
