@@ -1,5 +1,7 @@
-{...}: {
+{unstablePkgs, ...}: {
   programs.nixvim = {
+    # plugins.lsp.servers.clangd.package = unstablePkgs.llvmPackages_20.clang-tools;
+
     enable = true;
     defaultEditor = true;
 
@@ -9,7 +11,7 @@
 
     imports = [
       ./colorscheme.nix # Theme.
-      ./plugins # Plugins settings.
+      (import ./plugins {inherit unstablePkgs;}) # Plugins settings.
       ./opts.nix # Options.
       ./keymaps.nix # Import key maps.
     ];

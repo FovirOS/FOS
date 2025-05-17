@@ -30,12 +30,15 @@
     mkHost = name:
       nixpkgs.lib.nixosSystem {
         inherit system;
+
+        specialArgs = {inherit name inputs;};
+
         modules = [
           ./hosts/${name}.nix
 
           inputs.home-manager.nixosModules.home-manager
           {
-            home-manager.extraSpecialArgs = {inherit unstablePkgs name inputs;};
+            home-manager.extraSpecialArgs = {inherit unstablePkgs inputs;};
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.${name} = {
@@ -46,8 +49,6 @@
             };
           }
         ];
-
-        specialArgs = {inherit name inputs;};
       };
   in {
     nixosConfigurations = builtins.listToAttrs (builtins.map (name: {

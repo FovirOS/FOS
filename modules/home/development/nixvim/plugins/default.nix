@@ -1,4 +1,6 @@
-{...}: {
+{unstablePkgs, ...}: {
+  # plugins.lsp.servers.clangd.package = unstablePkgs.llvmPackages_20.clang-tools;
+
   imports = [
     ./nvim-autopairs.nix
     ./nvim-cmp.nix
@@ -15,9 +17,10 @@
     ./which-key.nix
     ./luasnip.nix
     ./telescope.nix
-    ./lsp
+    # ./lsp
     ./bufferline.nix
     ./indent-blankline.nix
     ./persistence.nix
+    (import ./lsp {inherit unstablePkgs;})
   ];
 }
