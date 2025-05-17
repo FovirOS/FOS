@@ -18,5 +18,6 @@
     ./lsp
     ./bufferline.nix
     ./indent-blankline.nix
+    ./persistence.nix
   ];
 }
