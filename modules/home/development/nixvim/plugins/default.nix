@@ -4,7 +4,7 @@
     ./nvim-cmp.nix
     ./nvim-surround.nix
     ./treesitter.nix
-    ./nvim-tree.nix
+    ./neo-tree.nix
     ./web-devicons.nix
     ./mini.nix
     ./toggleterm.nix
