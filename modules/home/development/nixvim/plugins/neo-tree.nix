@@ -7,12 +7,35 @@
     enableModifiedMarkers = true;
 
     useDefaultMappings = false;
+
+    closeIfLastWindow = true;
+
+    window.mappings = {
+      "<cr>" = "open";
+      o = "open";
+
+      l = "toggle_node";
+      h = "close_node";
+      r = "rename";
+
+      a = {
+        command = "add";
+        config = {
+          show_path = "relative";
+        };
+      };
+
+      y = "copy_to_clipboard";
+      p = "paste_from_clipboard";
+      d = "delete";
+      "." = "toggle_hidden";
+    };
   };
 
   keymaps = [
     {
       key = "<leader>tr";
-      action = "<cmd>Neotree<cr>";
+      action = "<cmd>Neotree toggle<cr>";
       mode = "n";
       options.desc = "Toggle Neo-Tree";
     }
