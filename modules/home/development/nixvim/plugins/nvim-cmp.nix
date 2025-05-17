@@ -59,6 +59,8 @@
             end
           end
         '';
+
+        "<CR>" = "cmp.confirm({select = true})";
       };
     };
   };
