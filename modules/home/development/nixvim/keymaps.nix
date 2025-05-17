@@ -36,7 +36,7 @@
     }
 
     {
-      action = "<cmd>Telescope lsp_implementations";
+      action = "<cmd>Telescope lsp_implementations<CR>";
       key = "gi";
       mode = "n";
       options.desc = "[G]o to [I]mplementations";
