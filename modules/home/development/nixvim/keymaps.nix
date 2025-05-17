@@ -44,7 +44,7 @@
 
     {
       action = "<cmd>WhichKey<CR>";
-      key = "<esc><esc>";
+      key = "<leader>?";
       mode = "n";
       options.desc = "Open which-key";
     }
