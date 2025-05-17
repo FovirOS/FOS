@@ -5,20 +5,20 @@
     openOnSetup = true;
     openOnSetupFile = true;
 
+    actions = {
+      changeDir = {
+        enable = false;
+        restrictAboveCwd = true;
+      };
+
+      openFile = {
+        quitOnOpen = false;
+      };
+    };
+
     git = {
       enable = true;
       ignore = true;
-    };
-  };
-
-  actions = {
-    changeDir = {
-      enable = false;
-      restrictAboveCwd = true;
-    };
-
-    openFile = {
-      quitOnOpen = false;
     };
   };
 
