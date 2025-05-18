@@ -15,7 +15,7 @@ in {
     settings = {
       monitor = "${monitor_name},1920x1080,0x0,1";
       bind = [
-        ",F1,exec,alacritty" # Run `alacritty`.
+        ",F1,exec,kitty" # Run `kitty`.
         "ALT,SPACE,exec,wofi --show drun" # Run `wofi`.
 
         "SUPER,Q,killactive" # Kill current process.
