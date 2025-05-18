@@ -51,12 +51,5 @@
       mode = "n";
       options.desc = "Toggle File Explorer";
     }
-
-    {
-      key = "<C-n>";
-      action = "<cmd>Neotree action=new source=filesystem<CR>";
-      options.desc = "Create New File";
-      mode = "n";
-    }
   ];
 }
