@@ -22,6 +22,13 @@
     }
 
     {
+      action = "<C-w>q";
+      key = "<leader>q";
+      mode = "n";
+      options.desc = "Close Splited Tab";
+    }
+
+    {
       action = "<cmd>set wrap!<CR>";
       key = "<M-z>";
       mode = "n";
