@@ -11,5 +11,6 @@
     ./fd.nix
     ./bat.nix
     ./ripgrep.nix
+    ./kitty.nix
   ];
 }
