@@ -6,6 +6,10 @@
   programs.wofi = {
     enable = true;
 
+    settings = {
+      prompt = "Run a program...";
+    };
+
     style = ''
       @define-color	rosewater  #f5e0dc;
       @define-color	rosewater-rgb  rgb(245, 224, 220);
