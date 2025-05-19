@@ -20,6 +20,10 @@
       source $HOME/.p10k.zsh
     '';
 
+    initExtra = ''
+      set -o vi
+    '';
+
     history.size = 10000;
 
     oh-my-zsh = {
@@ -27,7 +31,6 @@
 
       plugins = [
         "git"
-        "vi-mode"
       ];
     };
   };
