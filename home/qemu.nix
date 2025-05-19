@@ -1,9 +1,10 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   home.username = "qemu";
   home.homeDirectory = "/home/qemu";
 
   programs.zsh.enable = true;
 
+  system.stateVersion = "24.11";
   home.stateVersion = "24.11";
 
   imports = [
