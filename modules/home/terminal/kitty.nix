@@ -8,5 +8,9 @@
     };
 
     themeFile = "Catppuccin-Mocha";
+
+    settings = {
+      clear_all_shortcuts = "yes";
+    };
   };
 }
