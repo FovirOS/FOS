@@ -2,6 +2,7 @@
   # plugins.lsp.servers.clangd.package = unstablePkgs.llvmPackages_20.clang-tools;
 
   imports = [
+    ./noice.nix
     ./comment.nix
     ./nvim-autopairs.nix
     ./nvim-cmp.nix
