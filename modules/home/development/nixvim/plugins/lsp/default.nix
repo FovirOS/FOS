@@ -1,6 +1,5 @@
 {unstablePkgs, ...}: {
   imports = [
-    # ./clangd.nix
     (import ./clangd.nix {inherit unstablePkgs;})
   ];
 
