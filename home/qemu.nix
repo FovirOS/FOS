@@ -9,7 +9,7 @@
   programs.zsh.enable = true;
 
   system.stateVersion = "24.11";
->>>>>>> hosts/qemu
+
   home.stateVersion = "24.11";
 
   imports = [
