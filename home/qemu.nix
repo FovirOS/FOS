@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   pkgs,
   unstablePkgs,
@@ -6,6 +7,15 @@
   home.username = "qemu";
   home.homeDirectory = "/home/qemu";
 
+=======
+{pkgs, ...}: {
+  home.username = "qemu";
+  home.homeDirectory = "/home/qemu";
+
+  programs.zsh.enable = true;
+
+  system.stateVersion = "24.11";
+>>>>>>> hosts/qemu
   home.stateVersion = "24.11";
 
   imports = [
