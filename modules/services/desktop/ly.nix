@@ -10,10 +10,10 @@
       allow_empty_password = false;
       auth_fails = 5;
 
-      animation = "CMatrix";
+      animation = "matrix";
 
       # Hide password.
-      asterisk = "";
+      asterisk = "0x0";
     };
   };
 }
