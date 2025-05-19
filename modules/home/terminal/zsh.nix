@@ -18,6 +18,7 @@
     initExtraFirst = ''
       source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
       source $HOME/.p10k.zsh
+      set -o vi
     '';
 
     history.size = 10000;
@@ -27,7 +28,6 @@
 
       plugins = [
         "git"
-        "vi-mode"
       ];
     };
   };
