@@ -8,6 +8,7 @@
 
     settings = {
       prompt = "Run a program...";
+      columns = 2;
     };
 
     style = ''
