@@ -1,14 +1,8 @@
-<<<<<<< HEAD
 {
   pkgs,
   unstablePkgs,
   ...
 }: {
-  home.username = "qemu";
-  home.homeDirectory = "/home/qemu";
-
-=======
-{pkgs, ...}: {
   home.username = "qemu";
   home.homeDirectory = "/home/qemu";
 
