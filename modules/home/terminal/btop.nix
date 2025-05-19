@@ -4,7 +4,7 @@
 
     settings = {
       color_theme = "horizon";
-      vim_keys = True;
+      vim_keys = true;
     };
   };
 }
