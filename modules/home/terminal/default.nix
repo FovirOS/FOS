@@ -1,6 +1,5 @@
 {
   imports = [
-    ./alacritty.nix
     ./btop.nix
     ./zsh.nix
     ./zsh-powerlevel10k.nix
@@ -11,5 +10,6 @@
     ./fd.nix
     ./bat.nix
     ./ripgrep.nix
+    ./kitty.nix
   ];
 }

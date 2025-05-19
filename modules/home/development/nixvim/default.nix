@@ -1,7 +1,5 @@
 {unstablePkgs, ...}: {
   programs.nixvim = {
-    # plugins.lsp.servers.clangd.package = unstablePkgs.llvmPackages_20.clang-tools;
-
     enable = true;
     defaultEditor = true;
 

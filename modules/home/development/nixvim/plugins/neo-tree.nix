@@ -46,17 +46,10 @@
 
   keymaps = [
     {
-      key = "<leader>tr";
+      key = "<leader>e";
       action = "<cmd>Neotree toggle<cr>";
       mode = "n";
-      options.desc = "Toggle Neo-Tree";
-    }
-
-    {
-      key = "<C-n>";
-      action = "<cmd>Neotree action=new source=filesystem<CR>";
-      options.desc = "Create New File";
-      mode = "n";
+      options.desc = "Toggle File Explorer";
     }
   ];
 }

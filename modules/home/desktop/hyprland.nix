@@ -15,7 +15,7 @@ in {
     settings = {
       monitor = "${monitor_name},1920x1080,0x0,1";
       bind = [
-        ",F1,exec,alacritty" # Run `alacritty`.
+        ",F1,exec,kitty" # Run `kitty`.
         "ALT,SPACE,exec,wofi --show drun" # Run `wofi`.
 
         "SUPER,Q,killactive" # Kill current process.
@@ -39,6 +39,13 @@ in {
         "SUPER,7,workspace,7"
         "SUPER,8,workspace,8"
         "SUPER,9,workspace,9"
+
+        # Move the window to workspace.
+        "SUPERALT,L,movetoworkspace,+1"
+        "SUPERALT,H,movetoworkspace,-1"
+
+        # Make the window full screen.
+        "SUPER,F,fullscreen,0"
       ];
 
       bindm = [
