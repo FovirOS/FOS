@@ -39,6 +39,8 @@ in {
         "SUPER,7,workspace,7"
         "SUPER,8,workspace,8"
         "SUPER,9,workspace,9"
+
+        "SUPER,F,fullscreen,0"
       ];
 
       bindm = [
