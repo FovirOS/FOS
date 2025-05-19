@@ -40,6 +40,11 @@ in {
         "SUPER,8,workspace,8"
         "SUPER,9,workspace,9"
 
+        # Move the window to workspace.
+        "SUPERALT,L,movetoworkspace,+1"
+        "SUPERALT,H,movetoworkspace,-1"
+
+        # Make the window full screen.
         "SUPER,F,fullscreen,0"
       ];
 
