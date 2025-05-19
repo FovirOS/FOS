@@ -4,7 +4,7 @@
 
     settings = {
       mappings = {
-        basic = false;
+        basic = true;
         extra = false;
       };
     };
