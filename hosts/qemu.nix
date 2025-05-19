@@ -10,6 +10,7 @@
     };
   };
 
+  system.stateVersion = "24.11"; # Set the system version.
   networking.hostName = "qemu"; # Set the host name.
 
   boot.loader.grub.enable = true;
