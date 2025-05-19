@@ -10,6 +10,7 @@
       prompt = "Run a program...";
       columns = 2;
 
+      matching = "fuzzy";
       insensitive = true;
     };
 
