@@ -9,6 +9,8 @@
     settings = {
       prompt = "Run a program...";
       columns = 2;
+
+      insensitive = true;
     };
 
     style = ''
