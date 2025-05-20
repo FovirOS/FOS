@@ -57,6 +57,8 @@ in {
       input = {
         kb_options = "menu:escape"; # Map `menu` to `esc`.
       };
+
+      exec-once = "waybar";
     };
   };
 }
