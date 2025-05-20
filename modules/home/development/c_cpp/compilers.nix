@@ -18,6 +18,7 @@
       - -altera*
       - -google*
       - -fuchsia*
+      - -modernize-use-nodiscard
   '';
 
   home.file.".clangd".text = ''
