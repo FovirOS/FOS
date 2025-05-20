@@ -22,6 +22,7 @@
 
     initExtra = ''
       set -o vi
+      fastfetch
     '';
 
     history.size = 10000;
