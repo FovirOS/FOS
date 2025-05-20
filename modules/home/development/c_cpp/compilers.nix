@@ -23,6 +23,8 @@
       - -hicpp-special-member-functions
       - -readability-identifier-length
       - -readability-isolate-declaration
+      - -modernize-redundant-void-arg
+      - -readability-redundant-control-flow
   '';
 
   home.file.".clangd".text = ''
