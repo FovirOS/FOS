@@ -19,6 +19,7 @@
       - -google*
       - -fuchsia*
       - -modernize-use-nodiscard
+      - -cppcoreguidelines-special-member-functions
   '';
 
   home.file.".clangd".text = ''
