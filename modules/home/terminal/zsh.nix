@@ -22,6 +22,8 @@
 
     initExtra = ''
       set -o vi
+      bindkey -M viins '^H' backward-kill-word
+
       fastfetch
     '';
 
