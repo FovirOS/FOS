@@ -21,6 +21,8 @@
       - -modernize-use-nodiscard
       - -cppcoreguidelines-special-member-functions
       - -hicpp-special-member-functions
+      - -readability-identifier-length
+      - -readability-isolate-declaration
   '';
 
   home.file.".clangd".text = ''
