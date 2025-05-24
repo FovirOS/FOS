@@ -4,5 +4,6 @@
     ./wofi.nix
     ./waybar.nix
     ./theme.nix
+    ./xdg.nix
   ];
 }
