@@ -3,7 +3,7 @@
     ./hyprland.nix
     ./wofi.nix
     ./waybar.nix
-    ./theme.nix
+    ./gtk.nix
     ./xdg.nix
   ];
 }
