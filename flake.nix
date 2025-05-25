@@ -2,11 +2,13 @@
   description = "FOS Flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; # Use the stable version.
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; # Use the unstable version.
 
     # Home Manager
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
     nixvim = {
       url = "github:nix-community/nixvim/nixos-unstable";
@@ -18,6 +20,7 @@
     nixpkgs,
     home-manager,
     nixvim,
+    chaotic,
     ...
   } @ inputs: let
     system = "x86_64-linux";
