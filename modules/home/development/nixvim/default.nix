@@ -7,6 +7,10 @@
       mapleader = " "; # Set space as the leader key.
     };
 
+    diagnostic.settings = {
+      virtual_text = true;
+    };
+
     imports = [
       ./colorscheme.nix # Theme.
       ./plugins # Plugins settings.
