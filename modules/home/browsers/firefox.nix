@@ -89,6 +89,7 @@
       };
 
       Preferences = {
+        "browser.ctrlTab.sortByRecentlyUsed" = true;
       };
     };
   };
