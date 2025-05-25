@@ -2,14 +2,14 @@
   description = "FOS Flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05"; # Use the stable version.
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; # Use the stable version.
 
     # Home Manager
-    home-manager.url = "github:nix-community/home-manager/release-25.05";
+    home-manager.url = "github:nix-community/home-manager/release-unstable";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     nixvim = {
-      url = "github:nix-community/nixvim/nixos-25.05";
+      url = "github:nix-community/nixvim/nixos-unstable";
     };
   };
 
