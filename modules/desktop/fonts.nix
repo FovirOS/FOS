@@ -4,7 +4,9 @@
   ...
 }: {
   fonts = {
-    packages = pkgs.nerd-fonts.jetbrains-mono;
+    packages = with pkgs; [
+      nerd-fonts.jetbrains-mono
+    ];
 
     fontconfig = {
       defaultFonts = {
