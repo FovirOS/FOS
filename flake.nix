@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05"; # Use the stable version.
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable"; # The unstable version
 
     # Home Manager
     home-manager.url = "github:nix-community/home-manager/release-25.05";
