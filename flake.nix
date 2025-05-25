@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; # Use the stable version.
 
     # Home Manager
-    home-manager.url = "github:nix-community/home-manager/release-unstable";
+    home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     nixvim = {
