@@ -36,6 +36,8 @@
         modules = [
           ./hosts/${name}.nix
 
+          chaotic.nixosModules.default
+
           inputs.home-manager.nixosModules.home-manager
           {
             home-manager.extraSpecialArgs = {inherit inputs;};
