@@ -11,7 +11,7 @@
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
     nixvim = {
-      url = "github:nix-community/nixvim/nixos-unstable";
+      url = "github:nix-community/nixvim";
     };
   };
 
