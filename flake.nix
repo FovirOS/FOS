@@ -10,6 +10,9 @@
 
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
+    inputs.disko.url = "github:nix-community/disko/latest";
+    inputs.disko.inputs.nixpkgs.follows = "nixpkgs";
+
     nixvim = {
       url = "github:nix-community/nixvim";
     };
@@ -21,6 +24,7 @@
     home-manager,
     nixvim,
     chaotic,
+    disko,
     ...
   } @ inputs: let
     system = "x86_64-linux";
