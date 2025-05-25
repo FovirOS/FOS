@@ -16,7 +16,6 @@
   outputs = {
     self,
     nixpkgs,
-    nixpkgs-unstable,
     home-manager,
     nixvim,
     ...
@@ -24,7 +23,6 @@
     system = "x86_64-linux";
     hosts = ["laptop" "qemu"];
     pkgs = import nixpkgs {inherit system;};
-    unstablePkgs = import nixpkgs-unstable {inherit system;};
 
     mkHost = name:
       nixpkgs.lib.nixosSystem {
@@ -37,7 +35,7 @@
 
           inputs.home-manager.nixosModules.home-manager
           {
-            home-manager.extraSpecialArgs = {inherit unstablePkgs inputs;};
+            home-manager.extraSpecialArgs = {inherit inputs;};
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.${name} = {
