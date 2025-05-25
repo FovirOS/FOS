@@ -1,4 +1,4 @@
-{unstablePkgs, ...}: {
+{...}: {
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
@@ -9,7 +9,7 @@
 
     imports = [
       ./colorscheme.nix # Theme.
-      (import ./plugins {inherit unstablePkgs;}) # Plugins settings.
+      ./plugins # Plugins settings.
       ./opts.nix # Options.
       ./keymaps.nix # Import key maps.
     ];

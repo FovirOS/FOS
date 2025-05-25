@@ -1,6 +1,6 @@
-{unstablePkgs, ...}: {
+{...}: {
   imports = [
-    (import ./clangd.nix {inherit unstablePkgs;})
+    ./clangd.nix
   ];
 
   plugins.lsp = {
