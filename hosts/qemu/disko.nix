@@ -36,20 +36,20 @@
         };
       };
     };
-  };
 
-  zpool = {
-    zroot = {
-      type = "zpool";
-      datasets = {
-        "root" = {
-          mountpoint = "/";
-          type = "zfs_fs";
-        };
+    zpool = {
+      zroot = {
+        type = "zpool";
+        datasets = {
+          "root" = {
+            mountpoint = "/";
+            type = "zfs_fs";
+          };
 
-        "root/nix" = {
-          mountpoint = "/nix";
-          type = "zfs_fs";
+          "root/nix" = {
+            mountpoint = "/nix";
+            type = "zfs_fs";
+          };
         };
       };
     };
