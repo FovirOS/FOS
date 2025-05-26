@@ -17,6 +17,7 @@
   boot.loader.grub.device = "/dev/vda";
 
   imports = [
+    ./disko.nix # Import the `disko` configuration.
     ../../modules/services/server # Import the `server` services.
     ../../modules/services/desktop # Import the `desktop` services.
     ../../hardware-configuration.nix # Import the hardware configurations.
