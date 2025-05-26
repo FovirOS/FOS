@@ -38,7 +38,7 @@
         specialArgs = {inherit name inputs;};
 
         modules = [
-          ./hosts/${name}.nix
+          ./hosts/${name}
 
           chaotic.nixosModules.default
           disko.nixosModules.disko
