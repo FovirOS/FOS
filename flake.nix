@@ -41,6 +41,7 @@
           ./hosts/${name}.nix
 
           chaotic.nixosModules.default
+          disko.nixosModules.disko
 
           inputs.home-manager.nixosModules.home-manager
           {
