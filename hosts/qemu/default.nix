@@ -10,9 +10,6 @@
     };
   };
 
-<<<<<<< HEAD
-  system.stateVersion = "24.11"; # Set the system version.
-=======
   boot = {
     loader = {
       systemd-boot.enable = true;
@@ -23,7 +20,6 @@
     enableUnstable = false;
   };
 
->>>>>>> hosts/qemu
   networking.hostName = "qemu"; # Set the host name.
 
   # boot.loader.grub.enable = true;
