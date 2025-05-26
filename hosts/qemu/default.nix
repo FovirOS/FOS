@@ -10,10 +10,20 @@
     };
   };
 
+  boot = {
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+    };
+
+    supportedFilesystems = ["zfs"];
+    enableUnstable = false;
+  };
+
   networking.hostName = "qemu"; # Set the host name.
 
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/vda";
+  # boot.loader.grub.enable = true;
+  # boot.loader.grub.device = "/dev/vda";
 
   imports = [
     ./disko.nix # Import the `disko` configuration.
