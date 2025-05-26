@@ -17,7 +17,7 @@
     };
 
     supportedFilesystems = ["zfs"];
-    enableUnstable = false;
+    zfs.enableUnstable = false;
   };
 
   networking.hostName = "qemu"; # Set the host name.
