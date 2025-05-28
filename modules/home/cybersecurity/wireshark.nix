@@ -1,5 +1,5 @@
-{...}: {
-  programs.wireshark = {
-    enable = true;
-  };
+{pkgs, ...}: {
+  home.packages = with pkgs; [
+    wireshark
+  ];
 }

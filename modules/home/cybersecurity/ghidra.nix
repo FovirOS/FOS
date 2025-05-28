@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  programs.ghidra = {
-    enable = true;
-  };
+  home.packages = with pkgs; [
+    ghidra
+  ];
 }
