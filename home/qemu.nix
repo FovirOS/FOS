@@ -16,6 +16,7 @@
     ../modules/home/desktop # Import the desktop.
     ../modules/home/browsers # Import the browsers.
     ../modules/home/utilities # Import the utilities.
+    ../modules/home/cybersecurity # Import the softwares of cybersecurity.
   ];
 
   programs.git = {
