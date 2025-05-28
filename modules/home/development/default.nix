@@ -1,4 +1,4 @@
-{
+{unstablePkgs, ...}: {
   imports = [
     ./git.nix
     ./nixvim

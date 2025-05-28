@@ -14,8 +14,23 @@
       - -llvm*
       - -modernize-use-trailing-return-type
       - -readability-braces-around-statements
+      - -hicpp-braces-around-statements
       - -altera*
       - -google*
+      - -fuchsia*
+      - -modernize-use-nodiscard
+      - -cppcoreguidelines-special-member-functions
+      - -hicpp-special-member-functions
+      - -readability-identifier-length
+      - -readability-isolate-declaration
+      - -modernize-redundant-void-arg
+      - -readability-redundant-control-flow
+  '';
+
+  home.file.".clangd".text = ''
+    Completion:
+      ArgumentLists: None
+      HeaderInsertion: Never
   '';
 
   home.file.".clang-format".text = ''
