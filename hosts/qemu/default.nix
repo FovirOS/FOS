@@ -12,8 +12,10 @@
 
   boot = {
     loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
+      grub = {
+        enable = true;
+        device = "/dev/vda";
+      };
     };
 
     supportedFilesystems = ["zfs"];
@@ -22,11 +24,8 @@
   networking.hostName = "qemu"; # Set the host name.
   networking.hostId = "007f0200"; # Set the host ID.
 
-  # boot.loader.grub.enable = true;
-  # boot.loader.grub.device = "/dev/vda";
-
   imports = [
-    ./disko.nix # Import the `disko` configuration.
+    # ./disko.nix # Import the `disko` configuration.
     ../../modules/services/server # Import the `server` services.
     ../../modules/services/desktop # Import the `desktop` services.
     ../../hardware-configuration.nix # Import the hardware configurations.
