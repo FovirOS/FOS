@@ -15,6 +15,7 @@
     ../modules/home/terminal # Import terminal applications.
     ../modules/home/desktop # Import the desktop.
     ../modules/home/browsers # Import the browsers.
+    ../modules/home/utilities # Import the utilities.
   ];
 
   programs.git = {
