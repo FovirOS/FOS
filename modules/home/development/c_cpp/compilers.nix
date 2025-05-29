@@ -25,6 +25,7 @@
       - -readability-isolate-declaration
       - -modernize-redundant-void-arg
       - -readability-redundant-control-flow
+      - -boost*
   '';
 
   home.file.".clangd".text = ''
