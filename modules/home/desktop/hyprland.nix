@@ -59,6 +59,11 @@ in {
       };
 
       exec-once = "waybar";
+
+      # Autostart `fcitx5`.
+      exec-once = "fcitx5 -d -r";
+      exec-once = "fcitx5-remote -r";
+      windowrule = "pseudo, fcitx";
     };
   };
 }
