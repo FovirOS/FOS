@@ -1,5 +1,5 @@
-{...}: {
-  programs.thunderbird = {
-    enable = true;
-  };
+{pkgs, ...}: {
+  home.packages = with pkgs; [
+    thunderbird
+  ];
 }
