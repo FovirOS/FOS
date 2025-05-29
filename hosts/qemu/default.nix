@@ -19,8 +19,7 @@
     loader = {
       grub = {
         enable = true;
-        devices = ["nodev"];
-        efiSupport = true;
+        device = "/dev/vda";
       };
 
       # systemd-boot = {
