@@ -32,6 +32,9 @@
       pictures = "$HOME/Pictures";
       videos = "$HOME/Videos";
       desktop = "$HOME/Desktop";
+
+      templates = "/var/empty";
+      publicShare = "/var/empty";
     };
   };
 }
