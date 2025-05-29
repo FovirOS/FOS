@@ -5,5 +5,6 @@
     ./waybar.nix
     ./gtk.nix
     ./xdg.nix
+    ./qt.nix
   ];
 }
