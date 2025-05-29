@@ -11,12 +11,12 @@
   };
 
   boot = {
-    loader = {
-      zfs = {
-        devNodes = "/dev/disk/by-id";
-        forceImportRoot = false;
-      };
+    zfs = {
+      devNodes = "/dev/disk/by-id";
+      forceImportRoot = false;
+    };
 
+    loader = {
       # grub = {
       #   enable = true;
       #   devices = ["nodev"];
