@@ -23,4 +23,8 @@
     userName = "qemu";
     userEmail = "qemu@example.com";
   };
+
+  home.sessionVariables = {
+    QT_QPA_PLATFORMTHEME = "gtk3";
+  };
 }
