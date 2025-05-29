@@ -58,12 +58,11 @@ in {
         kb_options = "menu:escape"; # Map `menu` to `esc`.
       };
 
-      exec-once = "waybar";
-
-      # Autostart `fcitx5`.
-      exec-once = "fcitx5 -d -r";
-      exec-once = "fcitx5-remote -r";
-      windowrule = "pseudo, fcitx";
+      exec-once = [
+        "waybar"
+        "fcitx5 -d -r"
+        "fcitx5-remote -r"
+      ];
     };
   };
 }
