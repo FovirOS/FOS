@@ -4,6 +4,8 @@
   lib,
   ...
 }: {
+  system.stateVersion = "25.05";
+
   home-manager = {
     extraSpecialArgs = {
       inherit (config.networking) hostName;
