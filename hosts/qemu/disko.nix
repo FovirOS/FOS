@@ -8,14 +8,24 @@
         content = {
           type = "gpt";
           partitions = {
-            ESP = {
-              size = "256M";
+            esp = {
+              priority = 1;
               type = "EF00";
+              size = "512M";
               content = {
                 type = "filesystem";
                 format = "vfat";
+                mountpoint = "/boot/efi";
+              };
+            };
+
+            boot = {
+              priority = 2;
+              size = "1G";
+              content = {
+                type = "filesystem";
+                format = "ext4";
                 mountpoint = "/boot";
-                mountOptions = ["nofail"];
               };
             };
 
@@ -38,11 +48,19 @@
           "root" = {
             mountpoint = "/";
             type = "zfs_fs";
+
+            options = {
+              mountpoint = "legacy";
+            };
           };
 
           "root/nix" = {
             mountpoint = "/nix";
             type = "zfs_fs";
+
+            options = {
+              mountpoint = "legacy";
+            };
           };
         };
       };
