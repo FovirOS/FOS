@@ -21,4 +21,17 @@
       ];
     };
   };
+
+  userDirs = {
+    enable = true;
+
+    createDirectories = false;
+
+    documents = "$HOME/Documents";
+    download = "$HOME/Downloads";
+    music = "$HOME/Music";
+    pictures = "$HOME/Pictures";
+    videos = "$HOME/Videos";
+    desktop = "$HOME/Desktop";
+  };
 }
