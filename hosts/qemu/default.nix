@@ -14,7 +14,8 @@
     loader = {
       grub = {
         enable = true;
-        device = "/dev/vda";
+        devices = ["nodev"];
+        efiSupport = true;
       };
     };
 
