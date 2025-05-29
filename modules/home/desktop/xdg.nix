@@ -20,18 +20,18 @@
         pkgs.xdg-desktop-portal-hyprland
       ];
     };
-  };
 
-  userDirs = {
-    enable = true;
+    userDirs = {
+      enable = true;
 
-    createDirectories = false;
+      createDirectories = false;
 
-    documents = "$HOME/Documents";
-    download = "$HOME/Downloads";
-    music = "$HOME/Music";
-    pictures = "$HOME/Pictures";
-    videos = "$HOME/Videos";
-    desktop = "$HOME/Desktop";
+      documents = "$HOME/Documents";
+      download = "$HOME/Downloads";
+      music = "$HOME/Music";
+      pictures = "$HOME/Pictures";
+      videos = "$HOME/Videos";
+      desktop = "$HOME/Desktop";
+    };
   };
 }
