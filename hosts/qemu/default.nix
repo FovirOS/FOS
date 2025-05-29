@@ -12,10 +12,21 @@
 
   boot = {
     loader = {
-      grub = {
+      zfs = {
+        devNodes = "/dev/disk/by-id";
+        forceImportRoot = false;
+      };
+
+      # grub = {
+      #   enable = true;
+      #   devices = ["nodev"];
+      #   efiSupport = true;
+      # };
+
+      systemd-boot = {
+        configurationLimit = 50;
+        editor = true;
         enable = true;
-        devices = ["nodev"];
-        efiSupport = true;
       };
     };
 

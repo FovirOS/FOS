@@ -8,24 +8,20 @@
         content = {
           type = "gpt";
           partitions = {
-            esp = {
+            boot = {
+              size = "1M";
+              type = "EF02";
               priority = 1;
+            };
+
+            ESP = {
+              size = "256M";
               type = "EF00";
-              size = "512M";
               content = {
                 type = "filesystem";
                 format = "vfat";
-                mountpoint = "/boot/efi";
-              };
-            };
-
-            boot = {
-              priority = 2;
-              size = "1G";
-              content = {
-                type = "filesystem";
-                format = "ext4";
                 mountpoint = "/boot";
+                mountOptions = ["nofail"];
               };
             };
 
