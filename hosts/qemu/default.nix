@@ -14,7 +14,7 @@
 
   boot = {
     zfs = {
-      devNodes = "/dev/disk/by-path";
+      devNodes = "/dev/vda";
       forceImportRoot = false;
     };
 
