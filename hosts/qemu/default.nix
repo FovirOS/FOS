@@ -19,9 +19,16 @@
     };
 
     loader = {
-      grub = {
+      # grub = {
+      #   enable = true;
+      #   devices = ["nodev"];
+      #   efiSupport = true;
+      # };
+
+      systemd-boot = {
+        configurationLimit = 50;
+        editor = true;
         enable = true;
-        device = "/dev/vda";
       };
     };
 
