@@ -3,7 +3,7 @@
     disk = {
       main = {
         type = "disk";
-        device = "/dev/disk/by-path/virtio-pci-0000:04:00.0";
+        device = "/dev/vda";
 
         content = {
           type = "gpt";
