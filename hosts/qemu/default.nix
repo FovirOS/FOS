@@ -14,7 +14,7 @@
 
   boot = {
     zfs = {
-      devNodes = "/dev/disk/by-id";
+      devNodes = "/dev/disk/by-path";
       forceImportRoot = false;
     };
 
@@ -23,12 +23,6 @@
         enable = true;
         device = "/dev/vda";
       };
-
-      # systemd-boot = {
-      #   configurationLimit = 50;
-      #   editor = true;
-      #   enable = true;
-      # };
     };
 
     supportedFilesystems = ["zfs"];
@@ -38,7 +32,7 @@
   networking.hostId = "007f0200"; # Set the host ID.
 
   imports = [
-    # ./disko.nix # Import the `disko` configuration.
+    ./disko.nix # Import the `disko` configuration.
     ../../modules/services/server # Import the `server` services.
     ../../modules/services/desktop # Import the `desktop` services.
     ../../hardware-configuration.nix # Import the hardware configurations.
