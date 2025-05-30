@@ -4,6 +4,8 @@
   lib,
   ...
 }: {
+  system.stateVersion = "25.05";
+
   home-manager = {
     extraSpecialArgs = {
       inherit (config.networking) hostName;
@@ -19,8 +21,7 @@
     loader = {
       grub = {
         enable = true;
-        devices = ["nodev"];
-        efiSupport = true;
+        device = "/dev/vda";
       };
 
       # systemd-boot = {

@@ -58,7 +58,11 @@ in {
         kb_options = "menu:escape"; # Map `menu` to `esc`.
       };
 
-      exec-once = "waybar";
+      exec-once = [
+        "waybar"
+        "fcitx5 -d -r"
+        "fcitx5-remote -r"
+      ];
     };
   };
 }
