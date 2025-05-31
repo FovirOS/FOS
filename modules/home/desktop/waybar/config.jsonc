@@ -97,8 +97,9 @@
         "<span color='#00FF7F'>  </span>"
       ]
     },
-    "on-click-right": "pavucontrol -t 3",
     "on-click": "pactl -- set-sink-mute 0 toggle",
+    "on-scroll-up": "pamixer --increase 1",
+    "on-scroll-down": "pamixer --decrease 1",
     "tooltip": true,
     "tooltip-format": "Volumn: {volume}%"
   },
