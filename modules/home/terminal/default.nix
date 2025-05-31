@@ -1,6 +1,6 @@
 {
   imports = [
-    ./fastfetch.nix
+    ./fastfetch
     ./btop.nix
     ./zsh
     ./eza.nix
