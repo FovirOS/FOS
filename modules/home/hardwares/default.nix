@@ -1,6 +1,5 @@
 {
   imports = [
     ./audio
-    ./bluetooth.nix
   ];
 }
