@@ -5,6 +5,7 @@
   "spacing": 0,
   "modules-left": [
     "hyprland/workspaces",
+    "tray",
     "custom/lock",
     "custom/reboot",
     "custom/power"
@@ -124,6 +125,10 @@
     "format": "<span color='#BF00FF'>  </span>{:%H:%M} ",
     "tooltip": true,
     "tooltip-format": "{:L%Y/%m/%d %A}"
+  },
+  "tray": {
+    "icon-size": 17,
+    "spacing": 6
   },
   "backlight": {
     "device": "intel_backlight",
