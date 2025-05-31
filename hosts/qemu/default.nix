@@ -36,7 +36,7 @@
   };
 
   networking.hostName = "qemu"; # Set the host name.
-  networking.hostId = "007f0200"; # Set the host ID.
+  networking.hostId = "8425e349"; # Set the host ID.
 
   imports = [
     ./disko.nix # Import the `disko` configuration.

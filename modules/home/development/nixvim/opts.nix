@@ -1,4 +1,8 @@
 {pkgs, ...}: {
+  extraConfigVim = ''
+    set clipboard+=unnamedplus
+  '';
+
   opts = {
     # Configure tab behaviours.
     tabstop = 4;

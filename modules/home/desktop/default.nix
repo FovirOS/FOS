@@ -2,9 +2,11 @@
   imports = [
     ./hyprland.nix
     ./wofi.nix
-    ./waybar.nix
+    ./waybar
     ./gtk.nix
     ./xdg.nix
-    ./qt.nix
+    ./qt
+    ./hyprlock.nix
+    ./wl-clipboard-rs.nix
   ];
 }

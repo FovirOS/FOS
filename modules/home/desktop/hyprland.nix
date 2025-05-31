@@ -18,6 +18,7 @@ in {
       "$mod" = "SUPER";
       bind = [
         ",F1,exec,kitty" # Run `kitty`.
+        "$mod,P,exec,hyprlock" # Lock.
         "ALT,SPACE,exec,wofi --show drun" # Run `wofi`.
 
         "$mod,Q,killactive" # Kill current process.
