@@ -1,4 +1,8 @@
 {pkgs, ...}: {
+  extraConfigVim = ''
+    set clipboard+=unnamedplus
+  '';
+
   opts = {
     # Configure tab behaviours.
     tabstop = 4;
@@ -23,16 +27,5 @@
     # Search with case-insenstive.
     ignorecase = true;
     smartcase = true;
-
-    # Use system clipboard.
-    clipboard = {
-      providers = {
-        wl-copy = {
-          enable = true;
-          package = pkgs.wl-clipboard-rs;
-        };
-      };
-      register = "unnamedplus";
-    };
   };
 }
