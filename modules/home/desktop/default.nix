@@ -6,5 +6,6 @@
     ./gtk.nix
     ./xdg.nix
     ./qt.nix
+    ./hyprlock.nix
   ];
 }
