@@ -123,8 +123,7 @@
     "timezone": "Asia/Chengdu",
     "format": "<span color='#BF00FF'>  </span>{:%H:%M} ",
     "tooltip": true,
-    // "tooltip-format": "{:L%Y 年 %m 月 %d 日, %A}",
-    "tooltip-format": "{:L%Y/%m/%d <br> %A}"
+    "tooltip-format": "{:L%Y/%m/%d, %A}"
   },
   "tray": {
     "icon-size": 17,
