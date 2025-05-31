@@ -1,11 +1,16 @@
 {
   config,
+  lib,
   pkgs,
   ...
 }: {
   home.packages = with pkgs; [
     (flameshot.override {enableWlrSupport = true;})
   ];
+
+  home.activation.createFlameshotSaveDir = lib.hm.dag.entryAfter ["writeBoundary"] ''
+    mkdir -p ${config.home.homeDirectory}/Pictures/flameshot
+  '';
 
   home.file.".config/flameshot/flameshot.ini".text = ''
     [General]
