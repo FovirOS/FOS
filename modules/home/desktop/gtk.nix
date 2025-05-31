@@ -11,7 +11,7 @@
     };
 
     iconTheme = {
-      name = "Beauty Line";
+      name = "Beauty-Line";
       package = pkgs.beauty-line-icon-theme;
     };
   };
