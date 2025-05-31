@@ -18,6 +18,7 @@ in {
       "$mod" = "SUPER";
       bind = [
         ",F1,exec,kitty" # Run `kitty`.
+        "$mod,P,exec,hyprlock" # Lock.
         "ALT,SPACE,exec,wofi --show drun" # Run `wofi`.
 
         "$mod,Q,killactive" # Kill current process.
@@ -58,7 +59,11 @@ in {
         kb_options = "menu:escape"; # Map `menu` to `esc`.
       };
 
-      exec-once = "waybar";
+      exec-once = [
+        "waybar"
+        "fcitx5 -d -r"
+        "fcitx5-remote -r"
+      ];
     };
   };
 }

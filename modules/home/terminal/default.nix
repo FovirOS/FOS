@@ -1,9 +1,8 @@
 {
   imports = [
-    ./fastfetch.nix
+    ./fastfetch
     ./btop.nix
-    ./zsh.nix
-    ./zsh-powerlevel10k.nix
+    ./zsh
     ./eza.nix
     ./yazi.nix
     ./dust.nix
