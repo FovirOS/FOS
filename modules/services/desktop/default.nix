@@ -3,6 +3,6 @@
     ./ly.nix
     ./dbus.nix
     ./pipewire.nix
-    ./blueman.nix
+    ./bluetooth.nix
   ];
 }
