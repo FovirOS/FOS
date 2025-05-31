@@ -3,7 +3,7 @@
     ./keepassxc.nix
     ./thunderbird.nix
     ./fcitx5.nix
-    ./flameshot
+    ./flameshot.nix
     ./nemo.nix
   ];
 }
