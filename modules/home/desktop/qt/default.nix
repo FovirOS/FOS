@@ -14,7 +14,7 @@
   home.file.".config/qt6ct/qt6ct.conf".text = builtins.readFile ./qt6ct.conf;
 
   home.file.".config/Kvantum/kvantum.kvconfig".text = builtins.readFile ./kvantum.kvconfig;
-  home.file."..config/Kvantum/catppuccin-mocha-lavender/catppuccin-mocha-lavender.kvconfig".text = builtins.readFile "./catppuccin-mocha-lavender/catppuccin-mocha-lavender.kvconfig";
+  home.file.".config/Kvantum/catppuccin-mocha-lavender/catppuccin-mocha-lavender.kvconfig".text = builtins.readFile "./catppuccin-mocha-lavender/catppuccin-mocha-lavender.kvconfig";
 
   home.file.".config/Kvantum/catppuccin-mocha-lavender/catppuccin-mocha-lavender.svg" = {
     source = ./catppuccin-mocha-lavender/catppuccin-mocha-lavender.svg;
