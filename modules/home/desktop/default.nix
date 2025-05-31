@@ -5,7 +5,7 @@
     ./waybar
     ./gtk.nix
     ./xdg.nix
-    ./qt.nix
+    ./qt
     ./hyprlock.nix
   ];
 }
