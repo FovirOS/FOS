@@ -19,6 +19,7 @@
     filenamePattern=%F_%H-%M
     disabledTrayIcon=true
     copyPathAfterSave=true
+    saveAfterCopy=true
 
     [Shortcuts]
     TYPE_COPY=Enter
