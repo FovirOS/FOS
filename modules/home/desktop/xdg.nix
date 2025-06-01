@@ -1,5 +1,6 @@
 {
   config,
+  lib,
   pkgs,
   ...
 }: {
@@ -37,6 +38,13 @@
       publicShare = "/var/empty";
     };
 
+    desktopEntries = {
+      nemo = {
+        name = "Nemo";
+        exec = "${config.home.homeDirectory}/.local/bin/run-nemo.sh";
+      };
+    };
+
     mimeApps = let
       filemanager = ["nemo.desktop"];
       image-viewer = ["oculante.desktop"];
@@ -57,4 +65,13 @@
       };
     };
   };
+
+  home.activation.createRunNemo = lib.hm.dag.entryAfter ["writeBoundary"] ''
+    mkdir -p ${config.home.homeDirectory}/.local/bin
+  '';
+
+  home.file.".local/bin/run-nemo".text = ''
+    #!/bin/sh
+    nemo "$@"
+  '';
 }
