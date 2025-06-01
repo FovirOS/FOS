@@ -38,6 +38,13 @@
     };
 
     mimeApps = let
+      desktopEntries = {
+        nemo = {
+          name = "Nemo";
+          exec = "${pkgs.nemo-with-extensions}/bin/nemo";
+        };
+      };
+
       filemanager = ["nemo.desktop"];
       image-viewer = ["oculante.desktop"];
     in {
