@@ -36,6 +36,10 @@
 
       templates = "/var/empty";
       publicShare = "/var/empty";
+
+      extraConfig = {
+        XDG_SCREENSHOTS_DIR = "${config.xdg.userDirs.pictures}/Screenshots";
+      };
     };
 
     desktopEntries = {
@@ -48,6 +52,7 @@
     mimeApps = let
       filemanager = ["nemo.desktop"];
       image-viewer = ["oculante.desktop"];
+      video-player = ["mpv.desktop"];
     in {
       enable = true;
 
@@ -62,6 +67,9 @@
         "image/jpeg" = image-viewer;
         "image/png" = image-viewer;
         "image/webp" = image-viewer;
+
+        "audio/*" = video-player;
+        "video/*" = video-player;
       };
     };
   };
