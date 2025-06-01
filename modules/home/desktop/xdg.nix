@@ -38,7 +38,7 @@
       publicShare = "/var/empty";
 
       extraConfig = {
-        XDG_PROJECTS_DIR = "${config.home.homeDirectory}/Projects";
+        XDG_PROJECTS_DIR = "$HOME/Projects";
       };
     };
 
@@ -81,5 +81,9 @@
   home.file.".local/bin/run-nemo".text = ''
     #!/bin/sh
     nemo "$@"
+  '';
+
+  home.activation.createProjects = lib.hm.dag.entryAfter ["writeBoundary"] ''
+    mkdir -p $HOME/Projects
   '';
 }
