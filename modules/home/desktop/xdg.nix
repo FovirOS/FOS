@@ -40,7 +40,8 @@
     desktopEntries = {
       nemo = {
         name = "Nemo";
-        exec = "${pkgs.nemo-with-extensions}/bin/nemo";
+        exec = "${pkgs.nemo-with-extensions}/bin/nemo %U";
+        terminal = false;
       };
     };
 
