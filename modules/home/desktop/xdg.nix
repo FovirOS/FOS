@@ -36,6 +36,10 @@
 
       templates = "/var/empty";
       publicShare = "/var/empty";
+
+      extraConfig = {
+        XDG_PROJECTS_DIR = "${config.home.homeDirectory}/Projects";
+      };
     };
 
     desktopEntries = {
