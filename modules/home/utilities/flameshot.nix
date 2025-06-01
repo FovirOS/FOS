@@ -9,7 +9,7 @@
   ];
 
   home.activation.createFlameshotSaveDir = lib.hm.dag.entryAfter ["writeBoundary"] ''
-    mkdir -p ${config.home.homeDirectory}/Pictures/flameshot
+    mkdir -p ${config.xdg.userDirs.pictures}/Screenshots
   '';
 
   home.file.".config/flameshot/flameshot.ini".text = ''
