@@ -37,14 +37,14 @@
       publicShare = "/var/empty";
     };
 
-    mimeApps = let
-      desktopEntries = {
-        nemo = {
-          name = "Nemo";
-          exec = "${pkgs.nemo-with-extensions}/bin/nemo";
-        };
+    desktopEntries = {
+      nemo = {
+        name = "Nemo";
+        exec = "${pkgs.nemo-with-extensions}/bin/nemo";
       };
+    };
 
+    mimeApps = let
       filemanager = ["nemo.desktop"];
       image-viewer = ["oculante.desktop"];
     in {
