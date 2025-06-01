@@ -19,6 +19,8 @@
       lt = "eza -aT --color=always --group-directories-first --icons=always"; # Tree listing.
 
       open = "xdg-open"; # Open.
+
+      cat = "bat"; # Use `bat` instead of `cat`.
     };
 
     initContent = ''
