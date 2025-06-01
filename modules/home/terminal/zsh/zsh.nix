@@ -15,18 +15,6 @@
     shellAliases = {
     };
 
-    # initExtraFirst = ''
-    #   source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
-    #   source $HOME/.p10k.zsh
-    # '';
-
-    # initExtra = ''
-    #   set -o vi
-    #   bindkey -M viins '^H' backward-kill-word
-
-    #   fastfetch
-    # '';
-
     initContent = ''
       source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
       source $HOME/.p10k.zsh
