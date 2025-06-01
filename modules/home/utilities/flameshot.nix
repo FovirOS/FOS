@@ -9,12 +9,12 @@
   ];
 
   home.activation.createFlameshotSaveDir = lib.hm.dag.entryAfter ["writeBoundary"] ''
-    mkdir -p ${config.xdg.userDirs.pictures}/Screenshots
+    mkdir -p ${config.home.homeDirectory}/Pictures/Scrrenshots
   '';
 
   home.file.".config/flameshot/flameshot.ini".text = ''
     [General]
-    savePath=${config.xdg.userDirs.pictures}/Screenshots
+    savePath=${config.home.homeDirectory}/Pictures/Scrrenshots
     savePathFixed=true
     saveAsFileExtension=.png
     uiColor=#54baf1
