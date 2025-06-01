@@ -36,10 +36,6 @@
 
       templates = "/var/empty";
       publicShare = "/var/empty";
-
-      extraConfig = {
-        XDG_SCREENSHOTS_DIR = "${config.xdg.userDirs.pictures}/Screenshots";
-      };
     };
 
     desktopEntries = {
