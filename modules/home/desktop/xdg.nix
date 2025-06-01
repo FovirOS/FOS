@@ -36,5 +36,24 @@
       templates = "/var/empty";
       publicShare = "/var/empty";
     };
+
+    mimeApps = let
+      filemanager = ["nemo.desktop"];
+      image-viewer = ["oculante.desktop"];
+    in {
+      enable = true;
+
+      defaultApplications = {
+        "x-scheme-handler/about" = filemanager;
+        "x-scheme-handler/ftp" = filemanager;
+
+        "image/*" = image-viewer;
+        "image/avif" = image-viewer;
+        "image/gif" = image-viewer;
+        "image/jpeg" = image-viewer;
+        "image/png" = image-viewer;
+        "image/webp" = image-viewer;
+      };
+    };
   };
 }

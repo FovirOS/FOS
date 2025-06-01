@@ -1,5 +1,5 @@
 {
   imports = [
-    ./audio
+    ./oculante.nix
   ];
 }
