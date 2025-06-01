@@ -37,18 +37,23 @@
       publicShare = "/var/empty";
     };
 
-    desktopEntries = {
-      nemo = {
-        name = "Nemo";
-        exec = "${pkgs.nemo-with-extensions}/bin/nemo";
-      };
-    };
-
-    mimeApps = {
+    mimeApps = let
+      filemanager = ["nemo.desktop"];
+      image-viewer = ["oculante.desktop"];
+    in {
       enable = true;
+
       defaultApplications = {
-        "inode/directory" = ["nemo.desktop"];
-        "application/x-gnome-saved-search" = ["nemo.desktop"];
+        "x-scheme-handler/about" = filemanager;
+        "x-scheme-handler/ftp" = filemanager;
+        "inode/directory" = filemanager;
+
+        "image/*" = image-viewer;
+        "image/avif" = image-viewer;
+        "image/gif" = image-viewer;
+        "image/jpeg" = image-viewer;
+        "image/png" = image-viewer;
+        "image/webp" = image-viewer;
       };
     };
   };
