@@ -14,6 +14,7 @@
 
   home.file.".config/flameshot/flameshot.ini".text = ''
     [General]
+    savePath=${config.xdg.userDirs.pictures}/Screenshots
     savePathFixed=true
     saveAsFileExtension=.png
     uiColor=#54baf1
