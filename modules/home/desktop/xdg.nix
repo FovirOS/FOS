@@ -46,6 +46,7 @@
       defaultApplications = {
         "x-scheme-handler/about" = filemanager;
         "x-scheme-handler/ftp" = filemanager;
+        "inode/directory" = filemanager;
 
         "image/*" = image-viewer;
         "image/avif" = image-viewer;
