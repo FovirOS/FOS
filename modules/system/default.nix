@@ -4,5 +4,6 @@
     ./nix.nix
     ./boot.nix
     ./minimize.nix
+    ./networkmanager.nix
   ];
 }
