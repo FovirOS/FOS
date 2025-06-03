@@ -3,7 +3,7 @@
     enable = true;
 
     dns = "none";
-    nameservers = [
+    insertNameservers = [
       "1.1.1.1"
       "1.0.0.1"
       "8.8.8.8"
