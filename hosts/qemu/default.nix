@@ -50,7 +50,7 @@
   programs.zsh.enable = true;
   users.users.qemu = {
     isNormalUser = true;
-    extraGroups = ["wheel"];
+    extraGroups = ["wheel" "networkmanager"];
     password = "qemu";
     shell = pkgs.zsh;
   };
