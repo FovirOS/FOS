@@ -76,7 +76,7 @@
 
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = libreoffice-writer;
         "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" = libreoffice-calc;
-        "application/vnd.openxmlformats-officedocument.presentationml.presentation" = libreoffice-impress;
+        "application/vnd.openxmlformats-officedocument.presentationml.presentation" = libreoffice-presentation;
       };
     };
   };
