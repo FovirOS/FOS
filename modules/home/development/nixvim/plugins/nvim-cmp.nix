@@ -24,6 +24,12 @@
     };
 
     settings = {
+      completion = {
+        autocomplete = [
+          "TextChanged"
+        ];
+      };
+
       sources = [
         {name = "nvim_lsp";}
         {name = "path";}
