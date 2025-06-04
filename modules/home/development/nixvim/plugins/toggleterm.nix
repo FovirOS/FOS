@@ -13,8 +13,9 @@
     function RunCurrentFile()
       local runners = {
         py = "python -u %s",
-        c = "gcc *.c -o %s && ./%s",
-        cpp = "g++ *.cpp -o %s && ./%s",
+        c = "gcc -o %s *.c && ./%s",
+        cpp = "g++ -o %s *.cpp && ./%s",
+        go = "go build -o %s *.go && ./%s",
       }
 
       local filename = vim.fn.expand("%:t")
