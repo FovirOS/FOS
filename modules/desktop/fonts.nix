@@ -6,6 +6,7 @@
   fonts = {
     packages = with pkgs; [
       nerd-fonts.jetbrains-mono
+      lxgw-wenkai
     ];
 
     fontconfig = {
