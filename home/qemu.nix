@@ -19,6 +19,7 @@
     ../modules/home/cybersecurity # Import the softwares of cybersecurity.
     ../modules/home/hardwares # Import hardwares.
     ../modules/home/media # Import media tools.
+    ../modules/home/office # Import office tools.
   ];
 
   programs.git = {
