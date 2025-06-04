@@ -3,5 +3,5 @@
     libreoffice
   ];
 
-  home.file.".config/libreoffice/*/users/config/theme.soc".text = builtins.readFile ./theme.soc;
+  home.file.".config/libreoffice/4/users/config/theme.soc".text = builtins.readFile ./theme.soc;
 }
