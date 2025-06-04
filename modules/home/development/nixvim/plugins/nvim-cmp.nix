@@ -26,7 +26,7 @@
     settings = {
       completion = {
         autocomplete = [
-          "TextChanged"
+          "require('cmp.types').cmp.TriggerEvent.TextChanged"
         ];
       };
 
