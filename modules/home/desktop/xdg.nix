@@ -1,5 +1,6 @@
 {
   config,
+  lib,
   pkgs,
   ...
 }: {
@@ -35,17 +36,30 @@
 
       templates = "/var/empty";
       publicShare = "/var/empty";
+
+      extraConfig = {
+        XDG_PROJECTS_DIR = "$HOME/Projects";
+      };
+    };
+
+    desktopEntries = {
+      nemo = {
+        name = "Nemo";
+        exec = "${config.home.homeDirectory}/.local/bin/run-nemo.sh";
+      };
     };
 
     mimeApps = let
       filemanager = ["nemo.desktop"];
       image-viewer = ["oculante.desktop"];
+      video-player = ["mpv.desktop"];
     in {
       enable = true;
 
       defaultApplications = {
         "x-scheme-handler/about" = filemanager;
         "x-scheme-handler/ftp" = filemanager;
+        "inode/directory" = filemanager;
 
         "image/*" = image-viewer;
         "image/avif" = image-viewer;
@@ -53,7 +67,23 @@
         "image/jpeg" = image-viewer;
         "image/png" = image-viewer;
         "image/webp" = image-viewer;
+
+        "audio/*" = video-player;
+        "video/*" = video-player;
       };
     };
   };
+
+  home.activation.createRunNemo = lib.hm.dag.entryAfter ["writeBoundary"] ''
+    mkdir -p ${config.home.homeDirectory}/.local/bin
+  '';
+
+  home.file.".local/bin/run-nemo".text = ''
+    #!/bin/sh
+    nemo "$@"
+  '';
+
+  home.activation.createProjects = lib.hm.dag.entryAfter ["writeBoundary"] ''
+    mkdir -p $HOME/Projects
+  '';
 }
