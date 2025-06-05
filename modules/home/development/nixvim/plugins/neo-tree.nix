@@ -20,8 +20,10 @@
 
       file_added = ''
         function(file_path)
-          vim.cmd("edit " .. file_path)
-          require("neo-tree").close_all()
+          if not vim.fn.isdirectory(file_path) then
+            vim.cmd("edit " .. file_path)
+            vim.cmd("Neotree close")
+          end
         end
       '';
     };
