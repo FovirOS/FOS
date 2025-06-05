@@ -8,9 +8,12 @@
     enable = true;
 
     folding = true;
-    indent.enable = true;
 
     grammarPackages = config.plugins.treesitter.package.passthru.allGrammars;
+
+    settings = {
+      indent.enable = true;
+    };
   };
 
   extraConfigLua = ''
