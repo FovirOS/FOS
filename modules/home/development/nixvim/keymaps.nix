@@ -48,5 +48,12 @@
       mode = "n";
       options.desc = "Open which-key";
     }
+
+    {
+      action = "<cmd>:nohlsearch<CR>";
+      key = "<Esc>";
+      mode = "n";
+      options.desc = "Disable Highlight After Search";
+    }
   ];
 }
