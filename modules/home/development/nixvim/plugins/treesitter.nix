@@ -1,16 +1,13 @@
-{pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   # Syntax highlight.
   plugins.treesitter = {
     enable = true;
 
-    # Language options.
-    grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
-      bash
-      nix
-      json
-      lua
-      markdown
-      yaml
-    ];
+    folding = true;
+    grammarPackages = config.plugins.treesitter.package.passthru.allGrammars;
   };
 }
