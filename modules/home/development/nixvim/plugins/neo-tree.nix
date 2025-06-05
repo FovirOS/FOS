@@ -17,15 +17,6 @@
           require("neo-tree").close_all()
         end
       '';
-
-      file_added = ''
-        function(file_path)
-          if not vim.fn.isdirectory(file_path) then
-            vim.cmd("edit " .. file_path)
-            vim.cmd("Neotree close")
-          end
-        end
-      '';
     };
 
     window.mappings = {
