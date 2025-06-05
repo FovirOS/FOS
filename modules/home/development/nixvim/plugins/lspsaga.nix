@@ -4,6 +4,8 @@
 
     codeAction.keys.quit = "<esc>";
     rename.keys.quit = "<esc>";
+
+    lightbulb.enable = false;
   };
 
   keymaps = [
