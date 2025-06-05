@@ -21,6 +21,14 @@
           {name = "luasnip";}
         ];
       };
+
+      go = {
+        sources = [
+          {name = "nvim_lsp";}
+          {name = "path";}
+          {name = "luasnip";}
+        ];
+      };
     };
 
     settings = {
