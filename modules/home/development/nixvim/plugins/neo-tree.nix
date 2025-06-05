@@ -17,6 +17,12 @@
           require("neo-tree").close_all()
         end
       '';
+
+      file_added = ''
+        function(file_path)
+          vim.cmd("edit " .. file_path)
+        end
+      '';
     };
 
     window.mappings = {
