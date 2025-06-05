@@ -55,5 +55,19 @@
       mode = "n";
       options.desc = "Disable Highlight After Search";
     }
+
+    {
+      action = "zM";
+      key = "zC";
+      mode = "n";
+      options.desc = "Close All Folds";
+    }
+
+    {
+      action = "zR";
+      key = "zO";
+      mode = "n";
+      options.desc = "Open All Folds";
+    }
   ];
 }
