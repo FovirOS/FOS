@@ -13,13 +13,15 @@
     function RunCurrentFile()
       local runners = {
         py = "python -u %s",
-        c = "gcc *.c -o %s && ./%s",
-        cpp = "g++ *.cpp -o %s && ./%s",
+        c = "gcc -o %s *.c && ./%s",
+        cpp = "g++ -o %s *.cpp && ./%s",
+        go = "go build -o %s *.go && ./%s",
       }
 
       local filename = vim.fn.expand("%:t")
       local filename_without_ext = vim.fn.expand("%:t:r")
       local ext = vim.fn.expand("%:e")
+      local file_dir = vim.fn.expand("%:p:h")
 
       local cmd_template = runners[ext]
 
@@ -30,6 +32,8 @@
         else
           cmd = string.format(cmd_template, filename)
         end
+
+        cmd = string.format("cd %s && %s", file_dir, cmd)
 
         vim.cmd("TermExec cmd='" .. cmd .. "'")
       else

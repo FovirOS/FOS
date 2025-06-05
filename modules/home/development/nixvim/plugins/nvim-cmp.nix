@@ -24,6 +24,12 @@
     };
 
     settings = {
+      completion = {
+        autocomplete = [
+          "require('cmp.types').cmp.TriggerEvent.TextChanged"
+        ];
+      };
+
       sources = [
         {name = "nvim_lsp";}
         {name = "path";}
@@ -37,9 +43,9 @@
       '';
 
       sorting.comparators = [
+        "require('cmp.config.compare').recently_used"
         "require('cmp.config.compare').exact"
         "require('cmp.config.compare').score"
-        "require('cmp.config.compare').recently_used"
         "require('cmp.config.compare').order"
       ];
 
