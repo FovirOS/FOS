@@ -1,6 +1,4 @@
 {...}: {
-  # plugins.lsp.servers.clangd.package = unstablePkgs.llvmPackages_20.clang-tools;
-
   imports = [
     ./wakatime.nix
     ./noice.nix
@@ -24,6 +22,5 @@
     ./bufferline.nix
     ./indent-blankline.nix
     ./persistence.nix
-    # (import ./lsp {inherit unstablePkgs;})
   ];
 }
