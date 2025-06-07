@@ -22,5 +22,6 @@
     ./bufferline.nix
     ./indent-blankline.nix
     ./persistence.nix
+    ./aerial.nix
   ];
 }
