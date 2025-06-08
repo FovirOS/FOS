@@ -28,6 +28,7 @@
       l = "toggle_node";
       h = "close_node";
       r = "rename";
+      f = "refresh";
 
       a = {
         command = "add";
