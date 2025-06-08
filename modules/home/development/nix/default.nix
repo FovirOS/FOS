@@ -1,5 +1,5 @@
 {
-    imports=[
-        ./formatter.nix
-    ];
+  imports = [
+    ./formatter.nix
+  ];
 }

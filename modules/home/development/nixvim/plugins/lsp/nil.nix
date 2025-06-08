@@ -1,13 +1,13 @@
-{...}:{
-   plugins.lsp.servers.nil_ls = {
+{...}: {
+  plugins.lsp.servers.nil_ls = {
     enable = true;
 
-        filetypes = [
-            "nix"
-        ];
+    filetypes = [
+      "nix"
+    ];
 
-        settings = {
-            formatting.command=[ "alejandra" ];
-        };
+    settings = {
+      formatting.command = ["alejandra"];
     };
+  };
 }
