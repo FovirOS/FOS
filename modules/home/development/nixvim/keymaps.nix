@@ -69,5 +69,12 @@
       mode = "n";
       options.desc = "Open All Folds";
     }
+
+    {
+      action = "<cmd>AerialToggle<CR>";
+      key = "<leader>a";
+      mode = "n";
+      options.desc = "Toggle Outline";
+    }
   ];
 }
