@@ -2,6 +2,7 @@
   imports = [
     ./clangd.nix
     ./gopls.nix
+    ./nil.nix
   ];
 
   plugins.lsp = {
