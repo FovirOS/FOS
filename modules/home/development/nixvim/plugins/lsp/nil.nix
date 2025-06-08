@@ -5,5 +5,9 @@
         filetypes = [
             "nix"
         ];
+
+        settings = {
+            formatting.command=[ "alejandra" ];
+        };
     };
 }
