@@ -4,5 +4,6 @@
     ./nixvim
     ./c_cpp
     ./go
+        ./nix
   ];
 }
