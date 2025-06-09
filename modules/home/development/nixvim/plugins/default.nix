@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./ltex-extra.nix
     ./guess-indent.nix
     ./wakatime.nix
     ./noice.nix
@@ -26,3 +27,4 @@
     ./aerial.nix
   ];
 }
+
