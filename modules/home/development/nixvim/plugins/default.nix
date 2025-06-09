@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./guess-indent.nix
     ./wakatime.nix
     ./noice.nix
     ./comment.nix
