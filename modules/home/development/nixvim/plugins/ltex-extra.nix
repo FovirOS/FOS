@@ -4,7 +4,7 @@
 
     settings = {
       load_langs = [
-        "en_US"
+        "en-US"
       ];
     };
   };
