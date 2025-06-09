@@ -27,5 +27,10 @@
     # Search with case-insenstive.
     ignorecase = true;
     smartcase = true;
+
+    # Enable spell check.
+    spell = true;
+    spelllang = "en_US";
   };
 }
+
