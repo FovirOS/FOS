@@ -19,17 +19,17 @@
     };
 
     loader = {
-      # grub = {
-      #   enable = true;
-      #   devices = ["nodev"];
-      #   efiSupport = true;
-      # };
-
-      systemd-boot = {
-        configurationLimit = 50;
-        editor = true;
+      grub = {
         enable = true;
+        devices = ["nodev"];
+        efiSupport = true;
       };
+
+      # systemd-boot = {
+      #   configurationLimit = 50;
+      #   editor = true;
+      #   enable = true;
+      # };
     };
 
     supportedFilesystems = ["zfs"];
@@ -60,3 +60,4 @@
   security.sudo.enable = true;
   security.sudo.wheelNeedsPassword = false;
 }
+
