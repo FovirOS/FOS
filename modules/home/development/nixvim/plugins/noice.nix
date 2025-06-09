@@ -11,5 +11,11 @@
     };
   };
 
-  plugins.notify.enable = true;
+  plugins.notify = {
+    enable = true;
+
+    settings = {
+      timeout = 1000;
+    };
+  };
 }
