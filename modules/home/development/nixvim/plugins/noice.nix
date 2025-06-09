@@ -15,7 +15,7 @@
     enable = true;
 
     settings = {
-      timeout = 1000;
+      timeout = 1;
     };
   };
 }
