@@ -10,4 +10,13 @@
       };
     };
   };
+
+  keymaps = [
+    {
+      action = "<cmd>Markview<CR>";
+      key = "<leader>m";
+      mode = "n";
+      options.desc = "Toggle Markview";
+    }
+  ];
 }
