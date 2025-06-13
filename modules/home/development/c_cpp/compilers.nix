@@ -13,8 +13,6 @@
       - '*'
       - -llvm*
       - -modernize-use-trailing-return-type
-      - -readability-braces-around-statements
-      - -hicpp-braces-around-statements
       - -altera*
       - -google*
       - -fuchsia*
@@ -23,15 +21,7 @@
       - -hicpp-special-member-functions
       - -readability-identifier-length
       - -readability-isolate-declaration
-      - -modernize-redundant-void-arg
-      - -readability-redundant-control-flow
       - -boost*
-  '';
-
-  home.file.".clangd".text = ''
-    Completion:
-      ArgumentLists: None
-      HeaderInsertion: Never
   '';
 
   home.file.".clang-format".text = ''
@@ -41,3 +31,4 @@
     PointerAlignment: Middle
   '';
 }
+
