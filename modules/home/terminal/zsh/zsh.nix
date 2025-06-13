@@ -31,8 +31,6 @@
 
       set -o vi
       bindkey -M viins '^H' backward-kill-word
-
-      fastfetch
     '';
 
     history.size = 10000;
@@ -46,3 +44,4 @@
     };
   };
 }
+
