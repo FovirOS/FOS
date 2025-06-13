@@ -50,9 +50,13 @@
     };
 
     mimeApps = let
+      browser = ["firefox.desktop"];
       filemanager = ["nemo.desktop"];
       image-viewer = ["oculante.desktop"];
       video-player = ["mpv.desktop"];
+      libreoffice-writer = ["libreoffice-writer.desktop"];
+      libreoffice-calc = ["libreoffice-calc.desktop"];
+      libreoffice-presentation = ["libreoffice-impress.desktop"];
     in {
       enable = true;
 
@@ -70,6 +74,11 @@
 
         "audio/*" = video-player;
         "video/*" = video-player;
+
+        "application/pdf" = browser;
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = libreoffice-writer;
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" = libreoffice-calc;
+        "application/vnd.openxmlformats-officedocument.presentationml.presentation" = libreoffice-presentation;
       };
     };
   };

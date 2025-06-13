@@ -1,5 +1,5 @@
 {...}: {
-  plugins.wakatime = {
+  services.dbus = {
     enable = true;
   };
 }
