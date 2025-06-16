@@ -5,6 +5,7 @@
     ./c_cpp
     ./go
     ./nix
+    ./editorconfig.nix
   ];
 }
 
