@@ -1,7 +1,6 @@
 {
   config,
   pkgs,
-  lib,
   ...
 }: {
   system.stateVersion = "25.05";
@@ -60,4 +59,3 @@
   security.sudo.enable = true;
   security.sudo.wheelNeedsPassword = false;
 }
-
