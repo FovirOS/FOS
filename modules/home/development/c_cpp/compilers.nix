@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
     llvmPackages_19.clang-tools # For LSP.
     gcc # Global compiler.
@@ -31,4 +27,3 @@
     PointerAlignment: Middle
   '';
 }
-
