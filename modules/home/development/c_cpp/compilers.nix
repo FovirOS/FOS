@@ -25,5 +25,6 @@
     AccessModifierOffset: -4
     IndentWidth: 4
     PointerAlignment: Middle
+    IndentCaseLabels: true
   '';
 }
