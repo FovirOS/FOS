@@ -1,10 +1,4 @@
-{
-  config,
-  lib,
-  pkgs,
-  hostName,
-  ...
-}: let
+{hostName, ...}: let
   monitor_name =
     if hostName == "qemu"
     then "Virtual-1"
@@ -17,10 +11,10 @@ in {
 
       "$mod" = "SUPER";
       bind = [
-        ",F1,exec,kitty" # Run `kitty`.
+        "$mod,T,exec,kitty" # Run `kitty`.
         "$mod,P,exec,hyprlock" # Lock.
         "ALT,SPACE,exec,wofi --show drun" # Run `wofi`.
-        ", Print,exec,flameshot gui" # Run screenshot.
+        "$mod,S,exec,flameshot gui" # Run screenshot.
 
         "$mod,Q,killactive" # Kill current process.
         "$mod,SPACE,togglefloating" # Toggle floating mode.
