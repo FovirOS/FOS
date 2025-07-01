@@ -7,11 +7,9 @@
         ids = ["*"];
         settings = {
           main = {
-            capslock = "overload(alt, esc)";
-          };
-
-          "shift" = {
-            capslock = "capslock";
+            rightalt = "esc";
+            # esc = "grave";
+            # "shift+esc" = "shift+grave";
           };
         };
       };
