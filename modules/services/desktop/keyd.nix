@@ -7,9 +7,9 @@
         ids = ["*"];
         settings = {
           main = {
-            rightalt = "overload(alt, esc)";
-            esc = "grave";
-            "shift+esc" = "shift+grave";
+            rightalt = "esc";
+            # esc = "grave";
+            # "shift+esc" = "shift+grave";
           };
         };
       };
