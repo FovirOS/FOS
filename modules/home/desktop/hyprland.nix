@@ -18,6 +18,7 @@ in {
         "$mod,SPACE,exec,wofi --show drun" # Run `wofi`.
         "$mod,S,exec,flameshot gui" # Run screenshot.
         "$mod,N,exec,neovide" # Run `Neovide`.
+        "$mod,E,exec,nemo" # Run `Nemo`.
 
         "$mod,Q,killactive" # Kill current process.
 
