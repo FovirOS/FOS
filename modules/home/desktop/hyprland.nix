@@ -40,8 +40,8 @@ in {
         "$mod,9,workspace,9"
 
         # Move the window to workspace.
-        "$mod,CTRL L,movetoworkspace,+1"
-        "$mod,CTRL H,movetoworkspace,-1"
+        "$modCTRL,L,movetoworkspace,+1"
+        "$modCTRL,H,movetoworkspace,-1"
 
         # Make the window full screen.
         "$mod,F,fullscreen,0"
