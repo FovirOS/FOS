@@ -17,6 +17,7 @@ in {
         "$mod,P,exec,hyprlock" # Lock.
         "$mod,SPACE,exec,wofi --show drun" # Run `wofi`.
         "$mod,S,exec,flameshot gui" # Run screenshot.
+        "$mod,N,exec,neovide" # Run `Neovide`.
 
         "$mod,Q,killactive" # Kill current process.
 
