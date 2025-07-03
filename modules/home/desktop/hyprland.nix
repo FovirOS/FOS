@@ -13,7 +13,7 @@ in {
       bind = [
         "$mod,T,exec,kitty" # Run `kitty`.
         "$mod,P,exec,hyprlock" # Lock.
-        "ALT,SPACE,exec,wofi --show drun" # Run `wofi`.
+        "$mod,SPACE,exec,wofi --show drun" # Run `wofi`.
         "$mod,S,exec,flameshot gui" # Run screenshot.
 
         "$mod,Q,killactive" # Kill current process.
@@ -39,8 +39,8 @@ in {
         "$mod,9,workspace,9"
 
         # Move the window to workspace.
-        "$modALT,L,movetoworkspace,+1"
-        "$modALT,H,movetoworkspace,-1"
+        "$mod,CTRL L,movetoworkspace,+1"
+        "$mod,CTRL H,movetoworkspace,-1"
 
         # Make the window full screen.
         "$mod,F,fullscreen,0"
@@ -49,10 +49,6 @@ in {
       bindm = [
         "$mod,mouse:272,movewindow" # Move window.
       ];
-
-      input = {
-        kb_options = "menu:escape"; # Map `menu` to `esc`.
-      };
 
       exec-once = [
         "waybar"
