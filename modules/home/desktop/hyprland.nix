@@ -12,12 +12,13 @@ in {
       "$mod" = "SUPER";
       bind = [
         "$mod,T,exec,kitty" # Run `kitty`.
+        ",F1,exec,kitty" # Run `kitty`.
+
         "$mod,P,exec,hyprlock" # Lock.
         "$mod,SPACE,exec,wofi --show drun" # Run `wofi`.
         "$mod,S,exec,flameshot gui" # Run screenshot.
 
         "$mod,Q,killactive" # Kill current process.
-        "$mod,SPACE,togglefloating" # Toggle floating mode.
 
         # Move focus.
         "$mod,H,movefocus,l"
