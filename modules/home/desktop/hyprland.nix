@@ -17,7 +17,6 @@ in {
         "$mod,S,exec,flameshot gui" # Run screenshot.
 
         "$mod,Q,killactive" # Kill current process.
-        "$mod,SPACE,togglefloating" # Toggle floating mode.
 
         # Move focus.
         "$mod,H,movefocus,l"
