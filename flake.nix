@@ -29,7 +29,6 @@
   } @ inputs: let
     system = "x86_64-linux";
     hosts = ["laptop" "qemu"];
-    pkgs = import nixpkgs {inherit system;};
 
     mkHost = name:
       nixpkgs.lib.nixosSystem {
