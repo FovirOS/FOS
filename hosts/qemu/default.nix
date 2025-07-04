@@ -5,6 +5,12 @@
 }: {
   system.stateVersion = "25.05";
 
+  home-manager = {
+    extraSpecialArgs = {
+      inherit (config.networking) hostName;
+    };
+  };
+
   boot = {
     zfs = {
       devNodes = "/dev/disk/by-path";
