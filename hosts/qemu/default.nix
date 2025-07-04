@@ -1,13 +1,26 @@
 {
   config,
   pkgs,
+  inputs,
+  nixvim,
   ...
 }: {
   system.stateVersion = "25.05";
 
   home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+
     extraSpecialArgs = {
       inherit (config.networking) hostName;
+      inherit inputs;
+    };
+
+    users.qemu = {
+      imports = [
+        ../../home/qemu.nix
+        inputs.nixvim.homeManagerModules.nixvim
+      ];
     };
   };
 
