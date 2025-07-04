@@ -29,7 +29,6 @@
   } @ inputs: let
     system = "x86_64-linux";
     hosts = ["laptop" "qemu"];
-    pkgs = import nixpkgs {inherit system;};
 
     mkHost = name:
       nixpkgs.lib.nixosSystem {
@@ -44,10 +43,14 @@
           disko.nixosModules.disko
 
           inputs.home-manager.nixosModules.home-manager
+
           {
-            home-manager.extraSpecialArgs = {inherit inputs;};
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
+            home-manager = {
+              extraSpecialArgs = {inherit inputs;};
+              useGlobalPkgs = true;
+              useUserPackages = true;
+            };
+
             home-manager.users.${name} = {
               imports = [
                 ./home/${name}.nix
