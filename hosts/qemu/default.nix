@@ -1,29 +1,9 @@
 {
   config,
   pkgs,
-  inputs,
-  nixvim,
   ...
 }: {
   system.stateVersion = "25.05";
-
-  home-manager = {
-    useGlobalPkgs = true;
-    useUserPackages = true;
-
-    extraSpecialArgs = {
-      inherit (config.networking) hostName;
-    };
-
-    users = {
-      qemu = {
-        imports = [
-          ../../home/qemu.nix
-          nixvim.homeManagerModules.nixvim
-        ];
-      };
-    };
-  };
 
   boot = {
     zfs = {
@@ -52,7 +32,6 @@
   networking.hostId = "8425e349"; # Set the host ID.
 
   imports = [
-    ../../home/qemu.nix # Import the home configuration.
     ./disko.nix # Import the `disko` configuration.
     ../../modules/services/server # Import the `server` services.
     ../../modules/services/desktop # Import the `desktop` services.
