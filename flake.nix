@@ -33,7 +33,6 @@
     mkHost = name:
       nixpkgs.lib.nixosSystem {
         inherit system;
-
         specialArgs = {inherit name inputs;};
 
         modules = [
@@ -41,23 +40,7 @@
 
           chaotic.nixosModules.default
           disko.nixosModules.disko
-
           inputs.home-manager.nixosModules.home-manager
-
-          {
-            home-manager = {
-              extraSpecialArgs = {inherit inputs;};
-              useGlobalPkgs = true;
-              useUserPackages = true;
-            };
-
-            home-manager.users.${name} = {
-              imports = [
-                ./home/${name}.nix
-                nixvim.homeManagerModules.nixvim
-              ];
-            };
-          }
         ];
       };
   in {
