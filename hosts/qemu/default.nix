@@ -2,7 +2,6 @@
   config,
   pkgs,
   inputs,
-  nixvim,
   ...
 }: {
   system.stateVersion = "25.05";
