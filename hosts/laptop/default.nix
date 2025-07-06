@@ -1,13 +1,25 @@
 {
   pkgs,
   config,
+  inputs,
   ...
 }: {
   system.stateVersion = "25.05";
 
   home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+
     extraSpecialArgs = {
       inherit (config.networking) hostName;
+      inherit inputs;
+    };
+
+    users.fovir = {
+      imports = [
+        ../../home/fovir
+        inputs.nixvim.homeManagerModules.nixvim
+      ];
     };
   };
 
@@ -21,7 +33,7 @@
     };
 
     zfs = {
-      devNodes = "/dev/disk/by-id";
+      devNodes = "/dev/disk/by-path";
       forceImportRoot = false;
     };
   };
@@ -36,7 +48,7 @@
 
   networking = {
     hostName = "FovirOS";
-    networking.hostId = "007f0101";
+    hostId = "8425e349";
   };
 
   users.users = {
@@ -45,6 +57,7 @@
       extraGroups = ["wheel" "networkmanager"];
       hashedPassword = "$6$Z3tVvcb3O79M9wVa$eQsKKb4DbQMqolBLpy8bpNr1XFdl.lg4ek649YfWQ4nxW.EOGUdvKV4txOQH/RfozyPJwMu2o335K./TEF/gg.";
       shell = pkgs.zsh;
+      ignoreShellProgramCheck = true;
       homeMode = "755";
     };
 
