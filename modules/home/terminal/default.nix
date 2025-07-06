@@ -1,5 +1,6 @@
 {
   imports = [
+    ./rsync.nix
     ./fastfetch
     ./btop.nix
     ./zsh
