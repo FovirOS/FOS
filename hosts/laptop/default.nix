@@ -1,13 +1,25 @@
 {
   pkgs,
   config,
+  inputs,
   ...
 }: {
   system.stateVersion = "25.05";
 
   home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+
     extraSpecialArgs = {
       inherit (config.networking) hostName;
+      inherit inputs;
+    };
+
+    users.fovir = {
+      imports = [
+        ../../home/fovir.nix
+        inputs.nixvim.homeManagerModules.nixvim
+      ];
     };
   };
 
