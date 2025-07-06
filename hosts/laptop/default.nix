@@ -21,7 +21,7 @@
     };
 
     zfs = {
-      devNodes = "/dev/disk/by-path";
+      devNodes = "/dev/disk/by-id";
       forceImportRoot = false;
     };
   };
