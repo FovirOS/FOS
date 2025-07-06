@@ -41,11 +41,18 @@
       zroot = {
         type = "zpool";
         datasets = {
+          "home" = {
+            mountpoint = "/home";
+            type = "zfs_fs";
+            options."com.sun:auto-snapshot" = "true";
+          };
+
           "root" = {
             mountpoint = "/";
             type = "zfs_fs";
 
             options = {
+              "com.sun:auto-snapshot" = "false";
               mountpoint = "legacy";
             };
           };
@@ -56,6 +63,7 @@
 
             options = {
               mountpoint = "legacy";
+              "com.sun:auto-snapshot" = "false";
             };
           };
         };
