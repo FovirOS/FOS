@@ -36,7 +36,7 @@
 
   networking = {
     hostName = "FovirOS";
-    networking.hostId = "007f0101";
+    hostId = "8425e349";
   };
 
   users.users = {
