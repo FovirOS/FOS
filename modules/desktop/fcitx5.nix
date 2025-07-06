@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   i18n.inputMethod = {
     type = "fcitx5";
     enable = true;
@@ -16,5 +12,12 @@
 
       waylandFrontend = true;
     };
+  };
+
+  environment.variables = {
+    GTK_IM_MODULE = "fcitx";
+    QT_IM_MODULE = "fcitx";
+    XMODIFIERS = "@im=fcitx";
+    INPUT_METHOD = "fcitx";
   };
 }
