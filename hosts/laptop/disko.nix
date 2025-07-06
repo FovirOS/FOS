@@ -50,7 +50,7 @@
             };
           };
 
-          "root/nix" = {
+          "nix" = {
             mountpoint = "/nix";
             type = "zfs_fs";
 
