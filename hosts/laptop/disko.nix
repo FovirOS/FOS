@@ -46,11 +46,6 @@
             type = "zfs_fs";
           };
 
-          "persist" = {
-            mountpoint = "/persist";
-            type = "zfs_fs";
-          };
-
           "root" = {
             mountpoint = "/";
             type = "zfs_fs";
