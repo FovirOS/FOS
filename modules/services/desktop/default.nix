@@ -1,5 +1,6 @@
 {
   imports = [
+    ./xserver.nix
     ./keyd.nix
     ./ly.nix
     ./dbus.nix
