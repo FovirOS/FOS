@@ -10,8 +10,6 @@ echo "Run rsync..."
 sudo rsync -av --delete \
     --exclude '.git' \
     --exclude 'build.sh' \
-    --exclude 'flake.lock' \
-    --exclude 'hardware-configuration.nix' \
     "$SOURCE_DIR/" "$TARGET_DIR"
 
 echo "Run nixos-rebuild switch..."
