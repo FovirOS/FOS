@@ -17,7 +17,7 @@
 
     users.fovir = {
       imports = [
-        ../../home/fovir.nix
+        ../../home/fovir
         inputs.nixvim.homeManagerModules.nixvim
       ];
     };
@@ -33,7 +33,7 @@
     };
 
     zfs = {
-      devNodes = "/dev/disk/by-id";
+      devNodes = "/dev/disk/by-path";
       forceImportRoot = false;
     };
   };
