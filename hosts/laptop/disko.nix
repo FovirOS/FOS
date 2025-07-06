@@ -44,7 +44,11 @@
           "home" = {
             mountpoint = "/home";
             type = "zfs_fs";
-            options."com.sun:auto-snapshot" = "true";
+          };
+
+          "persist" = {
+            mountpoint = "/persist";
+            type = "zfs_fs";
           };
 
           "root" = {
@@ -52,7 +56,6 @@
             type = "zfs_fs";
 
             options = {
-              "com.sun:auto-snapshot" = "false";
               mountpoint = "legacy";
             };
           };
@@ -63,7 +66,6 @@
 
             options = {
               mountpoint = "legacy";
-              "com.sun:auto-snapshot" = "false";
             };
           };
         };
