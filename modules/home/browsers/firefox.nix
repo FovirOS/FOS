@@ -5,9 +5,7 @@
     languagePacks = ["en-US"];
 
     nativeMessagingHosts = {
-      packages = [
-        pkgs.keepassxc
-      ];
+      browserpass = true;
     };
 
     policies = {
