@@ -6,6 +6,9 @@
 in {
   wayland.windowManager.hyprland = {
     enable = true;
+
+    xwayland.enable = true;
+
     settings = {
       monitor = "${monitor_name},1920x1080,0x0,1";
 
