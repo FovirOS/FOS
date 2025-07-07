@@ -17,8 +17,6 @@ in {
     settings = {
       monitor = "${monitor_name},1920x1080,0x0,1";
 
-      layout = "master";
-
       "$mod" = "SUPER";
       bind = [
         "$mod,T,exec,kitty" # Run `kitty`.
