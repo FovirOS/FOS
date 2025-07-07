@@ -1,6 +1,5 @@
 {
   imports = [
-    ./notify.nix
     ./xserver.nix
     ./keyd.nix
     ./ly.nix
