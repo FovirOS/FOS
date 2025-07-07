@@ -17,13 +17,16 @@ in {
     settings = {
       monitor = "${monitor_name},1920x1080,0x0,1";
 
+      dwindle = {
+        pseudotile = true;
+      };
+
       "$mod" = "SUPER";
       bind = [
         "$mod,T,exec,kitty" # Run `kitty`.
         ",F1,exec,kitty" # Run `kitty`.
 
         "$mod,P,exec,hyprlock" # Lock.
-        "$mod,SPACE,exec,wofi --show drun" # Run `wofi`.
         "ALT,SPACE,exec,wofi --show drun" # Run `wofi`.
         "$mod,S,exec,hyprshot -m region" # Run `hyprshot`.
         "$mod,N,exec,neovide" # Run `Neovide`.
@@ -56,6 +59,9 @@ in {
 
         # Make the window full screen.
         "$mod,F,fullscreen,0"
+
+        # Toggle float window.
+        "$mod,SPACE,togglefloating"
       ];
 
       bindm = [
