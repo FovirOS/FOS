@@ -1,8 +1,14 @@
-{...}: {
+{pkgs, ...}: {
   programs.firefox = {
     enable = true;
 
     languagePacks = ["en-US"];
+
+    nativeMessagingHosts = {
+      packages = [
+        pkgs.keepassxc
+      ];
+    };
 
     policies = {
       DisableAccounts = true;
