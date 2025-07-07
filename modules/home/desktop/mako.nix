@@ -3,10 +3,8 @@
     enable = true;
 
     settings = {
-      background-color = "#1e1e2e";
+      background-color = "#101010C0";
       text-color = "#cdd6f4";
-      border-color = "#89b4fa";
-      border-size = 2;
       default-timeout = 5000;
 
       font = "JetBrainsMono Nerd Font Mono";
