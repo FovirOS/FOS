@@ -1,12 +1,13 @@
-{pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   programs.firefox = {
     enable = true;
+    package = pkgs.firefox-devedition;
 
     languagePacks = ["en-US"];
-
-    nativeMessagingHosts = {
-      browserpass = true;
-    };
 
     policies = {
       DisableAccounts = true;
