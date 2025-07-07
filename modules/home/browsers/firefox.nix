@@ -23,6 +23,9 @@
         Value = true;
       };
 
+      OfferToSaveLogins = false;
+      OfferToSaveLoginsDefault = false;
+
       ExtensionSettings = {
         "*" = {
           installation_mode = "blocked";
