@@ -58,6 +58,12 @@ in {
         "fcitx5 -d -r"
         "fcitx5-remote -r"
       ];
+
+      decoration = {
+        blur = {
+          enabled = true;
+        };
+      };
     };
   };
 }
