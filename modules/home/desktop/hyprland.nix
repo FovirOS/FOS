@@ -9,6 +9,11 @@ in {
 
     xwayland.enable = true;
 
+    systemd = {
+      enable = true;
+      variables = ["--all"];
+    };
+
     settings = {
       monitor = "${monitor_name},1920x1080,0x0,1";
 
