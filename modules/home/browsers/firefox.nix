@@ -49,12 +49,6 @@
           installation_mode = "force_installed";
         };
 
-        # Dark Reader
-        "addon@darkreader.org" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/addon@darkreader.org/latest.xpi";
-          installation_mode = "force_installed";
-        };
-
         # KISS Translator
         "{fb25c100-22ce-4d5a-be7e-75f3d6f0fc13}" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/{fb25c100-22ce-4d5a-be7e-75f3d6f0fc13}/latest.xpi";
