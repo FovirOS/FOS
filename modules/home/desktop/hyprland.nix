@@ -69,6 +69,10 @@ in {
         "$mod, mouse:273,resizewindow" # Resize window.
       ];
 
+      windowrule = [
+        "pseudo,class:fcitx"
+      ];
+
       exec-once = [
         "waybar"
         "fcitx5 -d -r"
