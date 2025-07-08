@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   home.file.".local/share/fcitx5/rime" = {
     force = true;
     recursive = true;
