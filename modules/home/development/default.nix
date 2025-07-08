@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./remmina.nix
     ./git.nix
     ./nixvim
     ./neovide.nix
