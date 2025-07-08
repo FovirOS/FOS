@@ -8,6 +8,6 @@
     ./qt
     ./hyprlock.nix
     ./wl-clipboard-rs.nix
-    ./mako.nix
+    ./swaync.nix
   ];
 }
