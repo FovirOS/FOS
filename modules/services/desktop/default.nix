@@ -2,7 +2,7 @@
   imports = [
     ./xserver.nix
     ./keyd.nix
-    ./ly.nix
+    ./greetd.nix
     ./dbus.nix
     ./pipewire.nix
     ./bluetooth.nix
