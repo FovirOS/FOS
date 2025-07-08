@@ -6,8 +6,20 @@
 in {
   wayland.windowManager.hyprland = {
     enable = true;
+
+    xwayland.enable = true;
+
+    systemd = {
+      enable = true;
+      variables = ["--all"];
+    };
+
     settings = {
       monitor = "${monitor_name},1920x1080,0x0,1";
+
+      dwindle = {
+        pseudotile = true;
+      };
 
       "$mod" = "SUPER";
       bind = [
@@ -15,8 +27,9 @@ in {
         ",F1,exec,kitty" # Run `kitty`.
 
         "$mod,P,exec,hyprlock" # Lock.
-        "$mod,SPACE,exec,wofi --show drun" # Run `wofi`.
-        "$mod,S,exec,flameshot gui" # Run screenshot.
+        "ALT,SPACE,exec,wofi --show drun" # Run `wofi`.
+        "$mod,S,exec,hyprshot -z -m region" # Run `hyprshot`.
+        ",Print,exec,hyprshot -z -m region" # Run `hyprshot`.
         "$mod,N,exec,neovide" # Run `Neovide`.
         "$mod,E,exec,nemo" # Run `Nemo`.
 
@@ -47,17 +60,27 @@ in {
 
         # Make the window full screen.
         "$mod,F,fullscreen,0"
+
+        # Toggle float window.
+        "$mod,SPACE,togglefloating"
       ];
 
       bindm = [
         "$mod,mouse:272,movewindow" # Move window.
+        "$mod, mouse:273,resizewindow" # Resize window.
       ];
 
       exec-once = [
         "waybar"
-        "fcitx5 -d -r"
+        "fcitx5 -d --replace"
         "fcitx5-remote -r"
       ];
+
+      decoration = {
+        blur = {
+          enabled = true;
+        };
+      };
     };
   };
 }

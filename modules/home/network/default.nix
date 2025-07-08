@@ -1,0 +1,5 @@
+{
+  imports = [
+    ./nekoray.nix
+  ];
+}

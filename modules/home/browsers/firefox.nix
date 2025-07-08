@@ -1,6 +1,7 @@
-{...}: {
+{pkgs, ...}: {
   programs.firefox = {
     enable = true;
+    package = pkgs.firefox-devedition;
 
     languagePacks = ["en-US"];
 
@@ -22,6 +23,9 @@
         Value = true;
       };
 
+      OfferToSaveLogins = false;
+      OfferToSaveLoginsDefault = false;
+
       ExtensionSettings = {
         "*" = {
           installation_mode = "blocked";
@@ -42,12 +46,6 @@
         # ClearURLs
         "{74145f27-f039-47ce-a470-a662b129930a}" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/{74145f27-f039-47ce-a470-a662b129930a}/latest.xpi";
-          installation_mode = "force_installed";
-        };
-
-        # Dark Reader
-        "addon@darkreader.org" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/addon@darkreader.org/latest.xpi";
           installation_mode = "force_installed";
         };
 
@@ -92,5 +90,9 @@
         "browser.ctrlTab.sortByRecentlyUsed" = true;
       };
     };
+  };
+
+  home.sessionVariables = {
+    MOZ_ENABLE_WAYLAND = 1;
   };
 }
