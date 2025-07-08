@@ -1,5 +1,9 @@
-{pkgs, ...}: {
-  home.packages = with pkgs; [
-    nekoray
-  ];
+{...}: {
+  programs.nekoray = {
+    enable = true;
+
+    tunMode = {
+      enable = true;
+    };
+  };
 }
