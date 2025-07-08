@@ -50,7 +50,7 @@
     };
 
     mimeApps = let
-      browser = ["firefox.desktop"];
+      browser = ["firefox-devedition.desktop"];
       filemanager = ["nemo.desktop"];
       image-viewer = ["oculante.desktop"];
       video-player = ["mpv.desktop"];
