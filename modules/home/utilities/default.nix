@@ -2,7 +2,7 @@
   imports = [
     ./keepassxc.nix
     ./thunderbird.nix
-    ./fcitx5.nix
+    ./rime.nix
     ./hyprshot.nix
     ./nemo.nix
   ];
