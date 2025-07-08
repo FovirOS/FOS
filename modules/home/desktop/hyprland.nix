@@ -66,6 +66,7 @@ in {
 
       bindm = [
         "$mod,mouse:272,movewindow" # Move window.
+        "$mod, mouse:273,resizewindow" # Resize window.
       ];
 
       exec-once = [
