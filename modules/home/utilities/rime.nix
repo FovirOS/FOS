@@ -3,10 +3,25 @@
     force = true;
     recursive = true;
     source = pkgs.fetchFromGitHub {
-      hash = "sha256-s3r8cdEliiPnKWs64Wgi0rC9Ngl1mkIrLnr2tIcyXWw=";
-      owner = "iDvel";
-      repo = "rime-ice";
-      tag = "2025.04.06";
+      hash = "sha256-yCVcTc8qitar5JJfVTH4xNJMTPgx/NsRMoTxVm5PVrY=";
+      owner = "FovirOS";
+      repo = "rime";
+      rev = "7acdee60d09602383b6299d1bdaaba03f0a57869";
     };
   };
+
+  home.file.".config/fcitx5/conf/rime.conf".text = ''
+    # Preedit Mode
+    PreeditMode="Do not show"
+    # Shared Input State
+    InputState=All
+    # Fix embedded preedit cursor at the beginning of the preedit
+    PreeditCursorPositionAtBeginning=True
+    # Action when switching input method
+    SwitchInputMethodBehavior="Commit commit preview"
+    # Deploy
+    Deploy=
+    # Synchronize
+    Synchronize=
+  '';
 }
