@@ -4,7 +4,6 @@
 
     autocd = true;
     enableCompletion = true;
-    enableGlobalCompInit = true;
 
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
