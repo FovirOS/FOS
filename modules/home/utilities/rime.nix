@@ -6,7 +6,7 @@
       hash = "sha256-yCVcTc8qitar5JJfVTH4xNJMTPgx/NsRMoTxVm5PVrY=";
       owner = "FovirOS";
       repo = "rime";
-      rev = "7acdee60d09602383b6299d1bdaaba03f0a57869";
+      rev = "10c1f3bcd1b9e4415ea9fab6a262e1106fffc346";
     };
   };
 }
