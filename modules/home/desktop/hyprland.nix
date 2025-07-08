@@ -28,7 +28,8 @@ in {
 
         "$mod,P,exec,hyprlock" # Lock.
         "ALT,SPACE,exec,wofi --show drun" # Run `wofi`.
-        "$mod,S,exec,hyprshot -m region" # Run `hyprshot`.
+        "$mod,S,exec,hyprshot -z -m region" # Run `hyprshot`.
+        ",Print,exec,hyprshot -z -m region" # Run `hyprshot`.
         "$mod,N,exec,neovide" # Run `Neovide`.
         "$mod,E,exec,nemo" # Run `Nemo`.
 
