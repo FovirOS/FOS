@@ -3,10 +3,10 @@
     force = true;
     recursive = true;
     source = pkgs.fetchFromGitHub {
-      hash = "sha256-s3r8cdEliiPnKWs64Wgi0rC9Ngl1mkIrLnr2tIcyXWw=";
-      owner = "iDvel";
-      repo = "rime-ice";
-      tag = "2025.04.06";
+      hash = "7acdee60d09602383b6299d1bdaaba03f0a57869";
+      owner = "FovirOS";
+      repo = "rime";
+      rev = "7acdee60d09602383b6299d1bdaaba03f0a57869";
     };
   };
 }
