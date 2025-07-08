@@ -23,5 +23,6 @@
     INPUT_METHOD = "fcitx";
     SDL_IM_MODULE = "fcitx";
     GLFW_IM_MODULE = "fcitx";
+    WLR_NO_HARDWARE_CURSORS = 1;
   };
 }
