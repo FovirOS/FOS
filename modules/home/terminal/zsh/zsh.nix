@@ -4,7 +4,6 @@
 
     autocd = true;
     enableCompletion = true;
-    enableBashCompletion = true;
     enableGlobalCompInit = true;
 
     autosuggestion.enable = true;
