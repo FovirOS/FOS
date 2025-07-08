@@ -11,6 +11,15 @@
     QT_AUTO_SCREEN_SCALE_FACTOR = 1;
     QT_QPA_PLATFORM = "wayland";
     QT_WAYLAND_DISABLE_WINDOWDECORATION = 1;
+    SDL_HINT_VIDEODRIVER = "wayland";
     XDG_SESSION_TYPE = "wayland";
+    SDL_VIDEODRIVER = "wayland";
+
+    QT_IM_MODULE = "fcitx";
+    SDL_IM_MODULE = "fcitx";
+    XMODIFIERS = "@im=fcitx";
+    INPUT_METHOD = "fcitx";
+    GLFW_IM_MODULE = "fcitx";
+    WLR_NO_HARDWARE_CURSORS = 1;
   };
 }

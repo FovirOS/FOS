@@ -15,13 +15,4 @@
       waylandFrontend = true;
     };
   };
-
-  environment.variables = {
-    QT_IM_MODULE = "fcitx";
-    XMODIFIERS = "@im=fcitx";
-    INPUT_METHOD = "fcitx";
-    SDL_IM_MODULE = "fcitx";
-    GLFW_IM_MODULE = "fcitx";
-    WLR_NO_HARDWARE_CURSORS = 1;
-  };
 }
