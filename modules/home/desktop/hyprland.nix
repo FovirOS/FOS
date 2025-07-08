@@ -71,7 +71,7 @@ in {
 
       exec-once = [
         "waybar"
-        "fcitx5 -d -r"
+        "fcitx5 -d --replace"
         "fcitx5-remote -r"
       ];
 
