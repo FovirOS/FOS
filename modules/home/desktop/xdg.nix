@@ -76,6 +76,10 @@
         "video/*" = video-player;
 
         "application/pdf" = browser;
+        "x-scheme-handler/http" = browser;
+        "x-scheme-handler/https" = browser;
+        "text/html" = browser;
+
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = libreoffice-writer;
         "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" = libreoffice-calc;
         "application/vnd.openxmlformats-officedocument.presentationml.presentation" = libreoffice-presentation;
