@@ -91,10 +91,14 @@
     mkdir -p ${config.home.homeDirectory}/.local/bin
   '';
 
-  home.file.".local/bin/run-nemo".text = ''
-    #!/bin/sh
-    nemo "$@"
-  '';
+  home.file.".local/bin/run-nemo" = {
+    text = ''
+      #!/bin/sh
+      nemo "$@"
+    '';
+
+    executable = true;
+  };
 
   home.activation.createProjects = lib.hm.dag.entryAfter ["writeBoundary"] ''
     mkdir -p $HOME/Projects
