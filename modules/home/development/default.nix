@@ -1,9 +1,12 @@
-{unstablePkgs, ...}: {
+{...}: {
   imports = [
+    ./remmina.nix
     ./git.nix
     ./nixvim
+    ./neovide.nix
     ./c_cpp
     ./go
-        ./nix
+    ./nix
+    ./editorconfig.nix
   ];
 }

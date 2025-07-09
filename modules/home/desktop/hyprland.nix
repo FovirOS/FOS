@@ -1,29 +1,37 @@
-{
-  config,
-  lib,
-  pkgs,
-  hostName,
-  ...
-}: let
+{hostName, ...}: let
   monitor_name =
     if hostName == "qemu"
     then "Virtual-1"
+    else if hostName == "laptop"
+    then "eDP-1"
     else "none";
 in {
   wayland.windowManager.hyprland = {
     enable = true;
+
+    xwayland.enable = true;
+
+    systemd = {
+      enable = true;
+      variables = ["--all"];
+    };
+
     settings = {
-      monitor = "${monitor_name},1920x1080,0x0,1";
+      monitor = "${monitor_name},preferred,auto,1";
 
       "$mod" = "SUPER";
       bind = [
+        "$mod,T,exec,kitty" # Run `kitty`.
         ",F1,exec,kitty" # Run `kitty`.
+
         "$mod,P,exec,hyprlock" # Lock.
         "ALT,SPACE,exec,wofi --show drun" # Run `wofi`.
-        ", Print,exec,flameshot gui" # Run screenshot.
+        "$mod,S,exec,hyprshot -z -m region" # Run `hyprshot`.
+        ",Print,exec,hyprshot -z -m region" # Run `hyprshot`.
+        "$mod,N,exec,neovide" # Run `Neovide`.
+        "$mod,E,exec,nemo" # Run `Nemo`.
 
         "$mod,Q,killactive" # Kill current process.
-        "$mod,SPACE,togglefloating" # Toggle floating mode.
 
         # Move focus.
         "$mod,H,movefocus,l"
@@ -45,25 +53,35 @@ in {
         "$mod,9,workspace,9"
 
         # Move the window to workspace.
-        "$modALT,L,movetoworkspace,+1"
-        "$modALT,H,movetoworkspace,-1"
+        "$modCTRL,L,movetoworkspace,+1"
+        "$modCTRL,H,movetoworkspace,-1"
 
         # Make the window full screen.
         "$mod,F,fullscreen,0"
+
+        # Toggle float window.
+        "$mod,SPACE,togglefloating"
       ];
 
       bindm = [
         "$mod,mouse:272,movewindow" # Move window.
+        "$mod, mouse:273,resizewindow" # Resize window.
       ];
-
-      input = {
-        kb_options = "menu:escape"; # Map `menu` to `esc`.
-      };
 
       exec-once = [
         "waybar"
-        "fcitx5 -d -r"
+        "fcitx5 -d --replace"
         "fcitx5-remote -r"
+      ];
+
+      decoration = {
+        blur = {
+          enabled = true;
+        };
+      };
+
+      windowrule = [
+        "pseudo,class:*fcitx*"
       ];
     };
   };

@@ -1,14 +1,10 @@
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}: {
+{pkgs, ...}: {
   programs.zsh = {
     enable = true;
 
     autocd = true;
     enableCompletion = true;
+
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
 
@@ -31,8 +27,6 @@
 
       set -o vi
       bindkey -M viins '^H' backward-kill-word
-
-      fastfetch
     '';
 
     history.size = 10000;

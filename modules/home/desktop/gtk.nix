@@ -9,10 +9,12 @@
 
     gtk3.extraConfig = {
       gtk-application-prefer-dark-theme = true;
+      gtk-im-module = "fcitx";
     };
 
     gtk4.extraConfig = {
       gtk-application-prefer-dark-theme = true;
+      gtk-im-module = "fcitx";
     };
 
     iconTheme = {
