@@ -79,6 +79,10 @@ in {
           enabled = true;
         };
       };
+
+      windowrule = [
+        "pseudo,class:*fcitx*"
+      ];
     };
   };
 }
