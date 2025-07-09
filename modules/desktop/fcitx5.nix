@@ -9,7 +9,6 @@
         fcitx5-rime
         libsForQt5.fcitx5-configtool
         libsForQt5.fcitx5-qt
-        libsForQt5.fcitx5-with-addons
       ];
 
       waylandFrontend = true;
