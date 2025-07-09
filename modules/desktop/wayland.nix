@@ -7,6 +7,7 @@
     GDK_BACKEND = "wayland";
     GTK_USE_PORTAL = 1;
     MOZ_ENABLE_WAYLAND = 1;
+    MOZ_WEBRENDER = 1;
     NIXOS_OZONE_WL = 1;
     QT_AUTO_SCREEN_SCALE_FACTOR = 1;
     QT_QPA_PLATFORM = "wayland";
@@ -14,6 +15,7 @@
     SDL_HINT_VIDEODRIVER = "wayland";
     XDG_SESSION_TYPE = "wayland";
     SDL_VIDEODRIVER = "wayland";
+    XDG_CURRENT_DESKTOP = "hyprland";
 
     GTK_IM_MODULE = "fcitx";
     QT_IM_MODULE = "fcitx";
@@ -22,5 +24,6 @@
     INPUT_METHOD = "fcitx";
     GLFW_IM_MODULE = "fcitx";
     WLR_NO_HARDWARE_CURSORS = 1;
+    IMSETTINGS_MODULE = "fcitx";
   };
 }
