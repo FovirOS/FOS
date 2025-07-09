@@ -1,4 +1,8 @@
-{hostName, ...}: let
+{
+  hostName,
+  config,
+  ...
+}: let
   monitor_name =
     if hostName == "qemu"
     then "Virtual-1"
@@ -61,6 +65,9 @@ in {
 
         # Toggle float window.
         "$mod,SPACE,togglefloating"
+
+        "ALT,T,exec,${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
+        "ALT_SHIFT,T,exec,${config.home.homeDirectory}/.local/bin/enable_touchpad.sh"
       ];
 
       bindm = [
@@ -70,7 +77,8 @@ in {
 
       exec-once = [
         "waybar"
-        "fcitx5 -d --replace"
+        "fcitx5-remote -r"
+        "fcitx5 -d --replace &"
         "fcitx5-remote -r"
       ];
 
@@ -84,5 +92,25 @@ in {
         "pseudo,class:*fcitx*"
       ];
     };
+  };
+
+  home.file.".local/bin/disable_touchpad.sh" = {
+    text = ''
+      #!/usr/bin/env bash
+      hyprctl keyword "device[uniw0001:00-093a:0274-touchpad]:enabled" false
+      notify-send "Touchpad Disabled!"
+    '';
+
+    executable = true;
+  };
+
+  home.file.".local/bin/enable_touchpad.sh" = {
+    text = ''
+      #!/usr/bin/env bash
+      hyprctl keyword "device[uniw0001:00-093a:0274-touchpad]:enabled" true
+      notify-send "Touchpad Enabled!"
+    '';
+
+    executable = true;
   };
 }
