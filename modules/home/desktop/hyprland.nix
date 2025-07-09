@@ -81,7 +81,8 @@ in {
         "fcitx5 -d --replace &"
         "fcitx5-remote -r"
 
-        "exec ${config.home.homeDirectory}/.local/bin/enable_touchpad.sh"
+        "exec ${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
+        "nekoray"
       ];
 
       decoration = {
