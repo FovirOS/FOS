@@ -2,6 +2,8 @@
   monitor_name =
     if hostName == "qemu"
     then "Virtual-1"
+    else if hostName == "laptop"
+    then "eDP-1"
     else "none";
 in {
   wayland.windowManager.hyprland = {
@@ -15,7 +17,7 @@ in {
     };
 
     settings = {
-      monitor = "${monitor_name},1920x1080,0x0,1";
+      monitor = "${monitor_name},preferred,auto,1";
 
       dwindle = {
         pseudotile = true;
