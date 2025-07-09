@@ -5,6 +5,7 @@
     CLUTTER_BACKEND = "wayland";
     ELECTRON_OZONE_PLATFORM_HINT = "wayland";
     GDK_BACKEND = "wayland";
+    GDK_SCALE = 1;
     GTK_USE_PORTAL = 1;
     MOZ_ENABLE_WAYLAND = 1;
     MOZ_WEBRENDER = 1;
