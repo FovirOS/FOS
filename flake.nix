@@ -43,13 +43,6 @@
           inputs.home-manager.nixosModules.home-manager
         ];
       };
-
-    nixpkgs.config.allowUnfreePredicate = pkg:
-      builtins.elem (lib.getName pkg) [
-        "nvidia-x11"
-        "nvidia-settings"
-        "nvidia-persistenced"
-      ];
   in {
     nixosConfigurations = builtins.listToAttrs (builtins.map (name: {
         inherit name;
