@@ -2,6 +2,7 @@
   pkgs,
   config,
   inputs,
+  lib,
   ...
 }: {
   system.stateVersion = "25.05";
@@ -40,6 +41,8 @@
 
   imports = [
     ./disko.nix # Import the `disko` configuration.
+    ./nvidia.nix
+
     ../../modules/services/desktop # Import the `desktop` services.
     ../../hardware-configuration.nix # Import the hardware configurations.
     ../../modules/system # Import `system` module.
@@ -72,4 +75,11 @@
       wheelNeedsPassword = true;
     };
   };
+
+  nixpkgs.config.allowUnfreePredicate = pkg:
+    builtins.elem (lib.getName pkg) [
+      "nvidia-x11"
+      "nvidia-settings"
+      "nvidia-persistenced"
+    ];
 }
