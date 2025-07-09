@@ -19,10 +19,6 @@ in {
     settings = {
       monitor = "${monitor_name},preferred,auto,1";
 
-      dwindle = {
-        pseudotile = true;
-      };
-
       "$mod" = "SUPER";
       bind = [
         "$mod,T,exec,kitty" # Run `kitty`.
