@@ -2,6 +2,7 @@
   pkgs,
   config,
   inputs,
+  lib,
   ...
 }: {
   system.stateVersion = "25.05";
@@ -74,4 +75,11 @@
       wheelNeedsPassword = true;
     };
   };
+
+  nixpkgs.config.allowUnfreePredicate = pkg:
+    builtins.elem (lib.getName pkg) [
+      "nvidia-x11"
+      "nvidia-settings"
+      "nvidia-persistenced"
+    ];
 }
