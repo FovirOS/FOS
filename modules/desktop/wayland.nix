@@ -15,7 +15,6 @@
     SDL_HINT_VIDEODRIVER = "wayland";
     XDG_SESSION_TYPE = "wayland";
     SDL_VIDEODRIVER = "wayland";
-    XDG_CURRENT_DESKTOP = "hyprland";
 
     GTK_IM_MODULE = "fcitx";
     QT_IM_MODULE = "fcitx";
