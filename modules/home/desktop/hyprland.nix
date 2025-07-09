@@ -91,7 +91,7 @@ in {
       };
 
       windowrule = [
-        "pseudo,class:*fcitx*"
+        "pseudo,class:^fcitx*$"
       ];
     };
   };
