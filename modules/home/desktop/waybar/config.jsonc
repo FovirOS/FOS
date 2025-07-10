@@ -50,13 +50,13 @@
   },
   "custom/reboot": {
     "format": "<span color='#FFD700'>  </span>",
-    "on-click": "systemctl reboot",
+    "on-click": "reboot",
     "tooltip": true,
     "tooltip-format": "Reboot"
   },
   "custom/power": {
     "format": "<span color='#FF4040'>  </span>",
-    "on-click": "systemctl poweroff",
+    "on-click": "poweroff",
     "tooltip": true,
     "tooltip-format": "Poweroff"
   },
