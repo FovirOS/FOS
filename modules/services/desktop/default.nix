@@ -6,5 +6,6 @@
     ./dbus.nix
     ./pipewire.nix
     ./bluetooth.nix
+    ./tlp.nix
   ];
 }
