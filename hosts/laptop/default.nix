@@ -42,6 +42,7 @@
   imports = [
     ./disko.nix # Import the `disko` configuration.
     ./nvidia.nix
+    ./amd.nix
 
     ../../modules/services/desktop # Import the `desktop` services.
     ../../hardware-configuration.nix # Import the hardware configurations.
