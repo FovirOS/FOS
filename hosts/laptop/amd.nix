@@ -1,6 +1,7 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   environment.systemPackages = with pkgs; [
-    "microcode-amd"
+    microcode-amd
   ];
 
   hardware.cpu.amd = {
