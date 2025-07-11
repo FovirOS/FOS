@@ -12,7 +12,7 @@
 
   home.file.".config/fcitx5/conf/rime.conf".text = ''
     # Preedit Mode
-    PreeditMode="Do not show"
+    PreeditMode="Composing text"
     # Shared Input State
     InputState=All
     # Fix embedded preedit cursor at the beginning of the preedit
