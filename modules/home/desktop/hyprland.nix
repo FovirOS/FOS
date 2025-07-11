@@ -68,6 +68,11 @@ in {
 
         "ALT,T,exec,${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
         "ALT_SHIFT,T,exec,${config.home.homeDirectory}/.local/bin/enable_touchpad.sh"
+
+        # Key binds of `master` layout.
+        "$mod,RETURN,layoutmsg,swapwithmaster master"
+        "ALT,TAB,layoutmsg, cyclenext"
+        "ALT_SHIFT,TAB,layoutmsg, cycleprev"
       ];
 
       bindm = [
@@ -86,9 +91,26 @@ in {
         "keepassxc"
       ];
 
+      general = {
+        gaps_in = 3;
+        gaps_out = 0;
+        layout = "master";
+      };
+
+      master = {
+        mfact = 0.55;
+      };
+
       decoration = {
+        rounding = 16;
+        rounding_power = 4.0;
+
         blur = {
           enabled = true;
+        };
+
+        shadow = {
+          enabled = false;
         };
       };
 
