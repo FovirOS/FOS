@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./prettier.nix
     ./python
     ./remmina.nix
     ./git.nix
