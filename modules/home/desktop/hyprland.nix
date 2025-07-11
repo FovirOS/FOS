@@ -1,6 +1,7 @@
 {
   hostName,
   config,
+  pkgs,
   ...
 }: let
   monitor_name =
@@ -19,6 +20,10 @@ in {
       enable = true;
       variables = ["--all"];
     };
+
+    plugins = [
+      pkgs.hyprlandPlugins.hy3
+    ];
 
     settings = {
       monitor = "${monitor_name},preferred,auto,1";
@@ -89,6 +94,7 @@ in {
       general = {
         gaps_in = 3;
         gaps_out = 0;
+        layout = "hy3";
       };
 
       decoration = {
