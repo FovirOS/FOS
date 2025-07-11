@@ -87,13 +87,20 @@ in {
       ];
 
       general = {
-        gaps_in = 0;
+        gaps_in = 3;
         gaps_out = 0;
       };
 
       decoration = {
+        rounding = 16;
+        rounding_power = 4.0;
+
         blur = {
           enabled = true;
+        };
+
+        shadow = {
+          enabled = false;
         };
       };
 
