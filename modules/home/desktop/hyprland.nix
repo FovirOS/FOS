@@ -66,6 +66,7 @@ in {
         # Toggle float window.
         "$mod,SPACE,togglefloating"
 
+        # Toupad operations.
         "ALT,T,exec,${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
         "ALT_SHIFT,T,exec,${config.home.homeDirectory}/.local/bin/enable_touchpad.sh"
 
