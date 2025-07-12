@@ -74,6 +74,10 @@ in {
         "$mod,RETURN,layoutmsg,swapwithmaster master"
         "ALT,TAB,layoutmsg, cyclenext"
         "ALT_SHIFT,TAB,layoutmsg, cycleprev"
+
+        "CTRL_ALT,SPACE,exec,playerctl play-pause"
+        "CTRL_ALT,L,exec,playerctl next"
+        "CTRL_ALT,H,exec,playerctl previous"
       ];
 
       bindm = [
