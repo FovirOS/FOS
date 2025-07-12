@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./nodejs
     ./live-server.nix
     ./prettier.nix
     ./python
