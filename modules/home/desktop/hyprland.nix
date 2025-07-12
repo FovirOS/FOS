@@ -75,6 +75,7 @@ in {
         "ALT,TAB,layoutmsg, cyclenext"
         "ALT_SHIFT,TAB,layoutmsg, cycleprev"
 
+        # Key binds of `playerctl`.
         "CTRL_ALT,SPACE,exec,playerctl play-pause"
         "CTRL_ALT,L,exec,playerctl next"
         "CTRL_ALT,H,exec,playerctl previous"
