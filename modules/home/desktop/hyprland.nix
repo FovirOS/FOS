@@ -66,6 +66,7 @@ in {
         # Toggle float window.
         "$mod,SPACE,togglefloating"
 
+        # Toupad operations.
         "ALT,T,exec,${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
         "ALT_SHIFT,T,exec,${config.home.homeDirectory}/.local/bin/enable_touchpad.sh"
 
@@ -73,6 +74,11 @@ in {
         "$mod,RETURN,layoutmsg,swapwithmaster master"
         "ALT,TAB,layoutmsg, cyclenext"
         "ALT_SHIFT,TAB,layoutmsg, cycleprev"
+
+        # Key binds of `playerctl`.
+        "CTRL_ALT,SPACE,exec,playerctl play-pause"
+        "CTRL_ALT,L,exec,playerctl next"
+        "CTRL_ALT,H,exec,playerctl previous"
       ];
 
       bindm = [
