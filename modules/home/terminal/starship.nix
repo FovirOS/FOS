@@ -4,9 +4,6 @@
   };
 
   home.file.".config/starship.toml".text = ''
-    # Get editor completions based on the config schema
-    "$schema" = 'https://starship.rs/config-schema.json'
-
     # Sets user-defined palette
     # Palettes must be defined _after_ this line
     palette = "catppuccin_mocha"
@@ -16,7 +13,6 @@
     # Note the use of Catppuccin color 'peach'
     success_symbol = "[[󰄛](green) ❯](peach)"
     error_symbol = "[[󰄛](red) ❯](peach)"
-    vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
 
     [git_branch]
     style = "bold mauve"
