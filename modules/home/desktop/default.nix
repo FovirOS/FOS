@@ -10,6 +10,5 @@
     ./qt
     ./hyprlock.nix
     ./wl-clipboard-rs.nix
-    ./swaync.nix
   ];
 }
