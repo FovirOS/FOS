@@ -1,5 +1,6 @@
 {
   imports = [
+    ./starship.nix
     ./rsync.nix
     ./fastfetch
     ./btop.nix
