@@ -88,6 +88,8 @@
 
       Preferences = {
         "browser.ctrlTab.sortByRecentlyUsed" = true;
+        "browser.urlbar.trimURLs" = false;
+        "browser.urlbar.trimHttps" = false;
       };
     };
   };
