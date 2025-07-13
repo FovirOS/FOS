@@ -94,7 +94,7 @@ in {
 
         "exec ${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
         "nekoray"
-        "keepassxc"
+        "keepassxc --minimized"
       ];
 
       general = {
