@@ -1,10 +1,20 @@
-{ ... }:
-{
+{pkgs, ...}: {
   services.hyprpaper = {
     enable = true;
 
     settings = {
       ipc = "on";
+    };
+  };
+
+  home.file."Pictures/Wallpaper" = {
+    force = true;
+    recursive = true;
+    source = pkgs.fetchFromGitHub {
+      hash = "sha256-2yMW967YwsgZiZ/EK6EXqnFmLtRsKt0RETLV5pP8K3U=";
+      owner = "FovirOS";
+      repo = "wallpaper";
+      rev = "a1205866ed5be74e22019ad9cf6801e5655ace65";
     };
   };
 
