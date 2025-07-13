@@ -101,6 +101,7 @@
         "browser.tabs.unloadOnLowMemory" = false;
         "browser.tabs.unloadTabInContextMenu" = false;
         "browser.tabs.fadeOutExplicitlyUnloadedTabs" = false;
+        "browser.startup.page" = 2;
       };
     };
   };
