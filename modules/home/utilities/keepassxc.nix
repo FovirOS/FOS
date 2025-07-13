@@ -7,6 +7,8 @@
         MinimizeAfterUnlock = false;
       };
 
+      Browser.Enabled = true;
+
       GUI = {
         MinimizeOnClose = true;
         MinimizeToTray = true;
