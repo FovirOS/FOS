@@ -2,14 +2,17 @@
   hostName,
   config,
   ...
-}: let
+}:
+let
   monitor_name =
-    if hostName == "qemu"
-    then "Virtual-1"
-    else if hostName == "laptop"
-    then "eDP-1"
-    else "none";
-in {
+    if hostName == "qemu" then
+      "Virtual-1"
+    else if hostName == "laptop" then
+      "eDP-1"
+    else
+      "none";
+in
+{
   wayland.windowManager.hyprland = {
     enable = true;
 
@@ -17,7 +20,7 @@ in {
 
     systemd = {
       enable = true;
-      variables = ["--all"];
+      variables = [ "--all" ];
     };
 
     settings = {
@@ -46,6 +49,8 @@ in {
         # Switch workspace.
         "$mod_SHIFT,H,workspace,e-1"
         "$mod_SHIFT,L,workspace,e+1"
+        "$mod_SHIFT,H,exec,${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
+        "$mod_SHIFT,L,exec,${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
         "$mod,1,workspace,1"
         "$mod,2,workspace,2"
         "$mod,3,workspace,3"
@@ -92,6 +97,7 @@ in {
         "fcitx5 -d --replace &"
         "fcitx5-remote -r"
 
+        "exec ${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
         "exec ${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
         "nekoray &"
         "keepassxc --minimized"
