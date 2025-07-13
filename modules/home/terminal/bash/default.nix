@@ -26,6 +26,7 @@
       gp = "git push --all";
       gd = "git diff";
       gb = "git branch";
+      gm = "git merge";
 
       ".." = "cd ../";
       "..." = "cd ../..";
