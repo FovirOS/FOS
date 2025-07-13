@@ -39,6 +39,7 @@
 
       extraConfig = {
         XDG_PROJECTS_DIR = "$HOME/Projects";
+        XDG_SCREENSHOTS_DIR = "${config.xdg.userDirs.pictures}/Screenshots";
       };
     };
 
