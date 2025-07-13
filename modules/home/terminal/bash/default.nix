@@ -1,12 +1,13 @@
 {...}: {
   programs.bash = {
-    completion = {
-      enable = true;
-    };
+    enable = true;
 
-    promptInit = ''
+    enableCompletion = true;
+
+    initExtra = ''
       set -o vi
       bind '"\C-h": backward-kill-word'
+      bind 'set completion-ignore-case on'
       eval "$(starship init bash)"
     '';
 
@@ -20,7 +21,19 @@
 
       cat = "bat"; # Use `bat` instead of `cat`.
 
+      ga = "git add";
+      gaa = "git add --all";
+      gc = "git commit --verbose";
       gs = "git switch";
+      gp = "git push --all";
+      gd = "git diff";
+      gb = "git branch";
+
+      "-" = "cd -";
+      "..." = "../..";
+      "...." = "../../..";
+      "....." = "../../../..";
+      "......" = "../../../../..";
     };
   };
 }
