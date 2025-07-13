@@ -5,7 +5,6 @@
     ./rsync.nix
     ./fastfetch
     ./btop.nix
-    ./zsh
     ./eza.nix
     ./yazi.nix
     ./dust.nix
