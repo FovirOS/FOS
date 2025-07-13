@@ -102,6 +102,10 @@ in {
         gaps_in = 3;
         gaps_out = 0;
         layout = "master";
+
+        border_size = 3;
+        "col.active_border" = "0xfff38ba8 0xffcba6f7 0xfff5c2e7 0xfff2cdcd";
+        "col.inactive_border" = "0x00ffffff";
       };
 
       master = {
