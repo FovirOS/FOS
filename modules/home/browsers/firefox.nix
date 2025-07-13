@@ -26,6 +26,8 @@
       OfferToSaveLogins = false;
       OfferToSaveLoginsDefault = false;
 
+      # Get ID with:
+      # nix run github:tupakkatapa/mozid -- <URL>
       ExtensionSettings = {
         "*" = {
           installation_mode = "blocked";
@@ -85,6 +87,7 @@
           installation_mode = "force_installed";
         };
 
+        # Simple Tab Groups
         "simple-tab-groups@drive4ik" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/simple-tab-groups@drive4ik/latest.xpi";
           installation_mode = "force_installed";
