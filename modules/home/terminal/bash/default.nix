@@ -19,8 +19,6 @@
 
       open = "xdg-open"; # Open.
 
-      cat = "bat"; # Use `bat` instead of `cat`.
-
       ga = "git add";
       gaa = "git add --all";
       gc = "git commit --verbose";
