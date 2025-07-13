@@ -15,7 +15,7 @@
       #!/usr/bin/env bash
 
       WALLPAPER_DIR="$HOME/Pictures/Wallpaper/"
-      WALLPAPER=$(ls "$WALLPAPER_DIR" | shuf -n 1)
+      WALLPAPER="$WALLPAPER_DIR$(ls "$WALLPAPER_DIR" | shuf -n 1)"
 
       hyprctl hyprpaper reload ,"$WALLPAPER"
     '';
