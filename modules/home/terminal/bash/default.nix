@@ -1,4 +1,9 @@
 {pkgs, ...}: {
+  home.packages = with pkgs; [
+    bash-completion
+    nix-bash-completions
+  ];
+
   programs.bash = {
     enable = true;
 
