@@ -1,5 +1,6 @@
 {
   imports = [
+    ./bash
     ./starship.nix
     ./rsync.nix
     ./fastfetch
