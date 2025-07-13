@@ -4,9 +4,6 @@
   };
 
   home.file.".config/starship.toml".text = ''
-    # Get editor completions based on the config schema
-    "$schema" = 'https://starship.rs/config-schema.json'
-
     # Sets user-defined palette
     # Palettes must be defined _after_ this line
     palette = "catppuccin_mocha"
