@@ -2,17 +2,14 @@
   hostName,
   config,
   ...
-}:
-let
+}: let
   monitor_name =
-    if hostName == "qemu" then
-      "Virtual-1"
-    else if hostName == "laptop" then
-      "eDP-1"
-    else
-      "none";
-in
-{
+    if hostName == "qemu"
+    then "Virtual-1"
+    else if hostName == "laptop"
+    then "eDP-1"
+    else "none";
+in {
   wayland.windowManager.hyprland = {
     enable = true;
 
@@ -20,7 +17,7 @@ in
 
     systemd = {
       enable = true;
-      variables = [ "--all" ];
+      variables = ["--all"];
     };
 
     settings = {
@@ -92,7 +89,7 @@ in
       ];
 
       exec-once = [
-        "waybar"
+        "hyprpanel"
         "fcitx5-remote -r"
         "fcitx5 -d --replace &"
         "fcitx5-remote -r"
