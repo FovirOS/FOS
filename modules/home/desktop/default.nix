@@ -1,5 +1,6 @@
 {
   imports = [
+    ./hyprpaper.nix
     ./hyprland.nix
     ./wofi.nix
     ./waybar
