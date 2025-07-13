@@ -10,6 +10,7 @@
       Browser.Enabled = true;
 
       GUI = {
+        ApplicationTheme = "dark";
         MinimizeOnClose = true;
         MinimizeToTray = true;
         ShowTrayIcon = true;
