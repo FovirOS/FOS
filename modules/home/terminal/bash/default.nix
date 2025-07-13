@@ -7,6 +7,7 @@
     initExtra = ''
       set -o vi
       bind '"\C-h": backward-kill-word'
+      bind 'set completion-ignore-case on'
       eval "$(starship init bash)"
     '';
 
