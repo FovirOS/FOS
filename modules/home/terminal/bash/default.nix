@@ -1,10 +1,10 @@
 {...}: {
   programs.bash = {
-    completion = {
-      enable = true;
-    };
+    enable = true;
 
-    promptInit = ''
+    enableCompletion = true;
+
+    initExtra = ''
       set -o vi
       bind '"\C-h": backward-kill-word'
       eval "$(starship init bash)"
