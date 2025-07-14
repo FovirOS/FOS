@@ -92,10 +92,10 @@
     mkdir -p ${config.home.homeDirectory}/.local/bin
   '';
 
-  home.file.".local/bin/run-nemo" = {
+  home.file.".local/bin/run-nemo.sh" = {
     text = ''
       #!/bin/sh
-      nemo "$@"
+      ( nohup nemo . >/dev/null 2>&1 & ) >/dev/null 2>&1
     '';
 
     executable = true;
