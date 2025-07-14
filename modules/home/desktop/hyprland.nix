@@ -94,6 +94,8 @@ in {
         "fcitx5 -d --replace &"
         "fcitx5-remote -r"
 
+        "hyprpaper"
+
         "bash -c ${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
         "bash -c ${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
         "nekoray &"
