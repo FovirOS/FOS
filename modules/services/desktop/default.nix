@@ -1,5 +1,6 @@
 {
   imports = [
+    ./upower.nix
     ./xserver.nix
     ./keyd.nix
     ./regreet.nix
