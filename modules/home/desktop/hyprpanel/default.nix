@@ -13,4 +13,8 @@
     force = true;
     source = ./config.json;
   };
+
+  home.file.".config/hyprpanel/profile.png" = {
+    source = ./profile.png;
+  };
 }
