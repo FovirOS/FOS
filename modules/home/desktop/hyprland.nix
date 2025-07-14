@@ -116,7 +116,7 @@ in {
       };
 
       decoration = let
-        OPACITY = 0.8;
+        OPACITY = 0.9;
       in {
         rounding = 16;
         rounding_power = 4.0;
