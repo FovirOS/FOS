@@ -6,7 +6,7 @@
   monitor_name =
     if hostName == "qemu"
     then "Virtual-1"
-    else if hostName == "laptop"
+    else if hostName == "FovirOS"
     then "eDP-1"
     else "none";
 in {
@@ -21,7 +21,7 @@ in {
     };
 
     settings = {
-      monitor = "${monitor_name},preferred,auto,1";
+      monitor = "${monitor_name},preferred,auto,auto";
 
       "$mod" = "SUPER";
       bind = [
@@ -94,8 +94,9 @@ in {
         "fcitx5 -d --replace &"
         "fcitx5-remote -r"
 
-        "exec ${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
-        "exec ${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
+        "hyprpaper"
+
+        "bash -c ${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
         "nekoray &"
         "keepassxc --minimized"
         "strawberry &"

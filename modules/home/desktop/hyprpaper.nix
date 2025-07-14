@@ -1,9 +1,25 @@
-{pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
+  home.packages = with pkgs; [
+    hyprpaper
+  ];
+
   services.hyprpaper = {
     enable = true;
 
-    settings = {
+    settings = let
+      default_wallpaper = "${config.xdg.userDirs.pictures}/Wallpaper/0.png";
+    in {
       ipc = "on";
+
+      preload = [
+        default_wallpaper
+      ];
+
+      wallpaper = ",${default_wallpaper}";
     };
   };
 
