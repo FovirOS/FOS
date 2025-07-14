@@ -21,7 +21,7 @@ in {
     };
 
     settings = {
-      monitor = "${monitor_name},highres,auto,1";
+      monitor = "${monitor_name},preferred,auto,auto";
 
       "$mod" = "SUPER";
       bind = [
@@ -94,8 +94,8 @@ in {
         "fcitx5 -d --replace &"
         "fcitx5-remote -r"
 
-        "exec ${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
-        "exec ${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
+        "bash -c ${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
+        "bash -c ${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
         "nekoray &"
         "keepassxc --minimized"
         "strawberry &"
