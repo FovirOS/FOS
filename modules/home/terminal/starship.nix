@@ -20,6 +20,7 @@
     [directory]
     truncation_length = 4
     truncate_to_repo= false
+    truncation_symbol = '…/'
     style = "bold lavender"
 
     # Palette definitions
