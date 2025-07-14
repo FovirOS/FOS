@@ -6,7 +6,7 @@
   monitor_name =
     if hostName == "qemu"
     then "Virtual-1"
-    else if hostName == "laptop"
+    else if hostName == "FovirOS"
     then "eDP-1"
     else "none";
 in {
@@ -21,7 +21,7 @@ in {
     };
 
     settings = {
-      monitor = "${monitor_name},preferred,auto,1";
+      monitor = "${monitor_name},highres,auto,1";
 
       "$mod" = "SUPER";
       bind = [
