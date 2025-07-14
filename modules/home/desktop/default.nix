@@ -1,6 +1,6 @@
 {
   imports = [
-    ./hyprpanel.nix
+    ./hyprpanel
     ./hyprpaper.nix
     ./hyprland.nix
     ./wofi.nix
