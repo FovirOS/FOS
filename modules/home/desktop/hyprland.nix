@@ -21,7 +21,7 @@ in {
     };
 
     settings = {
-      monitor = "${monitor_name},highres,auto,1";
+      monitor = "${monitor_name},preferred,auto,auto";
 
       "$mod" = "SUPER";
       bind = [
