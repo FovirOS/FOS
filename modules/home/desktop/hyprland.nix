@@ -115,9 +115,15 @@ in {
         mfact = 0.55;
       };
 
-      decoration = {
+      decoration = let
+        OPACITY = 0.8;
+      in {
         rounding = 16;
         rounding_power = 4.0;
+
+        active_opacity = OPACITY;
+        inactive_opacity = OPACITY;
+        fullscreen_opacity = OPACITY;
 
         blur = {
           enabled = true;
