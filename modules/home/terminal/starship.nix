@@ -19,6 +19,7 @@
 
     [directory]
     truncation_length = 4
+    truncate_to_repo= false
     style = "bold lavender"
 
     # Palette definitions
