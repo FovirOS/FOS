@@ -5,5 +5,6 @@
     ./rime.nix
     ./hyprshot.nix
     ./nemo.nix
+    ./localsend.nix
   ];
 }
