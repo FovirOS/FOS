@@ -90,7 +90,8 @@
       "left": [
         "dashboard",
         "workspaces",
-        "windowtitle"
+        "windowtitle",
+        "cava"
       ],
       "middle": [
         "media"
@@ -514,5 +515,10 @@
   "theme.bar.buttons.modules.microphone.background": "#242438",
   "theme.bar.buttons.modules.microphone.text": "#a6e3a1",
   "theme.bar.buttons.modules.microphone.icon": "#a6e3a1",
-  "theme.bar.buttons.modules.microphone.icon_background": "#242438"
+  "theme.bar.buttons.modules.microphone.icon_background": "#242438",
+  "bar.customModules.cava.bars": 16,
+  "bar.customModules.cava.showIcon": false,
+  "bar.customModules.cava.framerate": 120,
+  "bar.customModules.cava.stereo": true,
+  "bar.customModules.cava.showActiveOnly": true
 }
