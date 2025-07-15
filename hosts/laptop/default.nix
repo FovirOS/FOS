@@ -48,6 +48,7 @@
     ../../hardware-configuration.nix # Import the hardware configurations.
     ../../modules/system # Import `system` module.
     ../../modules/desktop # Import `desktop` module.
+    ../../modules/software # Import `software` module.
   ];
 
   networking = {
