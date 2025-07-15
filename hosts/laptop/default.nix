@@ -48,6 +48,7 @@
     ../../hardware-configuration.nix # Import the hardware configurations.
     ../../modules/system # Import `system` module.
     ../../modules/desktop # Import `desktop` module.
+    ../../modules/software # Import `software` module.
   ];
 
   networking = {
@@ -58,7 +59,7 @@
   users.users = {
     fovir = {
       isNormalUser = true;
-      extraGroups = ["wheel" "networkmanager"];
+      extraGroups = ["wheel" "networkmanager" "wireshark"];
       hashedPassword = "$6$Z3tVvcb3O79M9wVa$eQsKKb4DbQMqolBLpy8bpNr1XFdl.lg4ek649YfWQ4nxW.EOGUdvKV4txOQH/RfozyPJwMu2o335K./TEF/gg.";
       shell = pkgs.bash;
       ignoreShellProgramCheck = true;
