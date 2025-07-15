@@ -1,6 +1,5 @@
-{...}: {
-  programs.localsend = {
-    enable = true;
-    openFirewall = true;
-  };
+{pkgs, ...}: {
+  home.packages = with pkgs; [
+    localsend
+  ];
 }
