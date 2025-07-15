@@ -43,6 +43,8 @@
   "menus.transition": "crossfade",
   "theme.bar.border.location": "none",
   "bar.battery.hideLabelWhenFull": false,
+  "bar.battery.scrollUp": "brightnessctl set +5%",
+  "bar.battery.scrollDown": "brightnessctl set 5%-",
   "bar.clock.format": "%a %b %d  %I:%M:%S %p",
   "bar.media.show_active_only": false,
   "bar.media.middleClick": "playerctl play-pause",
