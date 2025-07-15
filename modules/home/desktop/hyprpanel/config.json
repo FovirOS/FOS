@@ -45,6 +45,7 @@
   "bar.battery.hideLabelWhenFull": false,
   "bar.clock.format": "%a %b %d  %I:%M:%S %p",
   "bar.media.show_active_only": false,
+  "bar.media.middleClick": "playerctl play-pause",
   "bar.notifications.show_total": true,
   "bar.notifications.hideCountWhenZero": false,
   "notifications.showActionsOnHover": true,
