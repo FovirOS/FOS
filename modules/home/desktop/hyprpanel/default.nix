@@ -7,6 +7,7 @@
 
   home.packages = with pkgs; [
     libnotify
+    cava
   ];
 
   home.file.".config/hyprpanel/config.json" = {
