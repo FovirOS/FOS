@@ -44,10 +44,11 @@ in {
         "$mod,L,movefocus,r"
 
         # Switch workspace.
-        "$mod_SHIFT,H,workspace,e-1"
-        "$mod_SHIFT,L,workspace,e+1"
-        "$mod_SHIFT,H,exec,${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
-        "$mod_SHIFT,L,exec,${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
+        "$mod,period,workspace,e+1"
+        "$mod,comma,workspace,e-1"
+        "$mod,period,exec,${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
+        "$mod,comma,exec,${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
+
         "$mod,1,workspace,1"
         "$mod,2,workspace,2"
         "$mod,3,workspace,3"
@@ -59,8 +60,8 @@ in {
         "$mod,9,workspace,9"
 
         # Move the window to workspace.
-        "$modCTRL,L,movetoworkspace,+1"
-        "$modCTRL,H,movetoworkspace,-1"
+        "$mod,bracketright,movetoworkspace,+1"
+        "$mod,bracketleft,movetoworkspace,-1"
 
         # Make the window full screen.
         "$mod,F,fullscreen,0"
