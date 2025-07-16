@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{...}: {
   programs.zsh = {
     enable = true;
 
@@ -7,6 +7,8 @@
 
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
+
+    defaultKeymap = "viins";
 
     shellAliases = {
       ls = "eza -alF --color=always --group --group-directories-first --icons=always"; # Preferred listing.
@@ -22,8 +24,7 @@
     };
 
     initContent = ''
-      source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
-      source $HOME/.p10k.zsh
+      eval "$(starship init zsh)"
 
       set -o vi
       bindkey -M viins '^H' backward-kill-word
