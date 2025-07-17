@@ -18,13 +18,14 @@
       };
 
       main = {
-        font = "JetBrainsMono Nerd Font Mono";
+        font = "JetBrainsMono Nerd Font Mono:size=14";
         icon-theme = "BeautyLine";
         icons-enabled = true;
         delayed-filter-ms = 0;
         delayed-filter-limit = 0;
-        lines = 10;
+        lines = 15;
         sort-result = "yes";
+        width = 60;
       };
     };
   };
