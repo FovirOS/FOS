@@ -1,6 +1,7 @@
 {...}: {
   programs.fuzzel = {
     enable = true;
+<<<<<<< HEAD
 
     settings = {
       colors = {
