@@ -29,7 +29,7 @@ in {
         ",F1,exec,kitty" # Run `kitty`.
 
         "$mod,P,exec,hyprlock" # Lock.
-        "ALT,SPACE,exec,wofi --show drun" # Run `wofi`.
+        "ALT,SPACE,exec,fuzzel" # Run `fuzzel`.
         "$mod,S,exec,hyprshot -z -m region" # Run `hyprshot`.
         ",Print,exec,hyprshot -z -m region" # Run `hyprshot`.
         "$mod,N,exec,neovide" # Run `Neovide`.
