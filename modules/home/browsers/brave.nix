@@ -9,11 +9,6 @@
       "--password-store=basic"
     ];
 
-    extensions = [
-      "dbepggeogbaibhgnhhndojpepiihcmeb" # Vimium
-      "cjpalhdlnbpafiamejdnhcphjbkeiagm" # uBlock Origin
-    ];
-
     package = pkgs.brave;
   };
 }
