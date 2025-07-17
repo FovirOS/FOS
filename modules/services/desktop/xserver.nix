@@ -4,7 +4,6 @@
 
     videoDrivers = [
       "amdgpu"
-      "nvidia"
     ];
   };
 }
