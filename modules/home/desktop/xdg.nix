@@ -7,7 +7,7 @@
   xdg = {
     enable = true;
 
-    configHome = "~/.config";
+    configHome = "${config.home.homeDirectory}/.config";
 
     portal = {
       enable = true;
