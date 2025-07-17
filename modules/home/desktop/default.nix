@@ -4,7 +4,6 @@
     ./hyprpanel
     ./hyprpaper.nix
     ./hyprland.nix
-    ./wofi.nix
     ./gtk.nix
     ./xdg.nix
     ./qt
