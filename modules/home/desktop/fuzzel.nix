@@ -21,7 +21,6 @@
       icon-theme = "BeautyLine";
       icons-enabled = true;
       delayed-filter-ms = 0;
-      delayed-filter-limit = 0;
       lines = 10;
       sort-result = "yes";
     };
