@@ -97,9 +97,10 @@ in {
         "hyprpaper"
 
         "bash -c ${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
-        "nekoray &"
+        "nekoray"
         "keepassxc --minimized"
-        "strawberry &"
+        "strawberry"
+        "thunderbird"
       ];
 
       general = {
