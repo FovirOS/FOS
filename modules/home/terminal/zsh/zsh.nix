@@ -18,8 +18,6 @@
 
       open = "xdg-open"; # Open.
 
-      cat = "bat"; # Use `bat` instead of `cat`.
-
       gp = "git push --all";
       gs = "git switch";
     };
