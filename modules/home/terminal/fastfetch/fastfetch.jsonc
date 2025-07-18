@@ -3,7 +3,7 @@
     "separator": " ",
   },
   "logo": {
-    "source": "../../../../logo.txt",
+    "source": "./logo.txt",
     "padding": {
       "top": 0,
     },
