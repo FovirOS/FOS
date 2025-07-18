@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   programs.hyprpanel = {
     enable = true;
 
@@ -10,12 +14,12 @@
     cava
   ];
 
-  home.file.".config/hyprpanel/config.json" = {
+  home.file."${config.xdg.configHome}/hyprpanel/config.json" = {
     force = true;
     source = ./config.json;
   };
 
-  home.file.".config/hyprpanel/profile.png" = {
+  home.file."${config.xdg.configHome}/hyprpanel/profile.png" = {
     source = ./profile.png;
   };
 }

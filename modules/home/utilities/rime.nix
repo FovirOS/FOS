@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   home.file.".local/share/fcitx5/rime" = {
     force = true;
     recursive = true;
@@ -10,7 +14,7 @@
     };
   };
 
-  home.file.".config/fcitx5/conf/rime.conf".text = ''
+  home.file."${config.xdg.configHome}/fcitx5/conf/rime.conf".text = ''
     # Preedit Mode
     PreeditMode="Composing text"
     # Shared Input State
