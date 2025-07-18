@@ -1,9 +1,9 @@
-{...}: {
+{config, ...}: {
   programs.keepassxc = {
     enable = true;
   };
 
-  home.file.".config/keepassxc/keepassxc.ini".text = ''
+  home.file."${config.xdg.configHome}/keepassxc/keepassxc.ini".text = ''
     [Browser]
     Enabled=true
 
