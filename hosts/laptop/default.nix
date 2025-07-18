@@ -26,7 +26,7 @@
   boot = {
     loader = {
       systemd-boot = {
-        configurationLimit = 5;
+        configurationLimit = 10;
         editor = true;
         enable = true;
       };
