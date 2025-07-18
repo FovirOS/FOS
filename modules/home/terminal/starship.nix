@@ -1,9 +1,9 @@
-{...}: {
+{config, ...}: {
   programs.starship = {
     enable = true;
   };
 
-  home.file.".config/starship.toml".text = ''
+  home.file."${config.xdg.configHome}/starship.toml".text = ''
     # Sets user-defined palette
     # Palettes must be defined _after_ this line
     palette = "catppuccin_mocha"

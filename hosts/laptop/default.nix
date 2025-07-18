@@ -2,7 +2,6 @@
   pkgs,
   config,
   inputs,
-  lib,
   ...
 }: {
   system.stateVersion = "25.05";
@@ -27,7 +26,7 @@
   boot = {
     loader = {
       systemd-boot = {
-        configurationLimit = 5;
+        configurationLimit = 10;
         editor = true;
         enable = true;
       };

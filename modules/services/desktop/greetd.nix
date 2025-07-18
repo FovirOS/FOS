@@ -5,8 +5,20 @@
     vt = 1;
 
     settings = {
-      command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland --user-menu";
-      user = "greeter";
+      default_session = {
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet -t -c Hyprland";
+        user = "greeter";
+      };
     };
+  };
+
+  systemd.services.greetd.serviceConfig = {
+    Type = "idle";
+    StandardInput = "tty";
+    StandardOutput = "tty";
+    StandardError = "journal";
+    TTYReset = true;
+    TTYVHangup = true;
+    TTYVTDisallocate = true;
   };
 }
