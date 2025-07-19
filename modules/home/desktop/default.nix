@@ -1,5 +1,6 @@
 {
   imports = [
+    ./hyprcursor.nix
     ./fuzzel.nix
     ./hyprpanel
     ./hyprpaper.nix
