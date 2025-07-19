@@ -58,6 +58,7 @@ in {
         "$mod,7,workspace,7"
         "$mod,8,workspace,8"
         "$mod,9,workspace,9"
+        "$mod,X,exec,hyprctl dispatch togglespecialworkspace"
 
         # Move the window to workspace.
         "$mod,bracketright,movetoworkspace,+1"
@@ -149,6 +150,10 @@ in {
 
       windowrule = [
         "pseudo,class:^fcitx*$"
+      ];
+
+      windowrulev2 = [
+        "workspace special, class:^(thunderbird)$"
       ];
     };
   };
