@@ -97,7 +97,7 @@ in {
 
         # Brightness control.
         ",XF86MonBrightnessUp,exec, brightnessctl set +5%"
-        ",XF86MonBrightnessDown,exec,brightnessctl set -5%"
+        ",XF86MonBrightnessDown,exec,brightnessctl set 5%-"
       ];
 
       exec-once = [
