@@ -1,5 +1,6 @@
 {
   imports = [
+    ./archiver.nix
     ./keepassxc.nix
     ./thunderbird.nix
     ./rime.nix
