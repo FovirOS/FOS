@@ -1,5 +1,6 @@
 {
   imports = [
+    ./hyprpolkitagent.nix
     ./hyprcursor.nix
     ./fuzzel.nix
     ./hyprpanel
