@@ -30,7 +30,7 @@
       hash = "sha256-2yMW967YwsgZiZ/EK6EXqnFmLtRsKt0RETLV5pP8K3U=";
       owner = "FovirOS";
       repo = "wallpaper";
-      rev = "a1205866ed5be74e22019ad9cf6801e5655ace65";
+      rev = "65e59c467ba3aac529a0e475994612c21c385753";
     };
   };
 
