@@ -17,4 +17,4 @@ build:
 clean:
     sudo nix-collect-garbage --delete-older-than 7d
 
-default := 'build'
+default: build
