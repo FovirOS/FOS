@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./virtual-machine.nix
     ./nodejs
     ./live-server.nix
     ./prettier.nix
