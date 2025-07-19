@@ -4,7 +4,7 @@ TARGET_DIR:="/etc/nixos"
 build:
   sudo rsync -av --delete \
       --exclude '.git' \
-      --exclude 'build.sh' \
+      --exclude 'justfile' \
       {{SOURCE_DIR}}/ {{TARGET_DIR}}
 
   sudo nixos-rebuild switch --flake {{TARGET_DIR}}#laptop;
