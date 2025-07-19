@@ -89,6 +89,17 @@ in {
         "$mod, mouse:273,resizewindow" # Resize window.
       ];
 
+      bindl = [
+        # Volume control.
+        ",XF86AudioRaiseVolume,exec,pamixer -i 5"
+        ",XF86AudioLowerVolume,exec,pamixer -d 5"
+        ",XF86AudioMute,exec,pamixer --toggle-mute"
+
+        # Brightness control.
+        ",XF86MonBrightnessUp,exec, brightnessctl set +5%"
+        ",XF86MonBrightnessDown,exec,brightnessctl set -5%"
+      ];
+
       exec-once = [
         "fcitx5-remote -r"
         "fcitx5 -d --replace &"
