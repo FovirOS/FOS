@@ -3,22 +3,26 @@
     enable = true;
   };
 
-  home.file."${config.xdg.configHome}/keepassxc/keepassxc.ini".text = ''
-    [Browser]
-    Enabled=true
+  home.file."${config.xdg.configHome}/keepassxc/keepassxc.ini" = {
+    force = true;
 
-    [GUI]
-    ApplicationTheme=dark
-    MinimizeOnClose=true
-    MinimizeToTray=true
-    ShowTrayIcon=true
-    TrayIconAppearance=colorful
+    text = ''
+      [Browser]
+      Enabled=true
 
-    [General]
-    MinimizeAfterUnlock=false
+      [GUI]
+      ApplicationTheme=dark
+      MinimizeOnClose=true
+      MinimizeToTray=true
+      ShowTrayIcon=true
+      TrayIconAppearance=colorful
 
-    [Security]
-    LockDatabaseIdle=true
-    LockDatabaseIdleSeconds=300
-  '';
+      [General]
+      MinimizeAfterUnlock=false
+
+      [Security]
+      LockDatabaseIdle=true
+      LockDatabaseIdleSeconds=300
+    '';
+  };
 }
