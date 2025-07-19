@@ -10,9 +10,9 @@
   "bar.launcher.autoDetectIcon": true,
   "theme.bar.buttons.dashboard.enableBorder": false,
   "bar.workspaces.show_icons": false,
-  "bar.workspaces.show_numbered": true,
-  "bar.workspaces.showWsIcons": false,
-  "bar.workspaces.showApplicationIcons": false,
+  "bar.workspaces.show_numbered": false,
+  "bar.workspaces.showWsIcons": true,
+  "bar.workspaces.showApplicationIcons": true,
   "bar.workspaces.applicationIconOncePerWorkspace": true,
   "bar.workspaces.showAllActive": true,
   "bar.workspaces.numbered_active_indicator": "highlight",
@@ -522,5 +522,6 @@
   "bar.customModules.cava.showIcon": false,
   "bar.customModules.cava.framerate": 120,
   "bar.customModules.cava.stereo": true,
-  "bar.customModules.cava.showActiveOnly": true
+  "bar.customModules.cava.showActiveOnly": true,
+  "bar.workspaces.ignored": "^-\\d+$"
 }
