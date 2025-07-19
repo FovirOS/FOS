@@ -1,6 +1,5 @@
 {
   imports = [
-    ./mutability.nix
     ./environment.nix
     ./nix.nix
     ./boot.nix
