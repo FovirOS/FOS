@@ -22,4 +22,8 @@ rsync -av \
     "$TARGET_DIR/flake.lock" \
     "$SOURCE_DIR/"
 
+echo "Collect garbage..."
+
+sudo nix-collect-garbage --delete-older-than 7d
+
 echo "Done!"
