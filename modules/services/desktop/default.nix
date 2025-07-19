@@ -1,5 +1,6 @@
 {
   imports = [
+    ./qemu.nix
     ./greetd.nix
     ./upower.nix
     ./xserver.nix
