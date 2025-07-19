@@ -27,7 +27,7 @@
     force = true;
     recursive = true;
     source = pkgs.fetchFromGitHub {
-      hash = "sha256-2yMW967YwsgZiZ/EK6EXqnFmLtRsKt0RETLV5pP8K3U=";
+      hash = "sha256-qv1TV+w1yIBuTXkyL1C/IyCHZO6Vtoq/vHz/LqR2UMo=";
       owner = "FovirOS";
       repo = "wallpaper";
       rev = "65e59c467ba3aac529a0e475994612c21c385753";
