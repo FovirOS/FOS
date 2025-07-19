@@ -522,5 +522,6 @@
   "bar.customModules.cava.showIcon": false,
   "bar.customModules.cava.framerate": 120,
   "bar.customModules.cava.stereo": true,
-  "bar.customModules.cava.showActiveOnly": true
+  "bar.customModules.cava.showActiveOnly": true,
+  "bar.workspaces.ignored": "^-\\d+$"
 }
