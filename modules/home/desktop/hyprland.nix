@@ -110,7 +110,7 @@ in {
 
         "bash -c ${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
         "nekoray"
-        "keepassxc --minimized"
+        "keepassxc"
         "strawberry"
         "thunderbird"
       ];
