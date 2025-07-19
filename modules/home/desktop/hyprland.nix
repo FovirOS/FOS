@@ -149,7 +149,7 @@ in {
       };
 
       windowrulev2 = [
-        "workspace special, class:^(thunderbird)$|^(nekoray)$|^*strawberry*$|^*keepassxc*$"
+        "workspace special, class:^(thunderbird)$|^(nekoray)$|^*strawberry*$"
       ];
     };
   };
