@@ -98,9 +98,9 @@
         "browser.ctrlTab.sortByRecentlyUsed" = true;
         "browser.urlbar.trimURLs" = false;
         "browser.urlbar.trimHttps" = false;
-        "browser.tabs.unloadOnLowMemory" = false;
+        "browser.tabs.unloadOnLowMemory" = true;
         "browser.tabs.unloadTabInContextMenu" = false;
-        "browser.tabs.fadeOutExplicitlyUnloadedTabs" = false;
+        "browser.tabs.fadeOutExplicitlyUnloadedTabs" = true;
         "browser.startup.page" = 2;
       };
     };
