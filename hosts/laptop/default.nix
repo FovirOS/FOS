@@ -18,6 +18,7 @@
     users.fovir = {
       imports = [
         ../../home/fovir
+        ../../modules/extension/mutable-files.nix
         inputs.nixvim.homeManagerModules.nixvim
       ];
     };
