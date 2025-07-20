@@ -1,105 +1,50 @@
-# This module extends home.file, xdg.configFile and xdg.dataFile with the `mutable` option.
 {
   config,
   pkgs,
-  lib,
   ...
-}: let
-  fileOptionAttrPaths = [["home" "file"] ["xdg" "configFile"] ["xdg" "dataFile"]];
-in {
-  options = let
-    mergeAttrsList = builtins.foldl' (lib.mergeAttrs) {};
+}: {
+  programs.keepassxc = {
+    enable = true;
+  };
 
-    fileAttrsType = lib.types.attrsOf (lib.types.submodule ({config, ...}: {
-      options.mutable = lib.mkOption {
-        type = lib.types.bool;
-        default = false;
-        description = ''
-          Whether to copy the file without the read-only attribute instead of
-          symlinking. If you set this to `true`, you must also set `force` to
-          `true`. Mutable files are not removed when you remove them from your
-          configuration.
-          This option is useful for programs that don't have a very good
-          support for read-only configurations.
-        '';
-      };
-    }));
-  in
-    mergeAttrsList (map (attrPath:
-      lib.setAttrByPath attrPath (lib.mkOption {type = fileAttrsType;}))
-    fileOptionAttrPaths);
+  home.file."${config.xdg.configHome}/keepassxc/keepassxc.ini" = {
+    force = true;
+    mutable = true;
 
-  config = {
-    home.activation.mutableFileGeneration = let
-      allFiles = builtins.concatLists (map
-        (attrPath: builtins.attrValues (lib.getAttrFromPath attrPath config))
-        fileOptionAttrPaths);
+    text = ''
+      [Browser]
+      Enabled=true
 
-      filterMutableFiles = builtins.filter (file:
-        (file.mutable or false)
-        && lib.assertMsg file.force
-        "if you specify `mutable` to `true` on a file, you must also set `force` to `true`");
+      [GUI]
+      ApplicationTheme=dark
+      MinimizeOnClose=true
+      MinimizeToTray=true
+      ShowTrayIcon=true
+      TrayIconAppearance=colorful
 
-      mutableFiles = filterMutableFiles allFiles;
+      [General]
+      MinimizeAfterUnlock=false
 
-      toCommand = file: let
-        source = lib.escapeShellArg file.source;
-        target = lib.escapeShellArg file.target;
-      in ''
-        $VERBOSE_ECHO "${source} -> ${target}"
-        $DRY_RUN_CMD cp --remove-destination --no-preserve=mode ${source} ${target}
-      '';
+      [Security]
+      LockDatabaseIdle=true
+      LockDatabaseIdleSeconds=300
+    '';
+  };
 
-      command =
-        ''
-          echo "Copying mutable home files for $HOME"
-        ''
-        + lib.concatLines (map toCommand mutableFiles);
-    in (lib.hm.dag.entryAfter ["linkGeneration"] command);
+  home.file.".mozilla/native-messaging-hosts/org.keepassxc.keepassxc_browser.json" = {
+    force = true;
+    mutable = true;
 
-    programs.keepassxc = {
-      enable = true;
-    };
-
-    home.file."${config.xdg.configHome}/keepassxc/keepassxc.ini" = {
-      force = true;
-      mutable = true;
-
-      text = ''
-        [Browser]
-        Enabled=true
-
-        [GUI]
-        ApplicationTheme=dark
-        MinimizeOnClose=true
-        MinimizeToTray=true
-        ShowTrayIcon=true
-        TrayIconAppearance=colorful
-
-        [General]
-        MinimizeAfterUnlock=false
-
-        [Security]
-        LockDatabaseIdle=true
-        LockDatabaseIdleSeconds=300
-      '';
-    };
-
-    home.file.".mozilla/native-messaging-hosts/org.keepassxc.keepassxc_browser.json" = {
-      force = true;
-      mutable = true;
-
-      text = ''
-        {
-            "name": "org.keepassxc.keepassxc_browser",
-            "description": "KeePassXC integration with native messaging support",
-            "path": "${pkgs.keepassxc}/bin/keepassxc-proxy",
-            "type": "stdio",
-            "allowed_extensions": [
-                "keepassxc-browser@keepassxc.org"
-            ]
-        }
-      '';
-    };
+    text = ''
+      {
+          "name": "org.keepassxc.keepassxc_browser",
+          "description": "KeePassXC integration with native messaging support",
+          "path": "${pkgs.keepassxc}/bin/keepassxc-proxy",
+          "type": "stdio",
+          "allowed_extensions": [
+              "keepassxc-browser@keepassxc.org"
+          ]
+      }
+    '';
   };
 }
