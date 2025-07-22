@@ -148,6 +148,14 @@ in {
         };
       };
 
+      input = {
+        numlock_by_default = true;
+      };
+
+      cursor = {
+        hide_on_key_press = true;
+      };
+
       windowrulev2 = [
         "workspace special, class:^(thunderbird)$|^(nekoray)$|^*strawberry*$"
       ];
