@@ -148,6 +148,10 @@ in {
         };
       };
 
+      input = {
+        numlock_by_default = true;
+      };
+
       windowrulev2 = [
         "workspace special, class:^(thunderbird)$|^(nekoray)$|^*strawberry*$"
       ];
