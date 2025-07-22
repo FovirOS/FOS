@@ -13,11 +13,12 @@
       - -google*
       - -fuchsia*
       - -modernize-use-nodiscard
-      - -cppcoreguidelines-special-member-functions
       - -hicpp-special-member-functions
       - -readability-identifier-length
       - -readability-isolate-declaration
       - -boost*
+      - -misc-non-private-member-variables-in-classes
+      - -cppcoreguidelines*
   '';
 
   home.file.".clang-format".text = ''
