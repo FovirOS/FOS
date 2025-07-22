@@ -153,7 +153,7 @@ in {
       };
 
       cursor = {
-        inactive_timeout = 2;
+        hide_on_key_press = true;
       };
 
       windowrulev2 = [
