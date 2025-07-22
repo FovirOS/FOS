@@ -152,6 +152,10 @@ in {
         numlock_by_default = true;
       };
 
+      cursor = {
+        inactive_timeout = 2;
+      };
+
       windowrulev2 = [
         "workspace special, class:^(thunderbird)$|^(nekoray)$|^*strawberry*$"
       ];
