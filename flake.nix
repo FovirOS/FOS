@@ -14,7 +14,7 @@
     disko.inputs.nixpkgs.follows = "nixpkgs";
 
     nixvim = {
-      url = "github:nix-community/nixvim";
+      url = "github:FovirOS/fos-nixvim";
     };
   };
 
