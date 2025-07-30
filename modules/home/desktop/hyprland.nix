@@ -109,10 +109,10 @@ in {
         "hyprpaper"
 
         "bash -c ${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
+        "thunderbird"
         "nekoray"
         "keepassxc"
         "strawberry"
-        "thunderbird"
       ];
 
       general = {
