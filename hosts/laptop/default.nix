@@ -65,6 +65,7 @@
         "networkmanager"
         "wireshark"
         "libvirtd"
+        "docker"
       ];
       hashedPassword = "$6$Z3tVvcb3O79M9wVa$eQsKKb4DbQMqolBLpy8bpNr1XFdl.lg4ek649YfWQ4nxW.EOGUdvKV4txOQH/RfozyPJwMu2o335K./TEF/gg.";
       shell = pkgs.zsh;
