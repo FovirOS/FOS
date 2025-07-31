@@ -1,5 +1,6 @@
 {
   imports = [
+    ./docker.nix
     ./qemu.nix
     ./greetd.nix
     ./upower.nix
