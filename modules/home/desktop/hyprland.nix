@@ -10,7 +10,8 @@
     then "eDP-1"
     else "none";
 
-  screenshotCommand = "hyprshot -z -m region";
+  screenshotCommand = "screenshot-area.sh";
+  ocrCommand = "screenshot-ocr.sh";
 in {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -33,9 +34,12 @@ in {
         "$mod,P,exec,hyprlock" # Lock.
         "ALT,SPACE,exec,fuzzel" # Run `fuzzel`.
 
-        # Run screenshot.
+        # Run area screenshot.
         "$mod,S,exec,${screenshotCommand}"
         ",Print,exec,${screenshotCommand}"
+
+        # Run OCR screenshot.
+        "$mod,O,exec,${ocrCommand}"
 
         "$mod,N,exec,neovide" # Run `Neovide`.
         "$mod,E,exec,nemo" # Run `Nemo`.
