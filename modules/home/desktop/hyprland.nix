@@ -55,8 +55,8 @@ in {
         # Switch workspace.
         "$mod,period,workspace,e+1"
         "$mod,comma,workspace,e-1"
-        "$mod,period,exec,${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
-        "$mod,comma,exec,${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
+        "$mod,period,exec,random_wallpaper.sh"
+        "$mod,comma,exec,random_wallpaper.sh"
 
         "$mod,1,workspace,1"
         "$mod,2,workspace,2"
@@ -80,8 +80,8 @@ in {
         "$mod,SPACE,togglefloating"
 
         # Toupad operations.
-        "ALT,T,exec,${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
-        "ALT_SHIFT,T,exec,${config.home.homeDirectory}/.local/bin/enable_touchpad.sh"
+        "ALT,T,exec,disable_touchpad.sh"
+        "ALT_SHIFT,T,exec,enable_touchpad.sh"
 
         # Key binds of `master` layout.
         "$mod,RETURN,layoutmsg,swapwithmaster master"
@@ -117,7 +117,7 @@ in {
 
         "hyprpaper"
 
-        "bash -c ${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
+        "disable_touchpad.sh"
         "thunderbird"
         "nekoray"
         "keepassxc"
