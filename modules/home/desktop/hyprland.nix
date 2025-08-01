@@ -10,8 +10,8 @@
     then "eDP-1"
     else "none";
 
-  # hyprshot -z -m region
-  screenshotCommand = "env QT_SCALE_FACTOR=0.625 flameshot gui";
+  screenshotCommand = "screenshot-area.sh";
+  ocrCommand = "screenshot-ocr.sh";
 in {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -34,9 +34,12 @@ in {
         "$mod,P,exec,hyprlock" # Lock.
         "ALT,SPACE,exec,fuzzel" # Run `fuzzel`.
 
-        # Run screenshot.
+        # Run area screenshot.
         "$mod,S,exec,${screenshotCommand}"
         ",Print,exec,${screenshotCommand}"
+
+        # Run OCR screenshot.
+        "$mod,O,exec,${ocrCommand}"
 
         "$mod,N,exec,neovide" # Run `Neovide`.
         "$mod,E,exec,nemo" # Run `Nemo`.
@@ -52,8 +55,8 @@ in {
         # Switch workspace.
         "$mod,period,workspace,e+1"
         "$mod,comma,workspace,e-1"
-        "$mod,period,exec,${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
-        "$mod,comma,exec,${config.home.homeDirectory}/.local/bin/random_wallpaper.sh"
+        "$mod,period,exec,random_wallpaper.sh"
+        "$mod,comma,exec,random_wallpaper.sh"
 
         "$mod,1,workspace,1"
         "$mod,2,workspace,2"
@@ -77,8 +80,8 @@ in {
         "$mod,SPACE,togglefloating"
 
         # Toupad operations.
-        "ALT,T,exec,${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
-        "ALT_SHIFT,T,exec,${config.home.homeDirectory}/.local/bin/enable_touchpad.sh"
+        "ALT,T,exec,disable_touchpad.sh"
+        "ALT_SHIFT,T,exec,enable_touchpad.sh"
 
         # Key binds of `master` layout.
         "$mod,RETURN,layoutmsg,swapwithmaster master"
@@ -114,7 +117,7 @@ in {
 
         "hyprpaper"
 
-        "bash -c ${config.home.homeDirectory}/.local/bin/disable_touchpad.sh"
+        "disable_touchpad.sh"
         "thunderbird"
         "nekoray"
         "keepassxc"
