@@ -9,6 +9,9 @@
     else if hostName == "FovirOS"
     then "eDP-1"
     else "none";
+
+  # hyprshot -z -m region
+  screenshotCommand = "env QT_SCALE_FACTOR=0.625 flameshot gui";
 in {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -30,8 +33,11 @@ in {
 
         "$mod,P,exec,hyprlock" # Lock.
         "ALT,SPACE,exec,fuzzel" # Run `fuzzel`.
-        "$mod,S,exec,hyprshot -z -m region" # Run `hyprshot`.
-        ",Print,exec,hyprshot -z -m region" # Run `hyprshot`.
+
+        # Run screenshot.
+        "$mod,S,exec,${screenshotCommand}"
+        ",Print,exec,${screenshotCommand}"
+
         "$mod,N,exec,neovide" # Run `Neovide`.
         "$mod,E,exec,nemo" # Run `Nemo`.
 
