@@ -1,5 +1,6 @@
 {
   imports = [
+    ./path.nix
     ./zsh
     ./bash
     ./starship.nix
