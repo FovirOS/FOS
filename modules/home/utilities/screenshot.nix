@@ -13,6 +13,8 @@
 
       grim -g "$(slurp)" - | tesseract -l "eng" stdin stdout | wl-copy;notify-send "OCR content copied to clipboard"
     '';
+
+    executable = true;
   };
 
   home.file.".local/bin/screenshot-area.sh" = {
@@ -21,5 +23,7 @@
 
       grim -g "$(slurp)" - | swappy -f -
     '';
+
+    executable = true;
   };
 }
