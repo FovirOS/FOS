@@ -10,8 +10,7 @@
     then "eDP-1"
     else "none";
 
-  # hyprshot -z -m region
-  screenshotCommand = "env QT_SCALE_FACTOR=0.625 flameshot gui";
+  screenshotCommand = "hyprshot -z -m region";
 in {
   wayland.windowManager.hyprland = {
     enable = true;
