@@ -11,5 +11,6 @@
     ./qt
     ./hyprlock.nix
     ./wl-clipboard-rs.nix
+    ./flameshot.nix
   ];
 }
