@@ -1,5 +1,6 @@
 {
   imports = [
+    ./screenshot.nix
     ./qalculate.nix
     ./archiver.nix
     ./keepassxc.nix
