@@ -22,6 +22,7 @@
       SDL_HINT_VIDEODRIVER = "wayland";
       XDG_SESSION_TYPE = "wayland";
       SDL_VIDEODRIVER = "wayland";
+      USE_WAYLAND_GRIM = 1;
 
       QT_IM_MODULE = "fcitx";
       SDL_IM_MODULE = "fcitx";
