@@ -1,5 +1,6 @@
 {
   imports = [
+    ./rustdesk.nix
     ./qalculate.nix
     ./archiver.nix
     ./keepassxc.nix
