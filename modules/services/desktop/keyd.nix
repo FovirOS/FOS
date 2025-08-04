@@ -10,6 +10,13 @@
             rightalt = "esc";
             menu = "esc";
           };
+
+          "alt" = {
+            h = "left";
+            j = "down";
+            k = "up";
+            l = "right";
+          };
         };
       };
     };
