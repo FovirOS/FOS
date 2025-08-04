@@ -9,8 +9,13 @@
           main = {
             rightalt = "esc";
             menu = "esc";
-            # esc = "grave";
-            # "shift+esc" = "shift+grave";
+          };
+
+          "alt" = {
+            h = "left";
+            j = "down";
+            k = "up";
+            l = "right";
           };
         };
       };
