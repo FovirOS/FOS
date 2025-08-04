@@ -9,8 +9,6 @@
           main = {
             rightalt = "esc";
             menu = "esc";
-            # esc = "grave";
-            # "shift+esc" = "shift+grave";
           };
         };
       };
