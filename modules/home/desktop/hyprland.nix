@@ -86,8 +86,8 @@ in {
 
         # Key binds of `playerctl`.
         "CTRL_ALT,SPACE,exec,playerctl play-pause"
-        "CTRL_ALT,L,exec,playerctl next"
-        "CTRL_ALT,H,exec,playerctl previous"
+        "CTRL_ALT,N,exec,playerctl next"
+        "CTRL_ALT,P,exec,playerctl previous"
       ];
 
       bindm = [
