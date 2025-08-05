@@ -1,8 +1,4 @@
-{
-  hostName,
-  config,
-  ...
-}: let
+{hostName, ...}: let
   monitor_name =
     if hostName == "qemu"
     then "Virtual-1"
