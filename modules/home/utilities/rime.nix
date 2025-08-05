@@ -7,10 +7,10 @@
     force = true;
     recursive = true;
     source = pkgs.fetchFromGitHub {
-      hash = "sha256-tXdIiYlSDBFxfBfParVN3lLEw5bp+rK78HSQtBnN5BM=";
+      hash = "sha256-Rz4dMcLJ2yRwKPBb3F/xutzK0//RRSLLCLfBTIGpaa0=";
       owner = "FovirOS";
       repo = "rime";
-      rev = "10c1f3bcd1b9e4415ea9fab6a262e1106fffc346";
+      rev = "df4dc1811d936df02a0f76ce1903ba3d3b8caf17";
     };
   };
 
