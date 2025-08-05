@@ -164,14 +164,6 @@ in {
       windowrulev2 = [
         "workspace special, class:^(thunderbird)$|^(nekoray)$|^*strawberry*$"
       ];
-
-      windowrule = [
-        "noanim, class:^(flameshot)$"
-        "float, class:^(flameshot)$"
-        "move 0 0, class:^(flameshot)$"
-        "pin, class:^(flameshot)$"
-        "noinitialfocus, class:^(flameshot)$"
-      ];
     };
   };
 
