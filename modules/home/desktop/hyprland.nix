@@ -1,8 +1,4 @@
-{
-  hostName,
-  config,
-  ...
-}: let
+{hostName, ...}: let
   monitor_name =
     if hostName == "qemu"
     then "Virtual-1"
@@ -90,8 +86,8 @@ in {
 
         # Key binds of `playerctl`.
         "CTRL_ALT,SPACE,exec,playerctl play-pause"
-        "CTRL_ALT,L,exec,playerctl next"
-        "CTRL_ALT,H,exec,playerctl previous"
+        "CTRL_ALT,N,exec,playerctl next"
+        "CTRL_ALT,P,exec,playerctl previous"
       ];
 
       bindm = [
@@ -167,14 +163,6 @@ in {
 
       windowrulev2 = [
         "workspace special, class:^(thunderbird)$|^(nekoray)$|^*strawberry*$"
-      ];
-
-      windowrule = [
-        "noanim, class:^(flameshot)$"
-        "float, class:^(flameshot)$"
-        "move 0 0, class:^(flameshot)$"
-        "pin, class:^(flameshot)$"
-        "noinitialfocus, class:^(flameshot)$"
       ];
     };
   };
