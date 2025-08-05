@@ -7,22 +7,22 @@
     force = true;
     recursive = true;
     source = pkgs.fetchFromGitHub {
-      hash = "sha256-Rz4dMcLJ2yRwKPBb3F/xutzK0//RRSLLCLfBTIGpaa0=";
+      hash = "sha256-l1e5Zrrqlvu+86JVCBTihzl5+gIJvzXeop4VPvQG8dk=";
       owner = "FovirOS";
       repo = "rime";
-      rev = "df4dc1811d936df02a0f76ce1903ba3d3b8caf17";
+      rev = "03a555a7181a04178984f05a658c6f25d368bdb3";
     };
   };
 
   home.file."${config.xdg.configHome}/fcitx5/conf/rime.conf".text = ''
     # Preedit Mode
-    PreeditMode="Composing text"
+    # PreeditMode="Composing text"
     # Shared Input State
-    InputState=All
+    # InputState=All
     # Fix embedded preedit cursor at the beginning of the preedit
-    PreeditCursorPositionAtBeginning=True
+    # PreeditCursorPositionAtBeginning=True
     # Action when switching input method
-    SwitchInputMethodBehavior="Commit commit preview"
+    # SwitchInputMethodBehavior="Commit commit preview"
     # Deploy
     Deploy=
     # Synchronize
