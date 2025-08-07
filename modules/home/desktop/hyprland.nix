@@ -79,11 +79,6 @@ in {
         "ALT,T,exec,disable_touchpad.sh"
         "ALT_SHIFT,T,exec,enable_touchpad.sh"
 
-        # Key binds of `master` layout.
-        "$mod,RETURN,layoutmsg,swapwithmaster master"
-        "ALT,TAB,layoutmsg, cyclenext"
-        "ALT_SHIFT,TAB,layoutmsg, cycleprev"
-
         # Key binds of `playerctl`.
         "CTRL_ALT,SPACE,exec,playerctl play-pause"
         "CTRL_ALT,N,exec,playerctl next"
@@ -123,15 +118,10 @@ in {
       general = {
         gaps_in = 3;
         gaps_out = 0;
-        # layout = "master";
 
         border_size = 3;
         "col.active_border" = "0xfff38ba8 0xffcba6f7 0xfff5c2e7 0xfff2cdcd";
         "col.inactive_border" = "0x00ffffff";
-      };
-
-      master = {
-        mfact = 0.55;
       };
 
       decoration = let
