@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./xmlstarlet.nix
     ./just.nix
     ./virtual-machine.nix
     ./nodejs
