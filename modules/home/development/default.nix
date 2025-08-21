@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./vscodium.nix
     ./xmlstarlet.nix
     ./just.nix
     ./virtual-machine.nix
