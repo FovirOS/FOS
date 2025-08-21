@@ -3,9 +3,9 @@
     enable = true;
     package = pkgs.vscodium;
     profiles.default.extensions = with pkgs.vscode-extensions; [
-      dracula-theme.theme-dracula
+      catppuccin.catppuccin-vsc
+      catppuccin.catppuccin-vsc-icons
       vscodevim.vim
-      yzhang.markdown-all-in-one
     ];
   };
 }
