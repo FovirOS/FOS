@@ -3,5 +3,6 @@
     ./chromium.nix
     ./wireshark.nix
     ./nekoray.nix
+    ./vscodium.nix
   ];
 }
