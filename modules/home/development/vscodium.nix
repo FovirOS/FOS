@@ -21,7 +21,7 @@
         "vim.highlightedyank.enable" = true;
         "vim.useSystemClipboard" = true;
         "workbench.colorTheme" = "Catppuccin Mocha";
-        "workbench.iconTheme" = "Catppuccin Mocha";
+        "workbench.iconTheme" = "catppuccin-mocha";
         "svg.preview.autoShow" = true;
         "editor.formatOnSave" = true;
         "editor.formatOnPaste" = true;
