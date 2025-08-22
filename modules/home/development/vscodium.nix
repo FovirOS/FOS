@@ -8,6 +8,10 @@
         catppuccin.catppuccin-vsc-icons
         vscodevim.vim
       ];
+
+      userSettings = {
+        "workbench.colorTheme" = "Catppuccin Mocha";
+      };
     };
   };
 }
