@@ -7,7 +7,6 @@
     text = ''
       {
         "printWidth": 72
-        "plugins": ["@prettier/plugin-xml"]
       }
     '';
   };
