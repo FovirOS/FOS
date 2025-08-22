@@ -16,6 +16,13 @@
       userSettings = {
         "workbench.colorTheme" = "Catppuccin Mocha";
         "workbench.iconTheme" = "Catppuccin Mocha";
+
+        "vim.useSystemClipboard" = true;
+        "vim.highlightedyank.enable" = true;
+
+        "editor.fontFamily" = "JetBrainsMono Nerd Font Mono";
+        "editor.wordWrap" = "on";
+        "editor.fontLigatures" = true;
       };
     };
   };
