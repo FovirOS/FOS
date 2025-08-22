@@ -14,15 +14,19 @@
       enableUpdateCheck = false;
       enableExtensionUpdateCheck = false;
       userSettings = {
+        "editor.fontFamily" = "JetBrainsMono Nerd Font Mono";
+        "editor.fontLigatures" = true;
+        "editor.wordWrap" = "on";
+        "vim.highlightedyank.enable" = true;
+        "vim.useSystemClipboard" = true;
         "workbench.colorTheme" = "Catppuccin Mocha";
         "workbench.iconTheme" = "Catppuccin Mocha";
-
-        "vim.useSystemClipboard" = true;
-        "vim.highlightedyank.enable" = true;
-
-        "editor.fontFamily" = "JetBrainsMono Nerd Font Mono";
-        "editor.wordWrap" = "on";
-        "editor.fontLigatures" = true;
+        "svg.preview.autoShow" = true;
+        "editor.formatOnSave" = true;
+        "editor.formatOnPaste" = true;
+        "editor.formatOnType" = true;
+        "editor.fontSize" = 16;
+        "editor.wrappingStrategy" = "advanced";
       };
     };
   };
