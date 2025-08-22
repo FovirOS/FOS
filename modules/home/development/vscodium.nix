@@ -8,7 +8,9 @@
         catppuccin.catppuccin-vsc-icons
         vscodevim.vim
         jock.svg
+        albert.TabOut
       ];
+
       enableUpdateCheck = false;
       enableExtensionUpdateCheck = false;
       userSettings = {
