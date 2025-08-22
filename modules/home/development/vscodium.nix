@@ -29,6 +29,7 @@
         "editor.fontSize" = 16;
         "editor.wrappingStrategy" = "advanced";
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
+        "editor.lineNumbers" = "relative";
       };
     };
   };
