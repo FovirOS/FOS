@@ -9,6 +9,7 @@
         vscodevim.vim
         jock.svg
         albert.tabout
+        esbenp.prettier-vscode
       ];
 
       enableUpdateCheck = false;
