@@ -2,10 +2,16 @@
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium;
-    profiles.default.extensions = with pkgs.vscode-extensions; [
-      dracula-theme.theme-dracula
-      vscodevim.vim
-      yzhang.markdown-all-in-one
-    ];
+    profiles.default = {
+      extensions = with pkgs.vscode-extensions; [
+        catppuccin.catppuccin-vsc
+        catppuccin.catppuccin-vsc-icons
+        vscodevim.vim
+      ];
+
+      userSettings = {
+        "workbench.colorTheme" = "Catppuccin Mocha";
+      };
+    };
   };
 }
