@@ -3,12 +3,12 @@
     enable = true;
     package = pkgs.vscodium;
     profiles.default = {
-      extensions = with pkgs.vscode-extensions; [
+      extensions = with pkgs.vscode-marketplace; [
         catppuccin.catppuccin-vsc
         catppuccin.catppuccin-vsc-icons
         vscodevim.vim
         jock.svg
-        albert.TabOut
+        albert.tabout
       ];
 
       enableUpdateCheck = false;

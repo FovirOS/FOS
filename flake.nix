@@ -16,6 +16,8 @@
     nixvim = {
       url = "github:FovirOS/fos-nixvim";
     };
+
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
   outputs = {
@@ -25,6 +27,7 @@
     nixvim,
     chaotic,
     disko,
+    nix-vscode-extensions,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -37,6 +40,12 @@
 
         modules = [
           ./hosts/${name}
+
+          {
+            nixpkgs.overlays = [
+              nix-vscode-extensions.overlays.default
+            ];
+          }
 
           chaotic.nixosModules.default
           disko.nixosModules.disko
