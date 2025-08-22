@@ -7,10 +7,13 @@
         catppuccin.catppuccin-vsc
         catppuccin.catppuccin-vsc-icons
         vscodevim.vim
+        jock.svg
       ];
-
+      enableUpdateCheck = false;
+      enableExtensionUpdateCheck = false;
       userSettings = {
         "workbench.colorTheme" = "Catppuccin Mocha";
+        "workbench.iconTheme" = "Catppuccin Mocha";
       };
     };
   };
