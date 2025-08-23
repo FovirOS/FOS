@@ -8,7 +8,7 @@
         settings = {
           main = {
             rightalt = "esc";
-            menu = "esc";
+            compose = "esc";
           };
 
           "alt" = {
