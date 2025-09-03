@@ -159,6 +159,11 @@ in {
         "workspace special, class:^(thunderbird)$|^(nekoray)$|^*strawberry*$"
         "opacity 1.0 override,initialClass:.*Minecraft.*"
       ];
+
+      ecosystem = {
+        no_donation_nag = true;
+        no_update_news = true;
+      };
     };
   };
 
