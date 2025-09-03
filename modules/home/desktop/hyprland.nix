@@ -22,6 +22,10 @@ in {
     settings = {
       monitor = "${monitor_name},preferred,auto,auto";
 
+      xwayland = {
+        force_zero_scaling = true;
+      };
+
       "$mod" = "SUPER";
       bind = [
         "$mod,T,exec,kitty" # Run `kitty`.
