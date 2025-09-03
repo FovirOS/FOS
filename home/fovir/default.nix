@@ -16,6 +16,7 @@
     ../../modules/home/hardwares # Import hardwares.
     ../../modules/home/media # Import media tools.
     ../../modules/home/office # Import office tools.
+    ../../modules/home/games # Import games.
 
     ./git.nix # Import `git` configuration.
   ];
