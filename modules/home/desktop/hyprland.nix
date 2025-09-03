@@ -157,6 +157,7 @@ in {
 
       windowrulev2 = [
         "workspace special, class:^(thunderbird)$|^(nekoray)$|^*strawberry*$"
+        "opacity 1.0 override,initialClass:.*Minecraft.*"
       ];
     };
   };
