@@ -4,7 +4,7 @@
 
     [*]
     indent_style = space
-    indent_size = 4
+    indent_size = 2
 
     trim_trailing_whitespace = true
 
@@ -13,6 +13,8 @@
     end_of_line = lf
 
     charset = utf-8
+
+    [*.{c,cpp,h,hpp,go}]
+    indent_size = 4
   '';
 }
-

@@ -26,6 +26,8 @@
       OfferToSaveLogins = false;
       OfferToSaveLoginsDefault = false;
 
+      # Get ID with:
+      # nix run github:tupakkatapa/mozid -- <URL>
       ExtensionSettings = {
         "*" = {
           installation_mode = "blocked";
@@ -84,15 +86,23 @@
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/{b3e677f4-1150-4387-8629-da738260a48e}/latest.xpi";
           installation_mode = "force_installed";
         };
+
+        # Simple Tab Groups
+        "simple-tab-groups@drive4ik" = {
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/simple-tab-groups@drive4ik/latest.xpi";
+          installation_mode = "force_installed";
+        };
       };
 
       Preferences = {
         "browser.ctrlTab.sortByRecentlyUsed" = true;
+        "browser.urlbar.trimURLs" = false;
+        "browser.urlbar.trimHttps" = false;
+        "browser.tabs.unloadOnLowMemory" = true;
+        "browser.tabs.unloadTabInContextMenu" = false;
+        "browser.tabs.fadeOutExplicitlyUnloadedTabs" = true;
+        "browser.startup.page" = 2;
       };
     };
-  };
-
-  home.sessionVariables = {
-    MOZ_ENABLE_WAYLAND = 1;
   };
 }

@@ -1,9 +1,12 @@
 {
   imports = [
+    ./path.nix
+    ./zsh
+    ./bash
+    ./starship.nix
     ./rsync.nix
     ./fastfetch
     ./btop.nix
-    ./zsh
     ./eza.nix
     ./yazi.nix
     ./dust.nix

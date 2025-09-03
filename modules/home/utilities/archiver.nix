@@ -1,5 +1,10 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    nemo-with-extensions
+    peazip
+
+    gnutar
+    zip
+    unzip
+    gzip
   ];
 }

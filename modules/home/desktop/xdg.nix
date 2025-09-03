@@ -7,6 +7,8 @@
   xdg = {
     enable = true;
 
+    configHome = "${config.home.homeDirectory}/.config";
+
     portal = {
       enable = true;
 
@@ -39,6 +41,7 @@
 
       extraConfig = {
         XDG_PROJECTS_DIR = "$HOME/Projects";
+        XDG_SCREENSHOTS_DIR = "${config.xdg.userDirs.pictures}/Screenshots";
       };
     };
 
@@ -50,7 +53,7 @@
     };
 
     mimeApps = let
-      browser = ["firefox.desktop"];
+      browser = ["firefox-devedition.desktop"];
       filemanager = ["nemo.desktop"];
       image-viewer = ["oculante.desktop"];
       video-player = ["mpv.desktop"];
@@ -76,6 +79,10 @@
         "video/*" = video-player;
 
         "application/pdf" = browser;
+        "x-scheme-handler/http" = browser;
+        "x-scheme-handler/https" = browser;
+        "text/html" = browser;
+
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = libreoffice-writer;
         "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" = libreoffice-calc;
         "application/vnd.openxmlformats-officedocument.presentationml.presentation" = libreoffice-presentation;
@@ -87,10 +94,14 @@
     mkdir -p ${config.home.homeDirectory}/.local/bin
   '';
 
-  home.file.".local/bin/run-nemo".text = ''
-    #!/bin/sh
-    nemo "$@"
-  '';
+  home.file.".local/bin/run-nemo.sh" = {
+    text = ''
+      #!/bin/sh
+      ( nohup nemo . >/dev/null 2>&1 & ) >/dev/null 2>&1
+    '';
+
+    executable = true;
+  };
 
   home.activation.createProjects = lib.hm.dag.entryAfter ["writeBoundary"] ''
     mkdir -p $HOME/Projects

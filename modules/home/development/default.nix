@@ -1,5 +1,14 @@
 {...}: {
   imports = [
+    ./vscodium.nix
+    ./xmlstarlet.nix
+    ./just.nix
+    ./virtual-machine.nix
+    ./nodejs
+    ./live-server.nix
+    ./prettier.nix
+    ./python
+    ./remmina.nix
     ./git.nix
     ./nixvim
     ./neovide.nix

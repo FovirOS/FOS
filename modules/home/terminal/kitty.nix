@@ -2,6 +2,12 @@
   programs.kitty = {
     enable = true;
 
+    shellIntegration = {
+      enableBashIntegration = true;
+    };
+
+    enableGitIntegration = true;
+
     font = {
       name = "JetBrainsMono Nerd Font Mono";
       size = 14;

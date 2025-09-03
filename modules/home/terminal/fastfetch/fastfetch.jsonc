@@ -3,6 +3,7 @@
     "separator": " ",
   },
   "logo": {
+    "source": "~/.config/fastfetch/logo.txt",
     "padding": {
       "top": 0,
     },

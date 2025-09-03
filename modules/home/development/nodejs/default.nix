@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    nemo-with-extensions
+    nodejs_24
+    pnpm
   ];
 }
