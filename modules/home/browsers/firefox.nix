@@ -33,6 +33,12 @@
           installation_mode = "blocked";
         };
 
+        # Dark Reader
+        "addon@darkreader.org" = {
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/addon@darkreader.org/latest.xpi";
+          installation_mode = "force_installed";
+        };
+
         # uBlock Origin
         "uBlock0@raymondhill.net" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
