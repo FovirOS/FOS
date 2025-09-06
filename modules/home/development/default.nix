@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./taplo.nix
     ./vscodium.nix
     ./xmlstarlet.nix
     ./just.nix
