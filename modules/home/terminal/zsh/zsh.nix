@@ -20,6 +20,9 @@
 
       gp = "git push --all";
       gs = "git switch";
+      cp = "cp -v";
+      mv = "mv --verbose";
+      rm = "rm -v";
     };
 
     initContent = ''
