@@ -4,7 +4,7 @@
     userName = "Fovir";
     userEmail = "fovir@disroot.org";
 
-    config = {
+    extraConfig = {
       init = {
         defaultBranch = "main";
       };
