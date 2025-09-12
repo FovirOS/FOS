@@ -55,9 +55,6 @@ in {
         # Switch workspace.
         "$mod,period,workspace,e+1"
         "$mod,comma,workspace,e-1"
-        "$mod,period,exec,random_wallpaper.sh"
-        "$mod,comma,exec,random_wallpaper.sh"
-
         "$mod,1,workspace,1"
         "$mod,2,workspace,2"
         "$mod,3,workspace,3"
@@ -117,6 +114,7 @@ in {
         "nekoray"
         "keepassxc"
         "strawberry"
+        "random_wallpaper.sh"
       ];
 
       general = {

@@ -27,10 +27,10 @@
     force = true;
     recursive = true;
     source = pkgs.fetchFromGitHub {
-      hash = "sha256-qv1TV+w1yIBuTXkyL1C/IyCHZO6Vtoq/vHz/LqR2UMo=";
+      hash = "sha256-YoFBK6e/CY9VkCJd+ACoMSGoUTo+8MguyEIcCEN1Edk=";
       owner = "FovirOS";
       repo = "wallpaper";
-      rev = "65e59c467ba3aac529a0e475994612c21c385753";
+      rev = "28031d92a2da6f3b1c0f4409a47eca4cae2b2516";
     };
   };
 
