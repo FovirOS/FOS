@@ -129,7 +129,7 @@ in {
       };
 
       decoration = let
-        OPACITY = 0.9;
+        OPACITY = 1;
       in {
         rounding = 16;
         rounding_power = 4.0;
@@ -157,7 +157,6 @@ in {
 
       windowrulev2 = [
         "workspace special, class:^(thunderbird)$|^(nekoray)$|^*strawberry*$"
-        "opacity 1.0 override,initialClass:.*Minecraft.*"
       ];
 
       ecosystem = {

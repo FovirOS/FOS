@@ -10,7 +10,11 @@
       };
 
       pull = {
-        rebase = "false";
+        rebase = false;
+      };
+
+      merge = {
+        ff = false;
       };
     };
   };
