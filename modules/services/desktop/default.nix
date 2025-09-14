@@ -11,6 +11,5 @@
     ./pipewire.nix
     ./bluetooth.nix
     ./tlp.nix
-    ./tailscale.nix
   ];
 }
