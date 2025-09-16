@@ -18,7 +18,7 @@
 
       open = "xdg-open"; # Open.
 
-      gp = "git push --all";
+      gpa = "git push --all";
       gs = "git switch";
 
       cp = "cp -v";
