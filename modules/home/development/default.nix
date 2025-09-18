@@ -17,5 +17,6 @@
     ./go
     ./nix
     ./editorconfig.nix
+    ./java.nix
   ];
 }
