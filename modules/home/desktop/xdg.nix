@@ -96,8 +96,9 @@
 
   home.file.".local/bin/run-nemo.sh" = {
     text = ''
-      #!/bin/sh
-      ( nohup nemo . >/dev/null 2>&1 & ) >/dev/null 2>&1
+      #!/usr/bin/env bash
+
+      ( nohup nemo $1 >/dev/null 2>&1 & ) >/dev/null 2>&1
     '';
 
     executable = true;
