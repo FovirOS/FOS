@@ -12,10 +12,6 @@
       pull = {
         rebase = false;
       };
-
-      merge = {
-        ff = false;
-      };
     };
   };
 }
