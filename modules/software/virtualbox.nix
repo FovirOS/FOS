@@ -5,4 +5,8 @@
       enableKvm = true;
     };
   };
+
+  users.extraGroups.vboxusers.members = [
+    "fovir"
+  ];
 }
