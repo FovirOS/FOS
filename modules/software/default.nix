@@ -3,6 +3,6 @@
     ./chromium.nix
     ./wireshark.nix
     ./nekoray.nix
-    ./virtualbox.nix
+    # ./virtualbox.nix
   ];
 }
