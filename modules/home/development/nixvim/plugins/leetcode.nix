@@ -3,6 +3,7 @@
     enable = true;
 
     settings = {
+      lang = "java";
       storage = {
         home = "~/Projects/leetcode";
       };
