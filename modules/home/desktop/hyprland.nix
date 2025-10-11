@@ -6,7 +6,7 @@
     then "eDP-1"
     else "none";
 
-  screenshotCommand = "screenshot-area.sh";
+  screenshotCommand = "flameshot gui";
   ocrCommand = "screenshot-ocr.sh";
 in {
   wayland.windowManager.hyprland = {

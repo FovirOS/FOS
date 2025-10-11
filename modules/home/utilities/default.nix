@@ -1,5 +1,6 @@
 {
   imports = [
+    ./flameshot.nix
     ./screenshot.nix
     ./qalculate.nix
     ./archiver.nix
