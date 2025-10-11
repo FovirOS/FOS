@@ -1,4 +1,4 @@
-{config, ...}: {
+{...}: {
   services.flameshot = {
     enable = true;
 
@@ -7,10 +7,9 @@
         disabledTrayIcon = true;
         startupLaunch = true;
         showStartupLaunchMessage = false;
-        savePath = config.xdg.userDirs.extraConfig.XDG_SCREENSHOTS_DIR;
+        savePath = "/home/fovir/Pictures/Screenshots";
         savePathFixed = true;
         showDesktopNotification = false;
-        useGrimAdapter = true;
       };
     };
   };
