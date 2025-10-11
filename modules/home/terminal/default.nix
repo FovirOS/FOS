@@ -1,5 +1,6 @@
 {
   imports = [
+    ./rename.nix
     ./path.nix
     ./zsh
     ./bash
