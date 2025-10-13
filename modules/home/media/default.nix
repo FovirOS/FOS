@@ -1,5 +1,6 @@
 {
   imports = [
+    ./mumble.nix
     ./inkscape.nix
     ./playerctl.nix
     ./obs-studio.nix
