@@ -1,5 +1,6 @@
 {
   imports = [
+    ./ntp.nix
     ./gvfs.nix
     ./docker.nix
     ./qemu.nix
