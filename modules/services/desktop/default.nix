@@ -1,6 +1,5 @@
 {
   imports = [
-    ./timesyncd.nix
     ./gvfs.nix
     ./docker.nix
     ./qemu.nix
