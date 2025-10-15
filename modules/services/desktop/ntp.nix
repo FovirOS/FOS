@@ -1,5 +1,5 @@
 {...}: {
-  services.timesyncd = {
+  services.ntp = {
     enable = true;
   };
 }
